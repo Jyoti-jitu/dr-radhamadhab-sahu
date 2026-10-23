@@ -40,10 +40,16 @@ export default function PatientReviews() {
                 <Star key={i} className="w-4 h-4 fill-amber-400" />
               ))}
             </div>
-            <span className="text-xs font-bold text-[#0B2545]">5.0 / 5.0 Rating</span>
+            <span className="text-xs font-bold text-[#0B2545]">
+              {DOCTOR.googleRating || 4.9} / 5.0 Rating
+            </span>
+            <span className="text-slate-300">•</span>
+            <span className="text-xs font-semibold text-slate-600">
+              {DOCTOR.googleReviewCount ? `${DOCTOR.googleReviewCount}+ Verified Reviews` : "980+ Verified Reviews"}
+            </span>
             <span className="text-slate-300">•</span>
             <a
-              href="https://maps.app.goo.gl/iyFUSCm5hVAiDjkn6"
+              href={DOCTOR.googleMapsReviewsUrl || "https://maps.app.goo.gl/iyFUSCm5hVAiDjkn6"}
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs font-semibold text-[#14746F] hover:underline inline-flex items-center gap-1"
@@ -55,7 +61,7 @@ export default function PatientReviews() {
         </div>
 
         {/* Reviews Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {DOCTOR.patientReviews.map((rev) => (
             <article
               key={rev.id}

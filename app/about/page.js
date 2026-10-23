@@ -249,6 +249,97 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Clinical Environment & Surgical Leadership Gallery */}
+      <section className="py-14 sm:py-20 bg-white border-t border-slate-200">
+        <div className="medical-container space-y-10">
+          <div className="max-w-3xl space-y-2">
+            <span className="medical-badge">
+              In The Clinic &amp; On The National Stage
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B2545] tracking-tight">
+              Clinical Practice, Honors &amp; Academic Leadership
+            </h2>
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+              Authentic photographic documentation from Dr. Radhamadhab Sahu’s consultation chamber at Ghatikia Main Road and his national keynote presentations across premier surgical forums.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Photo 1: Consultation Chamber & Awards Wall */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all">
+              <div className="relative aspect-[4/3] w-full bg-slate-100">
+                <Image
+                  src="/images/dr-sahu-clinic-office-awards.jpg"
+                  alt="Dr. Radhamadhab Sahu in clinic consultation chamber with patient and awards wall"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 380px"
+                  className="object-cover"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Consultation Chamber &amp; Honors
+                </div>
+              </div>
+              <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  Clinic Chamber &amp; Honors Wall
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Dr. Sahu in consultation with post-operative patient and family, seated before his wall of surgical honors (ISOCON, Global EES Summit) and sacred Jagannath artwork.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 2: SKULLBASECON 2025 Keynote */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all">
+              <div className="relative aspect-[4/3] w-full bg-slate-900">
+                <Image
+                  src="/images/dr-sahu-skullbasecon-2025.jpg"
+                  alt="Dr. Radhamadhab Sahu delivering keynote at SKULLBASECON 2025, Chennai"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 380px"
+                  className="object-cover"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  SKULLBASECON 2025 Keynote
+                </div>
+              </div>
+              <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  National Skull Base Keynote
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Delivering invited faculty address on &ldquo;Endoscope-assisted Management of Jugular Foramen Tumors&rdquo; at the Leela Palace, Chennai.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 3: Pediatric Post-Op Recovery */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all">
+              <div className="relative aspect-[4/3] w-full bg-slate-100">
+                <Image
+                  src="/images/dr-sahu-pediatric-patients-chamber.jpg"
+                  alt="Pediatric post-operative recovery follow-up with Dr. Radhamadhab Sahu"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 380px"
+                  className="object-cover"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Pediatric Ear Recovery
+                </div>
+              </div>
+              <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  Compassionate Patient Care
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Young reconstructive ear surgery patients smiling during post-operative clinical review in Dr. Sahu’s chamber in Bhubaneswar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Appointment CTA */}
       <AppointmentCTA variant="compact" />
     </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   BookOpen,
@@ -109,24 +110,50 @@ export function MediaCard({ media }) {
 
 export function ConferenceCard({ conference }) {
   return (
-    <div className="p-5 rounded-xl bg-white border border-slate-200 space-y-2 hover:border-[#0B2545]/30 transition-all">
-      <div className="flex items-center justify-between">
-        <span className="text-xs font-bold text-[#14746F] uppercase tracking-wide flex items-center gap-1.5">
-          <Award className="w-3.5 h-3.5" />
-          <span>{conference.role}</span>
-        </span>
-        <span className="text-xs text-slate-500 font-medium">
-          {conference.location}
-        </span>
+    <div className="rounded-2xl bg-white border border-slate-200 overflow-hidden hover:border-[#0B2545]/40 transition-all shadow-xs flex flex-col justify-between">
+      <div>
+        {conference.imageUrl && (
+          <div className="relative aspect-[16/10] w-full bg-slate-900 overflow-hidden">
+            <Image
+              src={conference.imageUrl}
+              alt={conference.conference}
+              fill
+              sizes="(max-width: 768px) 100vw, 500px"
+              className="object-cover"
+            />
+            <div className="absolute top-2.5 left-2.5 bg-slate-900/85 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold flex items-center gap-1 border border-slate-700">
+              <Award className="w-3 h-3 text-teal-400" />
+              <span>National Conference Keynote</span>
+            </div>
+          </div>
+        )}
+        <div className="p-5 space-y-2.5">
+          <div className="flex items-center justify-between text-xs">
+            <span className="font-bold text-[#14746F] uppercase tracking-wide flex items-center gap-1.5">
+              <Award className="w-3.5 h-3.5" />
+              <span>{conference.role}</span>
+            </span>
+            <span className="text-slate-500 font-medium">
+              {conference.location}
+            </span>
+          </div>
+
+          <h4 className="text-base font-bold text-[#0B2545]">
+            {conference.conference}
+          </h4>
+
+          <div className="text-xs text-slate-700 bg-slate-50 p-2.5 rounded-lg border border-slate-100 space-y-1">
+            <strong className="text-[#0B2545] block">Keynote Topic:</strong>
+            <p className="italic">&ldquo;{conference.topic}&rdquo;</p>
+          </div>
+
+          {conference.organization && (
+            <p className="text-[11px] text-slate-500">
+              Organized under the aegis of {conference.organization}
+            </p>
+          )}
+        </div>
       </div>
-
-      <h4 className="text-sm font-bold text-[#0B2545]">
-        {conference.conference}
-      </h4>
-
-      <p className="text-xs text-slate-600">
-        Topic: {conference.topic}
-      </p>
     </div>
   );
 }

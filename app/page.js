@@ -154,16 +154,16 @@ export default function HomePage() {
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-100 aspect-video">
                 <Image
-                  src="/images/ent-clinic-suite.jpg"
-                  alt="Modern ENT Examination & Endoscopic Suite"
+                  src="/images/dr-sahu-clinic-office-awards.jpg"
+                  alt="Dr. Radhamadhab Sahu Consultation Chamber & Honors Suite"
                   fill
                   sizes="(max-width: 1024px) 100vw, 600px"
                   className="object-cover"
                 />
-                <div className="absolute bottom-3 left-3 right-3 bg-slate-900/80 backdrop-blur-xs p-3 rounded-xl text-white text-xs">
-                  <p className="font-semibold text-teal-300">Modern Diagnostic Suite</p>
+                <div className="absolute bottom-3 left-3 right-3 bg-slate-900/85 backdrop-blur-xs p-3 rounded-xl text-white text-xs">
+                  <p className="font-semibold text-teal-300">Consultation Chamber &amp; Honors Suite</p>
                   <p className="text-slate-300 text-[11px]">
-                    Equipped with high-definition video-endoscopy, microscopic otology, and diagnostic stroboscopy.
+                    Equipped with advanced diagnostic ENT instrumentation at Ghatikia Main Road, Bhubaneswar.
                   </p>
                 </div>
               </div>

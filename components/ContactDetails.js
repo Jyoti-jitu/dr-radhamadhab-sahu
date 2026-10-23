@@ -121,7 +121,7 @@ export default function ContactDetails() {
               <div>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E6F4F3] text-[#14746F] text-xs font-bold uppercase tracking-wider mb-2">
                   <Stethoscope className="w-3.5 h-3.5" />
-                  <span>Private Consultation Clinic</span>
+                  <span>Private Consultation Clinic · 4.9 ★ Google Maps</span>
                 </span>
                 <h3 className="text-2xl font-bold text-[#0B2545]">
                   Dr. Radhamadhab ENT and Cancer Clinic
@@ -148,6 +148,23 @@ export default function ContactDetails() {
                   <span>Plot K8/118, Ghatikia Main Road</span>
                 </span>
                 <span className="text-teal-300">Street Map View</span>
+              </div>
+            </div>
+
+            {/* Verified Chamber Photo Thumbnail */}
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3">
+              <div className="relative w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-slate-200">
+                <Image
+                  src="/images/dr-sahu-clinic-office-awards.jpg"
+                  alt="Dr. Radhamadhab Sahu consultation chamber"
+                  fill
+                  sizes="64px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="text-[11px] text-slate-600 leading-tight">
+                <strong className="text-[#0B2545] block font-semibold">Consultation Chamber &amp; Honors Suite</strong>
+                <span>Air-conditioned consultation facility with ENT diagnostics at Ghatikia Main Road.</span>
               </div>
             </div>
 
