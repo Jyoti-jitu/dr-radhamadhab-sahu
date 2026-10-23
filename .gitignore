@@ -42,4 +42,5 @@ next-env.d.ts
 
 # raw local source image drops in root
 /*.png
-
+/*.jpg
+/*.jpeg

@@ -154,8 +154,8 @@ export default function HomePage() {
             <div className="lg:col-span-6 space-y-4">
               <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-100 aspect-[16/10]">
                 <Image
-                  src="/images/dr-sahu-clinic-office-awards.jpg"
-                  alt="Dr. Radhamadhab Sahu Consultation Chamber & Honors Suite"
+                  src="/images/clinic-head-silhouette-awards-wall.jpg"
+                  alt="Dr. Radhamadhab Sahu Consultation Chamber & Head Silhouette Awards Wall"
                   fill
                   sizes="(max-width: 1024px) 100vw, 600px"
                   className="object-cover"
@@ -185,14 +185,14 @@ export default function HomePage() {
 
                 <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
                   <Image
-                    src="/images/clinic-awards-trophies-detail.jpg"
-                    alt="National Otolaryngology Honors & Trophies"
+                    src="/images/dr-sahu-fess-sinus-cme-award.jpg"
+                    alt="AOI State CME on Endoscopic Sinus Surgery Felicitation"
                     fill
                     sizes="(max-width: 1024px) 50vw, 300px"
                     className="object-cover"
                   />
                   <div className="absolute bottom-1.5 left-1.5 right-1.5 bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded text-[10px] text-teal-300 font-semibold truncate">
-                    National Conclave Honors
+                    AOI Sinus CME Award
                   </div>
                 </div>
               </div>
@@ -349,26 +349,26 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Photo 4: State & National Honors */}
+            {/* Photo 4: State AOI Honors */}
             <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between group">
               <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
                 <Image
-                  src="/images/clinic-national-honors-awards.jpg"
-                  alt="National Otolaryngology Honors, MENTCON and ISOCON Awards"
+                  src="/images/dr-sahu-aoi-odisha-state-award.jpg"
+                  alt="Dr. Radhamadhab Sahu receiving gold memento at 46th Annual Conference AOI Odisha State Chapter"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
                   className="object-cover group-hover:scale-104 transition-transform duration-500"
                 />
                 <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  Surgical Honors
+                  State AOI Honor
                 </div>
               </div>
               <div className="p-4 space-y-1 bg-white border-t border-slate-100">
                 <h3 className="text-sm font-bold text-[#0B2545]">
-                  Conclave Accreditations
+                  46th AOI Odisha State Award
                 </h3>
                 <p className="text-xs text-slate-600 leading-tight">
-                  MENTCON, ISOCON Agra 2024, UPAOICON, and Jewels of Odisha awards.
+                  Gold memento felicitation for state leadership in advanced skull base &amp; ENT surgery.
                 </p>
               </div>
             </div>

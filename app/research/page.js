@@ -136,22 +136,22 @@ export default function ResearchPage() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
                 <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
                   <Image
-                    src="/images/clinic-national-honors-awards.jpg"
-                    alt="MENTCON, ISOCON Agra 2024 and UPAOICON Honors"
+                    src="/images/dr-sahu-aoi-odisha-state-award.jpg"
+                    alt="Dr. Radhamadhab Sahu receiving gold memento at 46th Annual Conference AOI Odisha State Chapter"
                     fill
                     sizes="(max-width: 768px) 100vw, 360px"
                     className="object-cover group-hover:scale-104 transition-transform duration-500"
                   />
                   <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
-                    State &amp; National Conclaves
+                    Odisha State Chapter
                   </div>
                 </div>
                 <div className="p-4 space-y-1 bg-white border-t border-slate-100">
                   <h4 className="text-sm font-bold text-[#0B2545]">
-                    National Conclave Felicitations
+                    46th AOI Odisha State Award
                   </h4>
                   <p className="text-xs text-slate-600 leading-tight">
-                    Recognitions from MENTCON, ISOCON Agra 2024, UPAOICON, and Jewels of Odisha.
+                    Gold memento felicitation on stage at the 46th Annual Conference of the Association of Otolaryngologists of India, Odisha State Chapter.
                   </p>
                 </div>
               </div>
@@ -159,22 +159,22 @@ export default function ResearchPage() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
                 <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
                   <Image
-                    src="/images/clinic-awards-trophies-detail.jpg"
-                    alt="PHONOCON and AOI Regional Conclave Trophies"
+                    src="/images/dr-sahu-phonocon-2025-award.jpg"
+                    alt="Dr. Radhamadhab Sahu receiving award at PHONOCON 2025 Mayfair Lagoon Bhubaneswar"
                     fill
                     sizes="(max-width: 768px) 100vw, 360px"
                     className="object-cover group-hover:scale-104 transition-transform duration-500"
                   />
                   <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
-                    Specialist Trophies
+                    National Phonosurgery
                   </div>
                 </div>
                 <div className="p-4 space-y-1 bg-white border-t border-slate-100">
                   <h4 className="text-sm font-bold text-[#0B2545]">
-                    PHONOCON &amp; AOI Honors
+                    PHONOCON 2025 Felicitation
                   </h4>
                   <p className="text-xs text-slate-600 leading-tight">
-                    Trophies from PHONOCON, 48th AOI Bihar &amp; Jharkhand 2024, and AOIBBCON 2023.
+                    Conclave award presentation at Mayfair Lagoon, Bhubaneswar (07-09 Feb 2025) honoring advanced phonosurgical expertise.
                   </p>
                 </div>
               </div>
@@ -182,22 +182,22 @@ export default function ResearchPage() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
                 <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
                   <Image
-                    src="/images/clinic-awards-wall-wide.jpg"
-                    alt="Full Consultation Suite Wall of Honors"
+                    src="/images/dr-sahu-fess-sinus-cme-award.jpg"
+                    alt="Dr. Radhamadhab Sahu receiving award at AOI Endoscopic Sinus Surgery CME"
                     fill
                     sizes="(max-width: 768px) 100vw, 360px"
                     className="object-cover group-hover:scale-104 transition-transform duration-500"
                   />
                   <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
-                    Chamber Honors Wall
+                    Rhinology &amp; FESS CME
                   </div>
                 </div>
                 <div className="p-4 space-y-1 bg-white border-t border-slate-100">
                   <h4 className="text-sm font-bold text-[#0B2545]">
-                    Awards Wall in Chamber
+                    AOI Sinus Surgery CME Award
                   </h4>
                   <p className="text-xs text-slate-600 leading-tight">
-                    Surgical awards display with sacred Lord Jagannath shrine at Ghatikia Main Road clinic.
+                    Stage honor at the AOI State CME on &ldquo;Recent Updates on Endoscopic Sinus Surgery &amp; Allergic Rhinitis&rdquo; (12 July 2025).
                   </p>
                 </div>
               </div>

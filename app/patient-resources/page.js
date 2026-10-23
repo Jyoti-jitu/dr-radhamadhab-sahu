@@ -36,9 +36,9 @@ const articles = [
     title: "Understanding Chronic Sinusitis: Causes, Symptoms & Modern Care",
     category: "Rhinology & Sinus Health",
     readTime: "5 min read",
-    image: "/images/clinic-consultation-desk.jpg",
-    imageCaption: "In-office endoscopic assessment and magnification loupes for chronic sinus and nasal evaluations.",
-    imageBadge: "Diagnostic Rhinology",
+    image: "/images/dr-sahu-fess-sinus-cme-award.jpg",
+    imageCaption: "Dr. Radhamadhab Sahu honored on stage at the AOI State CME on Endoscopic Sinus Surgery (FESS) & Allergic Rhinitis.",
+    imageBadge: "Sinus Surgery CME",
     summary:
       "What causes paranasal sinus blockage, when medical therapies suffice, and how Functional Endoscopic Sinus Surgery (FESS) restores natural sinus ventilation without external incisions.",
     content: [
@@ -77,8 +77,8 @@ const articles = [
     title: "When Should You Consult an ENT Specialist? 7 Red Flag Symptoms",
     category: "Clinical Guidance",
     readTime: "4 min read",
-    image: "/images/clinic-awards-wall-wide.jpg",
-    imageCaption: "Dr. Radhamadhab Sahu's consultation chamber and diagnostic review suite at Ghatikia Main Road, Bhubaneswar.",
+    image: "/images/clinic-head-silhouette-awards-wall.jpg",
+    imageCaption: "Distinctive head-silhouette awards wall and surgical honours inside Dr. Radhamadhab Sahu's clinic in Bhubaneswar.",
     imageBadge: "Consultation Chamber",
     summary:
       "Learn which ear, nose, throat, and neck symptoms warrant prompt specialist evaluation rather than continued self-medication.",
@@ -122,9 +122,9 @@ const articles = [
     title: "What is Endoscopic Skull Base Surgery? A Patient's Primer",
     category: "Skull Base Surgery",
     readTime: "6 min read",
-    image: "/images/dr-sahu-skullbasecon-2025.jpg",
-    imageCaption: "Dr. Radhamadhab Sahu presenting Endoscope-Assisted Skull Base Surgery at SKULLBASECON 2025, Chennai.",
-    imageBadge: "SKULLBASECON 2025 Keynote",
+    image: "/images/dr-sahu-eboss-skullbase-faculty.jpg",
+    imageCaption: "Dr. Radhamadhab Sahu serving as expert faculty at EBOSS 2.0 (Endoscopic Ear & Skull Base Surgery).",
+    imageBadge: "EBOSS 2.0 Faculty",
     summary:
       "How surgeons access deep pituitary tumors, clival chordomas, and cranial base leaks through the nostrils without opening the skull.",
     content: [

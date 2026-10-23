@@ -202,22 +202,22 @@ export default function AboutPage() {
                   <div className="rounded-xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
                     <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
                       <Image
-                        src="/images/clinic-national-honors-awards.jpg"
-                        alt="National Conclave Awards MENTCON and ISOCON"
+                        src="/images/dr-sahu-aoi-odisha-state-award.jpg"
+                        alt="Dr. Radhamadhab Sahu receiving gold memento at 46th Annual Conference AOI Odisha State Chapter"
                         fill
                         sizes="(max-width: 640px) 100vw, 300px"
                         className="object-cover group-hover:scale-104 transition-transform duration-500"
                       />
                       <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
-                        State &amp; National Honors
+                        State Chapter Honor
                       </div>
                     </div>
                     <div className="p-3.5 space-y-1">
                       <h4 className="text-xs font-bold text-[#0B2545]">
-                        MENTCON &amp; ISOCON Agra
+                        46th AOI Odisha State Award
                       </h4>
                       <p className="text-[11px] text-slate-600 leading-tight">
-                        Recognitions from MENTCON, ISOCON Agra 2024, UPAOICON, and Jewels of Odisha.
+                        Gold memento felicitation on stage recognizing surgical leadership in skull base &amp; ENT care.
                       </p>
                     </div>
                   </div>
@@ -225,22 +225,22 @@ export default function AboutPage() {
                   <div className="rounded-xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
                     <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
                       <Image
-                        src="/images/clinic-awards-trophies-detail.jpg"
-                        alt="PHONOCON and AOI Conclave Trophies"
+                        src="/images/dr-sahu-phonocon-2025-award.jpg"
+                        alt="Dr. Radhamadhab Sahu receiving PHONOCON 2025 award at Mayfair Lagoon Bhubaneswar"
                         fill
                         sizes="(max-width: 640px) 100vw, 300px"
                         className="object-cover group-hover:scale-104 transition-transform duration-500"
                       />
                       <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
-                        Surgical Trophies
+                        National Phonosurgery
                       </div>
                     </div>
                     <div className="p-3.5 space-y-1">
                       <h4 className="text-xs font-bold text-[#0B2545]">
-                        PHONOCON &amp; AOI Honors
+                        PHONOCON 2025 Award
                       </h4>
                       <p className="text-[11px] text-slate-600 leading-tight">
-                        Trophies from PHONOCON, 48th AOI Bihar &amp; Jharkhand, and AOIBBCON 2023.
+                        Stage felicitation at Mayfair Lagoon, Bhubaneswar (07-09 Feb 2025) for voice surgery excellence.
                       </p>
                     </div>
                   </div>
@@ -321,98 +321,98 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Photo 1: Consultation Chamber & Awards Wall */}
-            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
-              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
-                <Image
-                  src="/images/dr-sahu-clinic-office-awards.jpg"
-                  alt="Dr. Radhamadhab Sahu in clinic consultation chamber with patient and awards wall"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
-                  className="object-cover group-hover:scale-104 transition-transform duration-500"
-                />
-                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  Consultation Chamber
-                </div>
-              </div>
-              <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
-                <h3 className="text-sm font-bold text-[#0B2545]">
-                  Chamber &amp; Honors Wall
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Doctor in consultation before wall of surgical honors and Lord Jagannath artwork.
-                </p>
-              </div>
-            </div>
-
-            {/* Photo 2: SKULLBASECON 2025 Keynote */}
+            {/* Photo 1: EBOSS 2.0 Skull Base Faculty */}
             <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
               <div className="relative aspect-[4/3] w-full bg-slate-900 overflow-hidden">
                 <Image
-                  src="/images/dr-sahu-skullbasecon-2025.jpg"
-                  alt="Dr. Radhamadhab Sahu delivering keynote at SKULLBASECON 2025, Chennai"
+                  src="/images/dr-sahu-eboss-skullbase-faculty.jpg"
+                  alt="Dr. Radhamadhab Sahu serving as expert faculty at EBOSS 2.0 Endoscopic Ear and Skull Base Surgery"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
                   className="object-cover group-hover:scale-104 transition-transform duration-500"
                 />
                 <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  SKULLBASECON 2025
+                  EBOSS 2.0 Faculty
                 </div>
               </div>
               <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
                 <h3 className="text-sm font-bold text-[#0B2545]">
-                  National Keynote
+                  Endoscopic Skull Base Faculty
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Invited address on &ldquo;Jugular Foramen Tumors&rdquo; at The Leela Palace, Chennai.
+                  Invited faculty at EBOSS 2.0 for Endoscopic Ear and Skull Base Surgery symposium.
                 </p>
               </div>
             </div>
 
-            {/* Photo 3: Pediatric Post-Op Recovery */}
+            {/* Photo 2: IAOHNS Chennai 2026 Podium */}
             <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
-              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+              <div className="relative aspect-[4/3] w-full bg-slate-900 overflow-hidden">
                 <Image
-                  src="/images/dr-sahu-pediatric-patients-chamber.jpg"
-                  alt="Pediatric post-operative recovery follow-up with Dr. Radhamadhab Sahu"
+                  src="/images/dr-sahu-iaohns-chennai-podium.jpg"
+                  alt="Dr. Radhamadhab Sahu delivering podium address at IAOHNS Chennai 2026"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
                   className="object-cover group-hover:scale-104 transition-transform duration-500"
                 />
                 <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  Pediatric Care
+                  IAOHNS Chennai 2026
                 </div>
               </div>
               <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
                 <h3 className="text-sm font-bold text-[#0B2545]">
-                  Pediatric Recovery
+                  National Podium Address
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Smiles during post-operative ear reconstruction follow-up in Bhubaneswar.
+                  Indian Academy of Otorhinolaryngology Head and Neck Surgery national address.
                 </p>
               </div>
             </div>
 
-            {/* Photo 4: Adult Clinical Consultation */}
+            {/* Photo 3: AOICON National Stage Felicitation */}
             <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
               <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
                 <Image
-                  src="/images/dr-sahu-patient-consultation.jpg"
-                  alt="Clinical second opinion and symptom mapping consultation with Dr. Sahu"
+                  src="/images/dr-sahu-aoicon-stage-felicitation.jpg"
+                  alt="Dr. Radhamadhab Sahu receiving national stage felicitation at 48th Annual Conference AOI"
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
                   className="object-cover group-hover:scale-104 transition-transform duration-500"
                 />
                 <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  Clinical Consultation
+                  AOI Felicitation
                 </div>
               </div>
               <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
                 <h3 className="text-sm font-bold text-[#0B2545]">
-                  Airway Evaluation
+                  National AOI Leadership
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  In-depth clinical symptom evaluation and endoscopic planning in private suite.
+                  Honored on the national stage by senior ENT dignitaries at the 48th Annual Conference.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 4: ISOCON Keynote Podium */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
+              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+                <Image
+                  src="/images/dr-sahu-isocon-speaker-podium.jpg"
+                  alt="Dr. Radhamadhab Sahu addressing delegates at ISOCON National Conference"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  ISOCON Convention
+                </div>
+              </div>
+              <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  ISOCON Keynote Podium
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Presenting endoscopic skull base corridors at the Indian Society of Otology National Conference.
                 </p>
               </div>
             </div>
