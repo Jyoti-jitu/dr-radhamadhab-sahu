@@ -70,32 +70,26 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
       {/* Top Clinical Notification Bar */}
-      <div className="bg-[#0B2545] text-slate-100 text-xs py-2 px-4">
-        <div className="medical-container flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center flex-wrap gap-4 text-slate-200">
-            <span className="inline-flex items-center gap-1.5 font-medium">
-              <Building2 className="w-3.5 h-3.5 text-teal-400" />
-              <span>SUM Ultimate Medicare OPD: 9:30 AM – 5:30 PM (Mon–Sat)</span>
-            </span>
-            <span className="hidden md:inline-flex items-center gap-1.5 text-slate-300">
-              <Stethoscope className="w-3.5 h-3.5 text-teal-400" />
-              <span>Clinic: K-8/118 Ghatikia Main Rd</span>
-            </span>
+      <div className="bg-[#0B2545] text-slate-100 text-[11px] sm:text-xs py-1.5 sm:py-2 px-3 sm:px-4">
+        <div className="medical-container flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 text-slate-200 truncate min-w-0">
+            <Building2 className="w-3.5 h-3.5 text-teal-400 shrink-0" />
+            <span className="truncate">SUM Ultimate Medicare OPD: 9:30 AM – 5:30 PM (Mon–Sat)</span>
           </div>
 
-          <div className="flex items-center gap-4 text-xs">
+          <div className="flex items-center gap-3 text-[11px] sm:text-xs shrink-0">
             <a
               href={DOCTOR.clinic.telLink}
-              className="inline-flex items-center gap-1 text-slate-200 hover:text-white transition-colors"
+              className="inline-flex items-center gap-1 text-teal-300 hover:text-white font-semibold transition-colors"
               title="Call Clinic Direct"
             >
               <Phone className="w-3 h-3 text-teal-400" />
-              <span className="font-medium">Clinic: {DOCTOR.clinic.telephoneDisplay}</span>
+              <span>Clinic: {DOCTOR.clinic.telephoneDisplay}</span>
             </a>
-            <span className="text-slate-500 hidden sm:inline">|</span>
+            <span className="text-slate-500 hidden md:inline">|</span>
             <a
               href={DOCTOR.hospital.telLink}
-              className="hidden sm:inline-flex items-center gap-1 text-slate-200 hover:text-white transition-colors"
+              className="hidden md:inline-flex items-center gap-1 text-slate-200 hover:text-white transition-colors"
               title="Hospital EPABX"
             >
               <span>Hospital: {DOCTOR.hospital.telephoneDisplay}</span>
@@ -105,18 +99,18 @@ export default function Header() {
       </div>
 
       {/* Main Navigation Bar */}
-      <div className="medical-container py-3.5 flex items-center justify-between gap-4">
+      <div className="medical-container py-2.5 sm:py-3.5 flex items-center justify-between gap-3 sm:gap-4">
         {/* Brand / Doctor Identity */}
-        <Link href="/" className="group flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-[#0B2545] text-white flex items-center justify-center font-serif text-lg font-bold shadow-xs group-hover:bg-[#14746F] transition-colors">
+        <Link href="/" className="group flex items-center gap-2.5 sm:gap-3 min-w-0">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#0B2545] text-white flex items-center justify-center font-serif text-base sm:text-lg font-bold shadow-xs group-hover:bg-[#14746F] transition-colors shrink-0">
             DR
           </div>
-          <div className="flex flex-col">
-            <span className="text-lg sm:text-xl font-bold tracking-tight text-[#0B2545] leading-snug group-hover:text-[#14746F] transition-colors">
+          <div className="flex flex-col min-w-0">
+            <span className="text-base sm:text-xl font-bold tracking-tight text-[#0B2545] leading-tight group-hover:text-[#14746F] transition-colors truncate">
               Dr. Radhamadhab Sahu
             </span>
-            <span className="text-[11px] sm:text-xs text-slate-600 font-medium tracking-normal">
-              Senior Consultant &amp; HOD · ENT &amp; Skull Base Surgery
+            <span className="text-[10px] sm:text-xs text-slate-600 font-medium tracking-normal truncate">
+              Senior Consultant &amp; HOD · ENT &amp; Skull Base
             </span>
           </div>
         </Link>

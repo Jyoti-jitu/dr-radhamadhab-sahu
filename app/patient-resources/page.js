@@ -149,17 +149,17 @@ export default function PatientResourcesPage() {
   return (
     <div className="bg-[#FDFBF7]">
       {/* Top Header */}
-      <section className="bg-white border-b border-slate-200 py-8">
+      <section className="bg-white border-b border-slate-200 py-4 sm:py-8">
         <div className="medical-container">
           <Breadcrumbs items={breadcrumbItems} />
-          <div className="max-w-3xl mt-3 space-y-3">
+          <div className="max-w-3xl mt-2 sm:mt-3 space-y-2 sm:space-y-3">
             <span className="medical-badge">
               Patient Education &amp; Clinical Literacy
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight leading-tight">
               Patient Resources &amp; Guides
             </h1>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
               Empowering patients and families with verified medical knowledge. These educational articles are written from an evidence-based clinical perspective to help you understand your symptoms and prepare for specialist consultations.
             </p>
           </div>
@@ -167,18 +167,18 @@ export default function PatientResourcesPage() {
       </section>
 
       {/* Visual Guide Navigation Directory */}
-      <section className="py-8 bg-slate-50 border-b border-slate-200">
+      <section className="py-5 sm:py-8 bg-slate-50 border-b border-slate-200">
         <div className="medical-container">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
-              Quick Topic Directory (Select to Jump to Clinical Guide)
+          <div className="flex items-center justify-between mb-3 sm:mb-4">
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-600">
+              Quick Topic Directory (Select to Jump)
             </span>
             <span className="text-xs text-[#14746F] font-semibold hidden sm:inline">
               5 Comprehensive Clinical Primers
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-4">
             {articles.map((art) => (
               <a
                 key={art.id}
@@ -194,15 +194,15 @@ export default function PatientResourcesPage() {
                     className={`object-cover ${art.imagePosition || "object-center"} group-hover:scale-105 transition-transform duration-300`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
-                  <div className="absolute bottom-1.5 left-2 right-2 text-white text-[10px] font-semibold truncate">
+                  <div className="absolute bottom-1 left-1.5 right-1.5 text-white text-[9px] sm:text-[10px] font-semibold truncate">
                     {art.category}
                   </div>
                 </div>
-                <div className="p-3 space-y-1">
-                  <h3 className="text-xs font-bold text-[#0B2545] group-hover:text-[#14746F] transition-colors line-clamp-2 leading-tight">
+                <div className="p-2 sm:p-3 space-y-1">
+                  <h3 className="text-[11px] sm:text-xs font-bold text-[#0B2545] group-hover:text-[#14746F] transition-colors line-clamp-2 leading-tight">
                     {art.title}
                   </h3>
-                  <span className="text-[10px] font-semibold text-[#14746F] flex items-center gap-0.5 pt-1">
+                  <span className="text-[9px] sm:text-[10px] font-semibold text-[#14746F] flex items-center gap-0.5 pt-0.5 sm:pt-1">
                     <span>Read Guide</span>
                     <ArrowRight className="w-2.5 h-2.5 group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -214,32 +214,32 @@ export default function PatientResourcesPage() {
       </section>
 
       {/* Articles Section */}
-      <section className="py-14 sm:py-20">
+      <section className="py-8 sm:py-16 lg:py-20">
         <div className="medical-container">
-          <div className="space-y-12">
+          <div className="space-y-6 sm:space-y-10">
             {articles.map((art) => (
               <article
                 key={art.id}
                 id={art.id}
-                className="medical-card p-6 sm:p-10 space-y-6 scroll-mt-28 border border-slate-200 shadow-sm"
+                className="medical-card p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-6 scroll-mt-28 border border-slate-200 shadow-sm rounded-2xl sm:rounded-3xl"
               >
-                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#14746F] bg-teal-50 px-3 py-1 rounded-full border border-teal-100">
+                <div className="flex flex-wrap items-center justify-between gap-2 sm:gap-3 border-b border-slate-100 pb-3 sm:pb-4">
+                  <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#14746F] bg-teal-50 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border border-teal-100">
                     {art.category}
                   </span>
-                  <span className="text-xs text-slate-500 font-medium">
-                    {art.readTime} · Educational Guide
+                  <span className="text-[11px] sm:text-xs text-slate-500 font-medium">
+                    {art.readTime} &bull; Educational Guide
                   </span>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                   {/* Left Column: Narrative & Content */}
-                  <div className="lg:col-span-7 space-y-4">
-                    <div className="space-y-2">
-                      <h2 className="text-2xl sm:text-3xl font-bold text-[#0B2545] tracking-tight">
+                  <div className="lg:col-span-7 space-y-3 sm:space-y-4">
+                    <div className="space-y-1.5 sm:space-y-2">
+                      <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545] tracking-tight leading-snug">
                         {art.title}
                       </h2>
-                      <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
+                      <p className="text-xs sm:text-base text-slate-600 font-medium leading-relaxed">
                         {art.summary}
                       </p>
                     </div>

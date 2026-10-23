@@ -35,17 +35,17 @@ export default function ResearchPage() {
   return (
     <div className="bg-[#FDFBF7]">
       {/* Top Header */}
-      <section className="bg-white border-b border-slate-200 py-8">
+      <section className="bg-white border-b border-slate-200 py-4 sm:py-8">
         <div className="medical-container">
           <Breadcrumbs items={breadcrumbItems} />
-          <div className="max-w-3xl mt-3 space-y-3">
+          <div className="max-w-3xl mt-2 sm:mt-3 space-y-2 sm:space-y-3">
             <span className="medical-badge">
               Verified Academic Literature &amp; News
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight leading-tight">
               Publications, Conferences &amp; Media
             </h1>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
               Dr. Radhamadhab Sahu’s clinical leadership is actively documented through peer-reviewed medical journals, national conference faculty participation, and accredited medical journalism.
             </p>
           </div>
@@ -53,8 +53,8 @@ export default function ResearchPage() {
       </section>
 
       {/* Main Content Sections */}
-      <section className="py-14 sm:py-20">
-        <div className="medical-container space-y-16">
+      <section className="py-8 sm:py-16 lg:py-20">
+        <div className="medical-container space-y-10 sm:space-y-16">
           {/* Section 1: Verified Media Coverage */}
           <div className="space-y-6">
             <div className="flex items-center justify-between border-b border-slate-200 pb-3">

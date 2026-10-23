@@ -17,11 +17,11 @@ export default function Footer() {
   const currentYear = 2026;
 
   return (
-    <footer className="bg-[#081B33] text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <footer className="bg-[#081B33] text-slate-300 pt-10 sm:pt-16 pb-8 sm:pb-12 border-t border-slate-800">
       <div className="medical-container">
         {/* Emergency Alert Banner */}
-        <div className="mb-12 p-4 sm:p-5 rounded-2xl bg-amber-950/40 border border-amber-800/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="flex items-start gap-3">
+        <div className="mb-8 sm:mb-12 p-3.5 sm:p-5 rounded-2xl bg-amber-950/40 border border-amber-800/60 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+          <div className="flex items-start gap-2.5 sm:gap-3">
             <ShieldAlert className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
             <p className="text-xs sm:text-sm text-amber-200/90 leading-relaxed">
               <strong className="text-amber-100 font-semibold">Medical Emergency Notice:</strong> If you or a loved one is experiencing acute airway distress, foreign body choking, massive epistaxis (nose bleeding), or sudden neurological deficit, please proceed directly to the 24/7 Emergency Care Center at SUM Ultimate Medicare or dial hospital emergency.
@@ -29,15 +29,15 @@ export default function Footer() {
           </div>
           <a
             href={`tel:${DOCTOR.hospital.ambulanceTelephone.replace(/\s+/g, "")}`}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-amber-500 text-slate-950 text-xs font-bold hover:bg-amber-400 transition-colors shrink-0"
+            className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 sm:py-1.5 rounded-lg bg-amber-500 text-slate-950 text-xs font-bold hover:bg-amber-400 transition-colors shrink-0 w-full sm:w-auto text-center"
           >
-            <Phone className="w-3.5 h-3.5" />
+            <Phone className="w-3.5 h-3.5 shrink-0" />
             <span>Emergency: {DOCTOR.hospital.ambulanceTelephone}</span>
           </a>
         </div>
 
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8 pb-8 sm:pb-12 border-b border-slate-800">
           {/* Column 1: Clinician Profile */}
           <div className="space-y-4">
             <div>
@@ -204,19 +204,19 @@ export default function Footer() {
             <strong>Medical Notice:</strong> Information on this website is prepared for general public health awareness, anatomical education, and clinical transparency. It does not replace individualized clinical examination, diagnosis, or personalized therapeutic recommendations by a licensed medical practitioner. No outcome is guaranteed, and medical treatment choices depend upon specific diagnostic examinations.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 pt-4 border-t border-slate-800/80 text-xs text-slate-400 text-center sm:text-left">
             <p>
-              &copy; {currentYear} Dr. Radhamadhab Sahu · All clinical credentials verified via SUM Ultimate Medicare and peer-reviewed surgical registries.
+              &copy; {currentYear} Dr. Radhamadhab Sahu &bull; All clinical credentials verified via SUM Ultimate Medicare and peer-reviewed surgical registries.
             </p>
-            <div className="flex items-center gap-4 text-[11px]">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 sm:gap-4 text-[11px]">
               <Link href="/privacy-policy" className="hover:text-slate-300 transition-colors">
                 Privacy Policy
               </Link>
-              <span>•</span>
+              <span>&bull;</span>
               <Link href="/disclaimer" className="hover:text-slate-300 transition-colors">
                 Medical Disclaimer
               </Link>
-              <span>•</span>
+              <span>&bull;</span>
               <Link href="/contact" className="hover:text-slate-300 transition-colors">
                 Contact &amp; Map
               </Link>

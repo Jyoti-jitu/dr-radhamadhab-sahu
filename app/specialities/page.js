@@ -30,17 +30,17 @@ export default function SpecialitiesPage() {
   return (
     <div className="bg-[#FDFBF7]">
       {/* Top Header */}
-      <section className="bg-white border-b border-slate-200 py-8">
+      <section className="bg-white border-b border-slate-200 py-4 sm:py-8">
         <div className="medical-container">
           <Breadcrumbs items={breadcrumbItems} />
-          <div className="max-w-3xl mt-3 space-y-3">
+          <div className="max-w-3xl mt-2 sm:mt-3 space-y-2 sm:space-y-3">
             <span className="medical-badge">
               Comprehensive Surgical Directory
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight leading-tight">
               Clinical Specialities &amp; Surgical Care
             </h1>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
               Dr. Radhamadhab Sahu provides specialized surgical and diagnostic interventions across six dedicated otolaryngology and cranial base disciplines. Every clinical recommendation is guided by evidence-based medicine and anatomical preservation.
             </p>
           </div>
@@ -48,9 +48,9 @@ export default function SpecialitiesPage() {
       </section>
 
       {/* Specialities Grid */}
-      <section className="py-14 sm:py-20">
+      <section className="py-8 sm:py-16 lg:py-20">
         <div className="medical-container">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {SPECIALTIES.map((specialty) => (
               <SpecialtyCard key={specialty.slug} specialty={specialty} />
             ))}
@@ -59,21 +59,21 @@ export default function SpecialitiesPage() {
       </section>
 
       {/* Diagnostic & Technology Guarantee Section with Authentic Clinic Photography */}
-      <section className="py-16 bg-white border-y border-slate-200">
-        <div className="medical-container space-y-12">
-          <div className="max-w-4xl mx-auto text-center space-y-3">
+      <section className="py-8 sm:py-16 bg-white border-y border-slate-200">
+        <div className="medical-container space-y-6 sm:space-y-10">
+          <div className="max-w-4xl mx-auto text-center space-y-2.5 sm:space-y-3">
             <span className="medical-badge">
               Diagnostic Standards
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight">
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight leading-tight">
               Diagnostic Precision Before Surgical Recommendation
             </h2>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Surgery is recommended only when conservative medical management has been exhausted or when structural pathology clearly mandates operative intervention.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {/* Step 1: In-office endoscopic examination */}
             <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/50 transition-all group">
               <div className="relative aspect-[16/10] w-full bg-slate-900 overflow-hidden">

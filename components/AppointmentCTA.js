@@ -16,38 +16,38 @@ import { DOCTOR } from "@/lib/doctor";
 
 export default function AppointmentCTA({ variant = "full" }) {
   return (
-    <section className="bg-gradient-to-b from-white to-slate-50 py-14 sm:py-20 border-t border-slate-200">
+    <section className="bg-gradient-to-b from-white to-slate-50 py-8 sm:py-16 lg:py-20 border-t border-slate-200">
       <div className="medical-container">
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center space-y-3 mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EDF4FA] text-[#0B2545] text-xs font-bold uppercase tracking-wider">
-            <Calendar className="w-3.5 h-3.5 text-[#14746F]" />
+        <div className="max-w-3xl mx-auto text-center space-y-2.5 sm:space-y-3 mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EDF4FA] text-[#0B2545] text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+            <Calendar className="w-3.5 h-3.5 text-[#14746F] shrink-0" />
             <span>Consultation &amp; Appointments</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight">
+          <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight leading-tight">
             Schedule Your Clinical Consultation
           </h2>
-          <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+          <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
             Dr. Radhamadhab Sahu consults across two authorized clinical centers in Kalinga Nagar, Bhubaneswar. Choose your preferred care setting below to connect directly with the respective appointment desk.
           </p>
         </div>
 
         {/* Dual Care Pathway Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
           {/* Card 1: Hospital Outpatient & Surgeries (SUM Ultimate Medicare) */}
-          <div className="medical-card p-6 sm:p-8 flex flex-col justify-between border-2 border-slate-200 hover:border-[#0B2545]/40 transition-all shadow-sm">
+          <div className="medical-card p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl flex flex-col justify-between border-2 border-slate-200 hover:border-[#0B2545]/40 transition-all shadow-sm">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <span className="p-3 rounded-xl bg-[#EDF4FA] text-[#0B2545]">
-                  <Building2 className="w-6 h-6" />
+                <span className="p-2.5 sm:p-3 rounded-xl bg-[#EDF4FA] text-[#0B2545]">
+                  <Building2 className="w-5 h-5 sm:w-6 sm:h-6" />
                 </span>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-[#0B2545] bg-slate-100 px-3 py-1 rounded-full">
+                <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#0B2545] bg-slate-100 px-2.5 sm:px-3 py-1 rounded-full">
                   Quaternary Hospital OPD
                 </span>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-[#0B2545]">
+                <h3 className="text-lg sm:text-xl font-bold text-[#0B2545]">
                   SUM Ultimate Medicare
                 </h3>
                 <p className="text-xs text-slate-500 mt-0.5">
@@ -67,7 +67,7 @@ export default function AppointmentCTA({ variant = "full" }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-[10px] font-semibold bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded-md">
                   <span className="flex items-center gap-1">
-                    <MapPin className="w-3 h-3 text-rose-400" />
+                    <MapPin className="w-3 h-3 text-rose-400 shrink-0" />
                     <span>K-8, Ghatikia Main Road</span>
                   </span>
                   <span className="text-teal-300">GPS Map</span>
@@ -93,12 +93,12 @@ export default function AppointmentCTA({ variant = "full" }) {
             </div>
 
             {/* Action Buttons for Hospital */}
-            <div className="pt-6 mt-6 border-t border-slate-100 space-y-3">
+            <div className="pt-4 mt-4 sm:pt-6 sm:mt-6 border-t border-slate-100 space-y-2.5 sm:space-y-3">
               <a
                 href={DOCTOR.hospital.telLink}
-                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0B2545] text-white text-xs sm:text-sm font-semibold hover:bg-[#14746F] transition-colors shadow-xs"
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0B2545] text-white text-xs sm:text-sm font-semibold hover:bg-[#14746F] transition-colors shadow-xs text-center"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4 shrink-0" />
                 <span>Call Hospital EPABX: {DOCTOR.hospital.telephoneDisplay}</span>
               </a>
 
@@ -106,28 +106,28 @@ export default function AppointmentCTA({ variant = "full" }) {
                 href={DOCTOR.hospital.officialBookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors text-center"
               >
                 <span>Book on Hospital Portal / App</span>
-                <ExternalLink className="w-3.5 h-3.5" />
+                <ExternalLink className="w-3.5 h-3.5 shrink-0" />
               </a>
             </div>
           </div>
 
           {/* Card 2: Private Specialist Clinic */}
-          <div className="medical-card p-6 sm:p-8 flex flex-col justify-between border-2 border-slate-200 hover:border-[#14746F]/40 transition-all shadow-sm">
+          <div className="medical-card p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl flex flex-col justify-between border-2 border-slate-200 hover:border-[#14746F]/40 transition-all shadow-sm">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <span className="p-3 rounded-xl bg-[#E6F4F3] text-[#14746F]">
-                  <Stethoscope className="w-6 h-6" />
+                <span className="p-2.5 sm:p-3 rounded-xl bg-[#E6F4F3] text-[#14746F]">
+                  <Stethoscope className="w-5 h-5 sm:w-6 sm:h-6" />
                 </span>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-[#14746F] bg-teal-50 px-3 py-1 rounded-full border border-teal-100">
+                <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#14746F] bg-teal-50 px-2.5 sm:px-3 py-1 rounded-full border border-teal-100">
                   Private Clinic
                 </span>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-[#0B2545]">
+                <h3 className="text-lg sm:text-xl font-bold text-[#0B2545]">
                   E.N.T. &amp; Cancer Super-Speciality Clinic
                 </h3>
                 <p className="text-xs text-teal-700 font-semibold mt-0.5">
@@ -147,7 +147,7 @@ export default function AppointmentCTA({ variant = "full" }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-[10px] font-semibold bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded-md">
                   <span className="flex items-center gap-1">
-                    <MapPin className="w-3 h-3 text-teal-400" />
+                    <MapPin className="w-3 h-3 text-teal-400 shrink-0" />
                     <span>Plot K8/118, Ghatikia Main Road</span>
                   </span>
                   <span className="text-teal-300">Street Map</span>
@@ -175,18 +175,18 @@ export default function AppointmentCTA({ variant = "full" }) {
             </div>
 
             {/* Action Buttons for Clinic */}
-            <div className="pt-6 mt-6 border-t border-slate-100 space-y-3">
+            <div className="pt-4 mt-4 sm:pt-6 sm:mt-6 border-t border-slate-100 space-y-2.5 sm:space-y-3">
               <a
                 href={DOCTOR.clinic.telLink}
-                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#14746F] text-white text-xs sm:text-sm font-semibold hover:bg-[#0F5E59] transition-colors shadow-xs"
+                className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#14746F] text-white text-xs sm:text-sm font-semibold hover:bg-[#0F5E59] transition-colors shadow-xs text-center"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4 shrink-0" />
                 <span>Call Clinic Direct: {DOCTOR.clinic.telephoneDisplay}</span>
               </a>
 
               <Link
                 href="/contact"
-                className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors text-center"
               >
                 <span>View Full Directions &amp; Satellite Map</span>
               </Link>
@@ -195,9 +195,9 @@ export default function AppointmentCTA({ variant = "full" }) {
         </div>
 
         {/* Patient Appointment Instructions Box */}
-        <div className="max-w-5xl mx-auto mt-10 p-5 rounded-2xl bg-white border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-2">
+        <div className="max-w-5xl mx-auto mt-6 sm:mt-10 p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-2">
           <div className="flex items-center gap-2 font-bold text-[#0B2545]">
-            <FileText className="w-4 h-4 text-[#14746F]" />
+            <FileText className="w-4 h-4 text-[#14746F] shrink-0" />
             <span>Important Guidelines for Your Visit:</span>
           </div>
           <p className="text-slate-600 text-xs leading-relaxed">

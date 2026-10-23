@@ -13,7 +13,7 @@ import { DOCTOR } from "@/lib/doctor";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50/60 pt-10 pb-16 lg:pt-16 lg:pb-24 border-b border-slate-200">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50/60 pt-6 pb-12 sm:pt-10 sm:pb-16 lg:pt-16 lg:pb-24 border-b border-slate-200">
       {/* Subtle background architectural grid */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -27,23 +27,23 @@ export default function Hero() {
       />
 
       <div className="medical-container relative">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* Left Column: Editorial Medical Copy */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-7 space-y-4 sm:space-y-6">
             {/* Nomination & Eyebrow */}
             <div className="flex flex-wrap items-center gap-2">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-300/80 text-amber-900 text-xs font-bold tracking-wider uppercase shadow-xs">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-300/80 text-amber-900 text-[11px] sm:text-xs font-bold tracking-wider uppercase shadow-xs">
                 <Award className="w-3.5 h-3.5 text-amber-600 shrink-0" />
                 <span>Nominee: Bharat Pratibha Sammaan Award</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#EDF4FA] border border-[#D5E5F2] text-[#0B2545] text-xs font-bold tracking-wider uppercase">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EDF4FA] border border-[#D5E5F2] text-[#0B2545] text-[11px] sm:text-xs font-bold tracking-wider uppercase">
                 <span className="w-2 h-2 rounded-full bg-[#14746F] animate-pulse" />
                 <span>ENT &amp; Skull Base Surgery</span>
               </div>
             </div>
 
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-[#0B2545] tracking-tight leading-[1.15]">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-[#0B2545] tracking-tight leading-[1.2]">
               Pioneering Endoscopic ENT &amp;{" "}
               <span className="text-[#14746F] block sm:inline">
                 Skull Base Surgery
@@ -52,15 +52,15 @@ export default function Hero() {
             </h1>
 
             {/* Supporting Copy */}
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl font-normal">
+            <p className="text-sm sm:text-base md:text-lg text-slate-700 leading-relaxed max-w-2xl font-normal">
               Senior Consultant &amp; Head of Department at SUM Ultimate Medicare, Bhubaneswar. With over 17 years of clinical and surgical experience, Dr. Radhamadhab Sahu has performed more than 800 complex skull base surgeries for patients from over 20 countries, introducing transformative scarless and minimally invasive procedures for the first time in Odisha.
             </p>
 
             {/* CTAs */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#0B2545] text-white font-semibold text-sm sm:text-base hover:bg-[#14746F] transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.98]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl bg-[#0B2545] text-white font-semibold text-sm sm:text-base hover:bg-[#14746F] transition-all duration-200 shadow-md hover:shadow-lg active:scale-[0.98] text-center"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book a Consultation</span>
@@ -68,7 +68,7 @@ export default function Hero() {
 
               <Link
                 href="/specialities"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-800 font-semibold text-sm sm:text-base hover:bg-slate-50 hover:text-[#0B2545] hover:border-slate-400 transition-all duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 rounded-xl bg-white border border-slate-300 text-slate-800 font-semibold text-sm sm:text-base hover:bg-slate-50 hover:text-[#0B2545] hover:border-slate-400 transition-all duration-200 text-center"
               >
                 <span>Explore Specialities &amp; Surgeries</span>
                 <ArrowRight className="w-4 h-4 text-[#14746F]" />

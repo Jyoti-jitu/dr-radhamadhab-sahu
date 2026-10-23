@@ -28,18 +28,18 @@ export default function SpecialtyDetailView({ specialty }) {
   return (
     <div className="bg-[#FDFBF7]">
       {/* Top Breadcrumb & Header Banner with Authentic Clinical Visual */}
-      <section className="bg-white border-b border-slate-200 py-8 lg:py-10">
+      <section className="bg-white border-b border-slate-200 py-4 sm:py-8 lg:py-10">
         <div className="medical-container">
           <Breadcrumbs items={breadcrumbItems} />
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-4">
-            <div className="lg:col-span-8 space-y-3">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center mt-2 sm:mt-4">
+            <div className="lg:col-span-8 space-y-2 sm:space-y-3">
               <span className="medical-badge">
                 {specialty.eyebrow}
               </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight leading-tight">
                 {specialty.title}
               </h1>
-              <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              <p className="text-xs sm:text-base text-slate-700 leading-relaxed font-normal">
                 {specialty.shortDescription}
               </p>
             </div>
@@ -71,17 +71,17 @@ export default function SpecialtyDetailView({ specialty }) {
       </section>
 
       {/* Main Content Grid */}
-      <section className="py-12 sm:py-16">
+      <section className="py-8 sm:py-14">
         <div className="medical-container">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-12 items-start">
             {/* Left 8 Columns: Clinical Narrative */}
-            <div className="lg:col-span-8 space-y-12">
+            <div className="lg:col-span-8 space-y-6 sm:space-y-10">
               {/* Clinical Overview Narrative */}
-              <div className="medical-card p-6 sm:p-8 space-y-4">
-                <h2 className="text-xl sm:text-2xl font-bold text-[#0B2545]">
+              <div className="medical-card p-4 sm:p-6 lg:p-8 space-y-3 sm:space-y-4 rounded-2xl sm:rounded-3xl">
+                <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545]">
                   Clinical Overview &amp; Surgical Philosophy
                 </h2>
-                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                <p className="text-xs sm:text-base text-slate-700 leading-relaxed">
                   {specialty.fullDescription}
                 </p>
               </div>
@@ -102,7 +102,7 @@ export default function SpecialtyDetailView({ specialty }) {
                       <span>{specialty.featuredMedia.badge}</span>
                     </div>
                   </div>
-                  <div className="p-5 sm:p-6 space-y-2 bg-white border-t border-slate-100">
+                  <div className="p-3.5 sm:p-6 space-y-1.5 sm:space-y-2 bg-white border-t border-slate-100">
                     <h3 className="text-base sm:text-lg font-bold text-[#0B2545]">
                       {specialty.featuredMedia.title}
                     </h3>
@@ -114,12 +114,12 @@ export default function SpecialtyDetailView({ specialty }) {
               )}
 
               {/* Verified Surgical Procedures & Approaches */}
-              <div className="space-y-6">
-                <div className="space-y-2">
-                  <span className="text-xs font-bold text-[#14746F] uppercase tracking-wider">
+              <div className="space-y-4 sm:space-y-6">
+                <div className="space-y-1.5">
+                  <span className="text-[11px] sm:text-xs font-bold text-[#14746F] uppercase tracking-wider">
                     Surgical Capabilities
                   </span>
-                  <h2 className="text-xl sm:text-2xl font-bold text-[#0B2545]">
+                  <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545]">
                     Verified Surgical Procedures
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600">
@@ -127,13 +127,13 @@ export default function SpecialtyDetailView({ specialty }) {
                   </p>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {specialty.procedures.map((proc, idx) => (
                     <div
                       key={idx}
-                      className="medical-card p-5 space-y-1.5 border-l-4 border-l-[#0B2545] hover:border-l-[#14746F] transition-all"
+                      className="medical-card p-3.5 sm:p-5 space-y-1.5 border-l-4 border-l-[#0B2545] hover:border-l-[#14746F] transition-all rounded-xl sm:rounded-2xl"
                     >
-                      <h3 className="text-base font-bold text-[#0B2545]">
+                      <h3 className="text-sm sm:text-base font-bold text-[#0B2545]">
                         {proc.name}
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -145,20 +145,20 @@ export default function SpecialtyDetailView({ specialty }) {
               </div>
 
               {/* Symptoms & When to Seek Professional Evaluation */}
-              <div className="p-6 sm:p-8 rounded-2xl bg-amber-50/50 border border-amber-200/80 space-y-4">
+              <div className="p-4 sm:p-6 lg:p-8 rounded-2xl bg-amber-50/50 border border-amber-200/80 space-y-3 sm:space-y-4">
                 <div className="flex items-center gap-2">
                   <AlertCircle className="w-5 h-5 text-amber-700 shrink-0" />
-                  <h2 className="text-lg sm:text-xl font-bold text-amber-950">
+                  <h2 className="text-base sm:text-xl font-bold text-amber-950">
                     When Should You Seek Professional Evaluation?
                   </h2>
                 </div>
                 <p className="text-xs sm:text-sm text-amber-900/90 leading-relaxed">
                   If you or a family member experience any of the following persistent symptoms, a specialized examination by an otolaryngologist is strongly advised:
                 </p>
-                <ul className="space-y-2.5 text-xs sm:text-sm text-amber-950">
+                <ul className="space-y-2 text-xs sm:text-sm text-amber-950">
                   {specialty.symptoms.map((symptom, idx) => (
-                    <li key={idx} className="flex items-start gap-2.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-amber-600 shrink-0 mt-2" />
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-600 shrink-0 mt-1.5" />
                       <span className="leading-relaxed">{symptom}</span>
                     </li>
                   ))}
@@ -166,12 +166,12 @@ export default function SpecialtyDetailView({ specialty }) {
               </div>
 
               {/* Diagnostic Pathway */}
-              <div className="space-y-6">
-                <div className="space-y-2">
-                  <span className="text-xs font-bold text-[#14746F] uppercase tracking-wider">
+              <div className="space-y-4 sm:space-y-6">
+                <div className="space-y-1.5">
+                  <span className="text-[11px] sm:text-xs font-bold text-[#14746F] uppercase tracking-wider">
                     Evidence-Based Protocol
                   </span>
-                  <h2 className="text-xl sm:text-2xl font-bold text-[#0B2545]">
+                  <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545]">
                     Diagnostic Pathway &amp; Preoperative Workup
                   </h2>
                 </div>
@@ -187,23 +187,23 @@ export default function SpecialtyDetailView({ specialty }) {
                       className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
-                    <div className="absolute bottom-2.5 left-3 right-3 text-white text-xs font-semibold flex items-center justify-between">
+                    <div className="absolute bottom-2 left-2.5 right-2.5 sm:bottom-2.5 sm:left-3 sm:right-3 text-white text-[11px] sm:text-xs font-semibold flex items-center justify-between">
                       <span className="flex items-center gap-1.5">
-                        <Activity className="w-3.5 h-3.5 text-teal-400" />
+                        <Activity className="w-3.5 h-3.5 text-teal-400 shrink-0" />
                         <span>High-Definition Clinical Diagnostic &amp; Airway Suite</span>
                       </span>
-                      <span className="text-teal-200 text-[11px] hidden sm:inline">Endoscopic Evaluation</span>
+                      <span className="text-teal-200 text-[10px] sm:text-[11px] hidden sm:inline">Endoscopic Evaluation</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   {specialty.diagnosticPathway.map((diag, idx) => (
                     <div
                       key={idx}
-                      className="p-4 rounded-xl bg-white border border-slate-200 space-y-1.5 shadow-xs"
+                      className="p-3.5 sm:p-4 rounded-xl bg-white border border-slate-200 space-y-1 shadow-xs"
                     >
-                      <h3 className="text-sm font-bold text-[#0B2545]">
+                      <h3 className="text-xs sm:text-sm font-bold text-[#0B2545]">
                         {diag.step}
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed">
@@ -215,9 +215,9 @@ export default function SpecialtyDetailView({ specialty }) {
               </div>
 
               {/* Frequently Asked Questions */}
-              <div className="space-y-6 pt-4 border-t border-slate-200">
-                <div className="space-y-2">
-                  <h2 className="text-xl sm:text-2xl font-bold text-[#0B2545]">
+              <div className="space-y-4 sm:space-y-6 pt-4 border-t border-slate-200">
+                <div className="space-y-1.5">
+                  <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545]">
                     Frequently Asked Questions: {specialty.title}
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600">
@@ -230,9 +230,9 @@ export default function SpecialtyDetailView({ specialty }) {
             </div>
 
             {/* Right 4 Columns: Sticky Consultation Box & Quick Internal Links */}
-            <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
+            <div className="lg:col-span-4 space-y-4 sm:space-y-6 lg:sticky lg:top-28">
               {/* Consultation Card with Authentic Chamber Preview */}
-              <div className="medical-card p-0 bg-white border-2 border-[#0B2545]/20 shadow-md overflow-hidden">
+              <div className="medical-card p-0 bg-white border-2 border-[#0B2545]/20 shadow-md overflow-hidden rounded-2xl">
                 <div className="relative aspect-[16/10] w-full bg-slate-100">
                   <Image
                     src="/images/clinic-head-silhouette-awards-wall.jpg"
@@ -246,13 +246,13 @@ export default function SpecialtyDetailView({ specialty }) {
                   </div>
                 </div>
 
-                <div className="p-6 space-y-5">
-                  <div className="space-y-2">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#14746F]">
-                      <ShieldCheck className="w-4 h-4" />
+                <div className="p-4 sm:p-6 space-y-4 sm:space-y-5">
+                  <div className="space-y-1.5 sm:space-y-2">
+                    <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#14746F]">
+                      <ShieldCheck className="w-4 h-4 shrink-0" />
                       <span>Specialist Consultation</span>
                     </span>
-                    <h3 className="text-lg font-bold text-[#0B2545]">
+                    <h3 className="text-base sm:text-lg font-bold text-[#0B2545]">
                       Discuss Your Symptoms with Dr. Radhamadhab Sahu
                     </h3>
                     <p className="text-xs text-slate-600 leading-relaxed">
@@ -260,18 +260,18 @@ export default function SpecialtyDetailView({ specialty }) {
                     </p>
                   </div>
 
-                  <div className="space-y-2.5 pt-2">
+                  <div className="space-y-2.5 pt-1">
                     <Link
                       href="/contact"
-                      className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0B2545] text-white text-xs sm:text-sm font-semibold hover:bg-[#14746F] transition-colors shadow-xs"
+                      className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0B2545] text-white text-xs sm:text-sm font-semibold hover:bg-[#14746F] transition-colors shadow-xs text-center"
                     >
-                      <Calendar className="w-4 h-4" />
+                      <Calendar className="w-4 h-4 shrink-0" />
                       <span>Book an Evaluation</span>
                     </Link>
 
                     <a
                       href="tel:+919716772703"
-                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors"
+                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors text-center"
                     >
                       <span>Clinic Call: +91 97167 72703</span>
                     </a>
@@ -280,8 +280,8 @@ export default function SpecialtyDetailView({ specialty }) {
               </div>
 
               {/* Other Specialities Menu */}
-              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4">
-                <h4 className="text-sm font-bold text-[#0B2545] uppercase tracking-wider border-b border-slate-100 pb-2">
+              <div className="p-4 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3 sm:space-y-4">
+                <h4 className="text-xs sm:text-sm font-bold text-[#0B2545] uppercase tracking-wider border-b border-slate-100 pb-2">
                   Other ENT Specialities
                 </h4>
                 <ul className="space-y-2 text-xs">

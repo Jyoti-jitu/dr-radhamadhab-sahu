@@ -16,7 +16,7 @@ import { DOCTOR } from "@/lib/doctor";
 
 export default function NominationCitation({ page = "home" }) {
   return (
-    <section id="citation" className="relative py-16 sm:py-24 bg-gradient-to-b from-white via-amber-50/25 to-white border-b border-slate-200 overflow-hidden">
+    <section id="citation" className="relative py-10 sm:py-16 lg:py-24 bg-gradient-to-b from-white via-amber-50/25 to-white border-b border-slate-200 overflow-hidden">
       {/* Decorative ambient background */}
       <div
         className="absolute top-0 right-1/4 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl pointer-events-none"
@@ -29,23 +29,23 @@ export default function NominationCitation({ page = "home" }) {
 
       <div className="medical-container relative">
         {/* Main Citation Container */}
-        <div className="rounded-3xl border-2 border-amber-300/80 bg-white shadow-xl overflow-hidden">
+        <div className="rounded-2xl sm:rounded-3xl border-2 border-amber-300/80 bg-white shadow-xl overflow-hidden">
           {/* Header Citation Ribbon */}
-          <div className="bg-gradient-to-r from-[#0B2545] via-[#103A6B] to-[#0B2545] text-white p-6 sm:p-8 relative overflow-hidden">
+          <div className="bg-gradient-to-r from-[#0B2545] via-[#103A6B] to-[#0B2545] text-white p-4 sm:p-6 lg:p-8 relative overflow-hidden">
             <div className="absolute -right-8 -bottom-8 opacity-10 pointer-events-none">
               <Award className="w-56 h-56 text-amber-300" />
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
-                <div className="space-y-2">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-bold tracking-wider uppercase">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 relative z-10">
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 text-[11px] sm:text-xs font-bold tracking-wider uppercase">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-300 shrink-0" />
                   <span>Official Council Citation &bull; State &ndash; Odisha</span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+                <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight">
                   Nominee &ndash; Dr. Radhamadhab Sahu
                 </h2>
-                <p className="text-amber-200/90 text-sm sm:text-base font-medium">
+                <p className="text-amber-200/90 text-xs sm:text-base font-medium">
                   Citation for Bharat Pratibha Sammaan Award Nomination
                 </p>
                 <p className="text-xs sm:text-sm text-slate-300">
@@ -58,29 +58,29 @@ export default function NominationCitation({ page = "home" }) {
                     href="/documents/nominee-dr-radhamadhab-sahu.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#0B2545] font-bold text-xs sm:text-sm transition-all shadow-md hover:shadow-lg"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#0B2545] font-bold text-xs sm:text-sm transition-all shadow-md hover:shadow-lg w-full sm:w-auto text-center"
                   >
-                    <FileText className="w-4 h-4 text-[#0B2545]" />
+                    <FileText className="w-4 h-4 text-[#0B2545] shrink-0" />
                     <span>See NOMINEE - DR. RADHAMADHAB SAHU.pdf</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
+                    <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                   </a>
                 </div>
               </div>
 
               {/* Gold Emblem Shield */}
               <div className="shrink-0 self-start md:self-center">
-                <div className="flex items-center gap-3.5 px-5 py-3.5 rounded-2xl bg-gradient-to-b from-amber-400/20 to-amber-500/10 border border-amber-300/50 backdrop-blur-xs shadow-inner">
-                  <div className="w-12 h-12 rounded-xl bg-amber-400 flex items-center justify-center text-[#0B2545] font-black text-xl shadow-md shrink-0">
-                    <Award className="w-7 h-7 text-[#0B2545]" />
+                <div className="flex items-center gap-3 px-4 py-3 sm:px-5 sm:py-3.5 rounded-2xl bg-gradient-to-b from-amber-400/20 to-amber-500/10 border border-amber-300/50 backdrop-blur-xs shadow-inner">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-400 flex items-center justify-center text-[#0B2545] font-black text-lg sm:text-xl shadow-md shrink-0">
+                    <Award className="w-6 h-6 sm:w-7 sm:h-7 text-[#0B2545]" />
                   </div>
                   <div>
-                    <span className="block text-[11px] font-bold text-amber-300 uppercase tracking-widest">
+                    <span className="block text-[10px] sm:text-[11px] font-bold text-amber-300 uppercase tracking-widest">
                       Bharat Pratibha
                     </span>
-                    <span className="block text-sm font-extrabold text-white">
+                    <span className="block text-xs sm:text-sm font-extrabold text-white">
                       Sammaan Council
                     </span>
-                    <span className="block text-[10px] text-amber-200/80">
+                    <span className="block text-[9px] sm:text-[10px] text-amber-200/80">
                       National Recognition
                     </span>
                   </div>
@@ -90,10 +90,10 @@ export default function NominationCitation({ page = "home" }) {
           </div>
 
           {/* Citation Body */}
-          <div className="p-6 sm:p-10 space-y-10 bg-white">
+          <div className="p-4 sm:p-6 lg:p-10 space-y-6 sm:space-y-10 bg-white">
             {/* Official Nomination Award Certificate Banner & PDF Access */}
             <div className="space-y-3">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-amber-300/80 shadow-xl bg-slate-950 aspect-[2/1] w-full">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden border-2 border-amber-300/80 shadow-xl bg-slate-950 aspect-[2/1] w-full">
                 <Image
                   src="/images/bharat-pratibha-healthcare-nominee-award.png"
                   alt="Bharat Pratibha Sammaan Award Nomination - Official Citation - Dr. Radhamadhab Sahu (Healthcare & Medicine: ENT & Skull Base Surgery)"
@@ -102,24 +102,24 @@ export default function NominationCitation({ page = "home" }) {
                   className="object-contain"
                   priority
                 />
-                <div className="absolute top-3 right-3 bg-slate-900/85 backdrop-blur-xs px-3 py-1 rounded-full border border-amber-300/40 text-[11px] font-bold text-amber-300 flex items-center gap-1.5 shadow-md">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                <div className="absolute top-2.5 right-2.5 sm:top-3 sm:right-3 bg-slate-900/85 backdrop-blur-xs px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full border border-amber-300/40 text-[10px] sm:text-[11px] font-bold text-amber-300 flex items-center gap-1.5 shadow-md">
+                  <Sparkles className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-300" />
                   <span>Official Nomination Document</span>
                 </div>
               </div>
 
               {/* Document Access Strip */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200/90 shadow-xs">
-                <div className="flex items-center gap-3.5">
-                  <div className="w-11 h-11 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center shrink-0 shadow-sm">
-                    <FileText className="w-6 h-6 text-slate-950" />
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3.5 p-3.5 sm:p-5 rounded-xl sm:rounded-2xl bg-amber-50/80 border border-amber-200/90 shadow-xs">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center shrink-0 shadow-sm">
+                    <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-slate-950" />
                   </div>
-                  <div>
-                    <p className="text-xs sm:text-sm font-bold text-[#0B2545]">
+                  <div className="min-w-0">
+                    <p className="text-xs sm:text-sm font-bold text-[#0B2545] truncate">
                       Official Nomination Record: NOMINEE - DR. RADHAMADHAB SAHU.pdf
                     </p>
-                    <p className="text-[11px] text-slate-600">
-                      Council nomination filing for Bharat Pratibha Sammaan Award (Healthcare &amp; Medicine: ENT &amp; Skull Base Surgery).
+                    <p className="text-[10px] sm:text-[11px] text-slate-600 line-clamp-1">
+                      Council nomination filing for Bharat Pratibha Sammaan Award (Healthcare &amp; Medicine).
                     </p>
                   </div>
                 </div>
@@ -128,22 +128,22 @@ export default function NominationCitation({ page = "home" }) {
                   href="/documents/nominee-dr-radhamadhab-sahu.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#0B2545] hover:bg-[#14746F] text-white font-bold text-xs sm:text-sm transition-all shadow-md shrink-0 w-full sm:w-auto"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-2.5 rounded-xl bg-[#0B2545] hover:bg-[#14746F] text-white font-bold text-xs sm:text-sm transition-all shadow-md shrink-0 w-full sm:w-auto text-center"
                 >
-                  <FileText className="w-4 h-4 text-amber-300" />
+                  <FileText className="w-4 h-4 text-amber-300 shrink-0" />
                   <span>See Bharat Pratibha Sammaan Nomination PDF</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                 </a>
               </div>
             </div>
 
             {/* Introduction Quote */}
-            <div className="p-6 sm:p-7 rounded-2xl bg-amber-50/50 border border-amber-200/80 relative">
-              <div className="space-y-3">
-                <span className="text-xs font-bold uppercase tracking-wider text-amber-900 block">
+            <div className="p-4 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl bg-amber-50/50 border border-amber-200/80 relative">
+              <div className="space-y-2 sm:space-y-3">
+                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-900 block">
                   Official Citation Narrative
                 </span>
-                <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-serif italic">
+                <p className="text-sm sm:text-base md:text-lg text-slate-800 leading-relaxed font-serif italic">
                   &ldquo;Dr. Radhamadhab Sahu is a Senior Consultant and Head of the Department of ENT &amp; Skull Base Surgery at Sum Ultimate Medicare, Bhubaneswar. With over 17 years of clinical and surgical experience, he has distinguished himself as one of India&apos;s foremost endoscopic skull base surgeons. He is nominated for the Bharat Pratibha Sammaan Award in the category of Healthcare &amp; Medicine, in recognition of his pioneering contributions to advanced ENT and Skull Base Surgery.&rdquo;
                 </p>
               </div>
@@ -151,60 +151,60 @@ export default function NominationCitation({ page = "home" }) {
 
             {/* 4 Key Numerical Accomplishments */}
             <div>
-              <div className="mb-4">
-                <h3 className="text-base sm:text-lg font-bold text-[#0B2545]">
+              <div className="mb-3 sm:mb-4">
+                <h3 className="text-sm sm:text-lg font-bold text-[#0B2545]">
                   Certified Surgical Impact &amp; Global Patient Reach
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600">
+                <p className="text-[11px] sm:text-sm text-slate-600">
                   Documented operative metrics verified in the Bharat Pratibha Sammaan nomination record.
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-                <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1 hover:border-[#14746F]/50 transition-colors">
-                  <div className="text-3xl sm:text-4xl font-extrabold text-[#0B2545]">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
+                <div className="p-3 sm:p-5 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1 hover:border-[#14746F]/50 transition-colors">
+                  <div className="text-2xl sm:text-4xl font-extrabold text-[#0B2545]">
                     800+
                   </div>
-                  <div className="text-xs sm:text-sm font-bold text-[#14746F]">
+                  <div className="text-[11px] sm:text-sm font-bold text-[#14746F]">
                     Skull Base Surgeries
                   </div>
-                  <p className="text-[11px] text-slate-500 leading-tight">
+                  <p className="text-[10px] sm:text-[11px] text-slate-500 leading-tight">
                     Endoscopic anterior &amp; lateral cranial base procedures
                   </p>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1 hover:border-[#14746F]/50 transition-colors">
-                  <div className="text-3xl sm:text-4xl font-extrabold text-[#0B2545]">
+                <div className="p-3 sm:p-5 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1 hover:border-[#14746F]/50 transition-colors">
+                  <div className="text-2xl sm:text-4xl font-extrabold text-[#0B2545]">
                     20+
                   </div>
-                  <div className="text-xs sm:text-sm font-bold text-[#14746F]">
+                  <div className="text-[11px] sm:text-sm font-bold text-[#14746F]">
                     Countries Treated
                   </div>
-                  <p className="text-[11px] text-slate-500 leading-tight">
+                  <p className="text-[10px] sm:text-[11px] text-slate-500 leading-tight">
                     International patients traveling to Bhubaneswar
                   </p>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1 hover:border-[#14746F]/50 transition-colors">
-                  <div className="text-3xl sm:text-4xl font-extrabold text-[#0B2545]">
+                <div className="p-3 sm:p-5 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1 hover:border-[#14746F]/50 transition-colors">
+                  <div className="text-2xl sm:text-4xl font-extrabold text-[#0B2545]">
                     17+
                   </div>
-                  <div className="text-xs sm:text-sm font-bold text-[#14746F]">
+                  <div className="text-[11px] sm:text-sm font-bold text-[#14746F]">
                     Years Experience
                   </div>
-                  <p className="text-[11px] text-slate-500 leading-tight">
+                  <p className="text-[10px] sm:text-[11px] text-slate-500 leading-tight">
                     Clinical and advanced operative surgery
                   </p>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1 hover:border-[#14746F]/50 transition-colors">
-                  <div className="text-3xl sm:text-4xl font-extrabold text-[#0B2545]">
+                <div className="p-3 sm:p-5 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-200 text-center space-y-1 hover:border-[#14746F]/50 transition-colors">
+                  <div className="text-2xl sm:text-4xl font-extrabold text-[#0B2545]">
                     5
                   </div>
-                  <div className="text-xs sm:text-sm font-bold text-[#14746F]">
+                  <div className="text-[11px] sm:text-sm font-bold text-[#14746F]">
                     Odisha Firsts
                   </div>
-                  <p className="text-[11px] text-slate-500 leading-tight">
+                  <p className="text-[10px] sm:text-[11px] text-slate-500 leading-tight">
                     Pioneering procedures introduced in the state
                   </p>
                 </div>

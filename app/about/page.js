@@ -31,17 +31,17 @@ export default function AboutPage() {
   return (
     <div className="bg-[#FDFBF7]">
       {/* Top Breadcrumb Header */}
-      <section className="bg-white border-b border-slate-200 py-6">
+      <section className="bg-white border-b border-slate-200 py-4 sm:py-6">
         <div className="medical-container">
           <Breadcrumbs items={breadcrumbItems} />
           <div className="mt-2">
             <span className="medical-badge">
               Physician Biography &amp; Surgical Background
             </span>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight mt-2">
+            <h1 className="text-2xl sm:text-4xl font-extrabold text-[#0B2545] tracking-tight mt-2">
               Dr. Radhamadhab Sahu
             </h1>
-            <p className="text-sm sm:text-base text-slate-600 mt-1">
+            <p className="text-xs sm:text-base text-slate-600 mt-1">
               Senior Consultant &amp; Head of Department, ENT &amp; Skull Base Surgery
             </p>
           </div>
@@ -49,12 +49,12 @@ export default function AboutPage() {
       </section>
 
       {/* Main Biography & Credential Grid */}
-      <section className="py-14 sm:py-20">
+      <section className="py-8 sm:py-16 lg:py-20">
         <div className="medical-container">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-12 items-start">
             {/* Left Column: Authentic Portrait & Key Facts */}
-            <div className="lg:col-span-5 space-y-6">
-              <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-white p-3">
+            <div className="lg:col-span-5 space-y-4 sm:space-y-6">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-white p-2.5 sm:p-3">
                 <div className="relative aspect-[4/5] w-full rounded-xl overflow-hidden bg-slate-100">
                   <Image
                     src={DOCTOR.portraitUrl}
@@ -64,14 +64,14 @@ export default function AboutPage() {
                     sizes="(max-width: 1024px) 100vw, 440px"
                     className="object-cover object-top"
                   />
-                  <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 rounded-full border border-slate-200 text-[11px] font-semibold text-[#0B2545] flex items-center gap-1 shadow-xs">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#14746F]" />
+                  <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-xs px-2.5 py-1 rounded-full border border-slate-200 text-[10px] sm:text-[11px] font-semibold text-[#0B2545] flex items-center gap-1 shadow-xs">
+                    <ShieldCheck className="w-3.5 h-3.5 text-[#14746F] shrink-0" />
                     <span>Official Hospital Portrait</span>
                   </div>
                 </div>
 
-                <div className="p-4 space-y-2 text-center sm:text-left">
-                  <h2 className="text-xl font-bold text-[#0B2545]">
+                <div className="p-3.5 sm:p-4 space-y-1 text-center sm:text-left">
+                  <h2 className="text-lg sm:text-xl font-bold text-[#0B2545]">
                     {DOCTOR.name}
                   </h2>
                   <p className="text-xs font-semibold text-[#14746F]">
@@ -84,12 +84,12 @@ export default function AboutPage() {
               </div>
 
               {/* Verified Facts Sidebar */}
-              <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-4 text-xs">
-                <h3 className="text-sm font-bold uppercase tracking-wider text-[#0B2545] border-b border-slate-100 pb-2">
+              <div className="p-4 sm:p-6 rounded-2xl bg-white border border-slate-200 shadow-xs space-y-3 sm:space-y-4 text-xs">
+                <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0B2545] border-b border-slate-100 pb-2">
                   At A Glance
                 </h3>
 
-                <div className="space-y-3">
+                <div className="space-y-2.5 sm:space-y-3">
                   <div>
                     <span className="text-slate-500 block">Primary Hospital:</span>
                     <strong className="text-slate-800 font-semibold">
@@ -129,14 +129,14 @@ export default function AboutPage() {
             </div>
 
             {/* Right Column: In-Depth Narrative Biography */}
-            <div className="lg:col-span-7 space-y-10">
+            <div className="lg:col-span-7 space-y-6 sm:space-y-10">
               {/* Introduction Narrative */}
-              <div className="space-y-4 text-sm sm:text-base text-slate-700 leading-relaxed bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-xs font-bold uppercase tracking-wider">
-                  <Award className="w-3.5 h-3.5 text-amber-600" />
+              <div className="space-y-3 sm:space-y-4 text-xs sm:text-base text-slate-700 leading-relaxed bg-white p-4 sm:p-6 lg:p-8 rounded-2xl border border-slate-200">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+                  <Award className="w-3.5 h-3.5 text-amber-600 shrink-0" />
                   <span>Nominee &ndash; Bharat Pratibha Sammaan Award</span>
                 </div>
-                <h2 className="text-2xl font-bold text-[#0B2545] tracking-tight">
+                <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545] tracking-tight">
                   Professional Journey &amp; Surgical Philosophy
                 </h2>
                 <p>
@@ -149,15 +149,15 @@ export default function AboutPage() {
                   In head and neck care, he introduced <strong>five landmark procedures for the first time in Odisha</strong>: Transoral Endoscopic Thyroid Surgery (TOETVA), Balloon Eustachian Tuboplasty (BET), Endoscopic Transnasal Trigeminal Schwannoma Excision, Sialendoscopy, and Endoscopic Transoral Submandibular Gland Excision.
                 </p>
 
-                <div className="pt-2 flex flex-wrap items-center gap-3">
+                <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3">
                   <a
                     href="/documents/nominee-dr-radhamadhab-sahu.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-xs"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-xs w-full sm:w-auto text-center"
                   >
-                    <FileText className="w-4 h-4 text-slate-950" />
-                    <span>See Bharat Pratibha Sammaan Nomination PDF (NOMINEE - DR. RADHAMADHAB SAHU.pdf) &rarr;</span>
+                    <FileText className="w-4 h-4 text-slate-950 shrink-0" />
+                    <span>See Nomination PDF (NOMINEE - DR. RADHAMADHAB SAHU.pdf) &rarr;</span>
                   </a>
                 </div>
               </div>

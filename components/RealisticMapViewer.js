@@ -20,13 +20,13 @@ export default function RealisticMapViewer() {
   return (
     <div className="space-y-6">
       {/* Header with Title and Mode Switcher */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 pb-4">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-4 border-b border-slate-200 pb-4">
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-[#14746F] flex items-center gap-1.5 mb-1">
-            <Compass className="w-4 h-4" />
+            <Compass className="w-4 h-4 shrink-0" />
             <span>Digital Cartography &amp; Location Guide</span>
           </span>
-          <h2 className="text-2xl font-bold text-[#0B2545]">
+          <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545]">
             Realistic Map Views &amp; Navigation Pathways
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-0.5">
@@ -35,11 +35,11 @@ export default function RealisticMapViewer() {
         </div>
 
         {/* Location selector pills */}
-        <div className="flex items-center gap-2 bg-slate-100 p-1.5 rounded-xl text-xs font-semibold">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-1.5 sm:gap-2 bg-slate-100 p-1 sm:p-1.5 rounded-xl text-xs font-semibold w-full md:w-auto">
           <button
             type="button"
             onClick={() => setSelectedLocation("hospital")}
-            className={`px-3 py-1.5 rounded-lg transition-all ${
+            className={`px-3 py-2 sm:py-1.5 rounded-lg transition-all text-center ${
               selectedLocation === "hospital"
                 ? "bg-[#0B2545] text-white shadow-xs"
                 : "text-slate-700 hover:text-[#0B2545]"
@@ -50,7 +50,7 @@ export default function RealisticMapViewer() {
           <button
             type="button"
             onClick={() => setSelectedLocation("clinic")}
-            className={`px-3 py-1.5 rounded-lg transition-all ${
+            className={`px-3 py-2 sm:py-1.5 rounded-lg transition-all text-center ${
               selectedLocation === "clinic"
                 ? "bg-[#14746F] text-white shadow-xs"
                 : "text-slate-700 hover:text-[#0B2545]"
@@ -62,49 +62,49 @@ export default function RealisticMapViewer() {
       </div>
 
       {/* Main Map Presentation Card */}
-      <div className="medical-card p-4 sm:p-6 bg-white border-2 border-slate-200 shadow-md space-y-4">
+      <div className="medical-card p-3 sm:p-6 bg-white border-2 border-slate-200 shadow-md space-y-3 sm:space-y-4">
         {/* Top Control Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100 text-xs">
-          <div className="flex items-center gap-2">
-            <span className="font-bold text-[#0B2545] text-sm">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 pb-3 border-b border-slate-100 text-xs">
+          <div className="flex flex-wrap items-center gap-1.5 text-xs">
+            <span className="font-bold text-[#0B2545] text-xs sm:text-sm">
               {selectedLocation === "hospital"
                 ? "SUM Ultimate Medicare, Ghatikia / Kalinga Nagar"
                 : "Dr. Radhamadhab ENT and Cancer Clinic, K8/118 Ghatikia"}
             </span>
-            <span className="text-slate-400">•</span>
-            <span className="text-slate-500">Bhubaneswar, Odisha 751003</span>
+            <span className="text-slate-400 hidden sm:inline">&bull;</span>
+            <span className="text-slate-500 text-[11px] sm:text-xs">Bhubaneswar, Odisha 751003</span>
           </div>
 
           {/* View Mode Toggle */}
-          <div className="flex items-center gap-1.5 bg-slate-100 p-1 rounded-lg">
+          <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg shrink-0">
             <button
               type="button"
               onClick={() => setActiveTab("satellite")}
-              className={`px-2.5 py-1 rounded-md text-[11px] font-semibold transition-colors flex items-center gap-1 ${
+              className={`px-2 sm:px-2.5 py-1 rounded-md text-[10px] sm:text-[11px] font-semibold transition-colors flex items-center gap-1 ${
                 activeTab === "satellite"
                   ? "bg-white text-[#0B2545] shadow-2xs"
                   : "text-slate-600 hover:text-slate-900"
               }`}
             >
-              <Layers className="w-3 h-3 text-[#14746F]" />
-              <span>Satellite GPS View</span>
+              <Layers className="w-3 h-3 text-[#14746F] shrink-0" />
+              <span>Satellite</span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab("street")}
-              className={`px-2.5 py-1 rounded-md text-[11px] font-semibold transition-colors flex items-center gap-1 ${
+              className={`px-2 sm:px-2.5 py-1 rounded-md text-[10px] sm:text-[11px] font-semibold transition-colors flex items-center gap-1 ${
                 activeTab === "street"
                   ? "bg-white text-[#0B2545] shadow-2xs"
                   : "text-slate-600 hover:text-slate-900"
               }`}
             >
-              <MapIcon className="w-3 h-3 text-[#14746F]" />
-              <span>Road Map View</span>
+              <MapIcon className="w-3 h-3 text-[#14746F] shrink-0" />
+              <span>Road Map</span>
             </button>
             <button
               type="button"
               onClick={() => setActiveTab("interactive")}
-              className={`px-2.5 py-1 rounded-md text-[11px] font-semibold transition-colors flex items-center gap-1 ${
+              className={`px-2 sm:px-2.5 py-1 rounded-md text-[10px] sm:text-[11px] font-semibold transition-colors flex items-center gap-1 ${
                 activeTab === "interactive"
                   ? "bg-white text-[#0B2545] shadow-2xs"
                   : "text-slate-600 hover:text-slate-900"
