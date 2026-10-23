@@ -52,7 +52,15 @@ This document records the provenance, attribution, dimensions, and usage permiss
 
 ---
 
-## 4. Compliance and Ethical Medical Standards
+## 4. Official Clinical & Council Documents
+
+| Asset File | Subject / Description | Resolution / Size | Source & Provenance | Usage Context |
+| :--- | :--- | :--- | :--- | :--- |
+| `nominee-dr-radhamadhab-sahu.pdf` / `NOMINEE - DR. RADHAMADHAB SAHU.pdf` | Official Bharat Pratibha Sammaan Award Nomination Document (Healthcare & Medicine: ENT & Skull Base Surgery) | 209 KB, PDF | Official Council Nomination Document provided directly by doctor / council | Accessible via direct download/view buttons in Landing Page Section 3 and About Page official council citation sections. |
+
+---
+
+## 5. Compliance and Ethical Medical Standards
 
 * **Authentic Clinician & Patient Likenesses:** All patient review photographs are genuine public Google Maps reviews uploaded by actual patients. In strict accordance with user instructions, no faces were altered, generated, or swapped.
 * **No Manufactured Reviews:** Reviews reflect authentic public feedback with verbatim quotes, actual reviewer names, and verified procedure categories.

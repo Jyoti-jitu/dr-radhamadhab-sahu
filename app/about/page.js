@@ -148,6 +148,18 @@ export default function AboutPage() {
                 <p>
                   In head and neck care, he introduced <strong>five landmark procedures for the first time in Odisha</strong>: Transoral Endoscopic Thyroid Surgery (TOETVA), Balloon Eustachian Tuboplasty (BET), Endoscopic Transnasal Trigeminal Schwannoma Excision, Sialendoscopy, and Endoscopic Transoral Submandibular Gland Excision.
                 </p>
+
+                <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <a
+                    href="/documents/nominee-dr-radhamadhab-sahu.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-xs"
+                  >
+                    <FileText className="w-4 h-4 text-slate-950" />
+                    <span>See Bharat Pratibha Sammaan Nomination PDF (NOMINEE - DR. RADHAMADHAB SAHU.pdf) &rarr;</span>
+                  </a>
+                </div>
               </div>
 
               {/* Education & Academic Timeline */}

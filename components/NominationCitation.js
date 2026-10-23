@@ -37,7 +37,7 @@ export default function NominationCitation({ page = "home" }) {
             </div>
 
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
-              <div className="space-y-2">
+                <div className="space-y-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-bold tracking-wider uppercase">
                   <Sparkles className="w-3.5 h-3.5 text-amber-300" />
                   <span>Official Council Citation &bull; State &ndash; Odisha</span>
@@ -51,6 +51,20 @@ export default function NominationCitation({ page = "home" }) {
                 <p className="text-xs sm:text-sm text-slate-300">
                   <strong className="text-white">Category:</strong> Healthcare &amp; Medicine (ENT &amp; Skull Base Surgery)
                 </p>
+
+                {/* Direct Action Button to view PDF */}
+                <div className="pt-2">
+                  <a
+                    href="/documents/nominee-dr-radhamadhab-sahu.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-[#0B2545] font-bold text-xs sm:text-sm transition-all shadow-md hover:shadow-lg"
+                  >
+                    <FileText className="w-4 h-4 text-[#0B2545]" />
+                    <span>See NOMINEE - DR. RADHAMADHAB SAHU.pdf</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </a>
+                </div>
               </div>
 
               {/* Gold Emblem Shield */}
@@ -77,19 +91,49 @@ export default function NominationCitation({ page = "home" }) {
 
           {/* Citation Body */}
           <div className="p-6 sm:p-10 space-y-10 bg-white">
-            {/* Official Nomination Award Certificate Banner */}
-            <div className="relative rounded-2xl overflow-hidden border-2 border-amber-300/80 shadow-xl bg-slate-950 aspect-[2/1] w-full">
-              <Image
-                src="/images/bharat-pratibha-healthcare-nominee-award.png"
-                alt="Bharat Pratibha Sammaan Award Nomination - Official Citation - Dr. Radhamadhab Sahu (Healthcare & Medicine: ENT & Skull Base Surgery)"
-                fill
-                sizes="(max-width: 1200px) 100vw, 1100px"
-                className="object-contain"
-                priority
-              />
-              <div className="absolute top-3 right-3 bg-slate-900/85 backdrop-blur-xs px-3 py-1 rounded-full border border-amber-300/40 text-[11px] font-bold text-amber-300 flex items-center gap-1.5 shadow-md">
-                <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-                <span>Official Nomination Document</span>
+            {/* Official Nomination Award Certificate Banner & PDF Access */}
+            <div className="space-y-3">
+              <div className="relative rounded-2xl overflow-hidden border-2 border-amber-300/80 shadow-xl bg-slate-950 aspect-[2/1] w-full">
+                <Image
+                  src="/images/bharat-pratibha-healthcare-nominee-award.png"
+                  alt="Bharat Pratibha Sammaan Award Nomination - Official Citation - Dr. Radhamadhab Sahu (Healthcare & Medicine: ENT & Skull Base Surgery)"
+                  fill
+                  sizes="(max-width: 1200px) 100vw, 1100px"
+                  className="object-contain"
+                  priority
+                />
+                <div className="absolute top-3 right-3 bg-slate-900/85 backdrop-blur-xs px-3 py-1 rounded-full border border-amber-300/40 text-[11px] font-bold text-amber-300 flex items-center gap-1.5 shadow-md">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                  <span>Official Nomination Document</span>
+                </div>
+              </div>
+
+              {/* Document Access Strip */}
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-5 rounded-2xl bg-amber-50/80 border border-amber-200/90 shadow-xs">
+                <div className="flex items-center gap-3.5">
+                  <div className="w-11 h-11 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center shrink-0 shadow-sm">
+                    <FileText className="w-6 h-6 text-slate-950" />
+                  </div>
+                  <div>
+                    <p className="text-xs sm:text-sm font-bold text-[#0B2545]">
+                      Official Nomination Record: NOMINEE - DR. RADHAMADHAB SAHU.pdf
+                    </p>
+                    <p className="text-[11px] text-slate-600">
+                      Council nomination filing for Bharat Pratibha Sammaan Award (Healthcare &amp; Medicine: ENT &amp; Skull Base Surgery).
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href="/documents/nominee-dr-radhamadhab-sahu.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#0B2545] hover:bg-[#14746F] text-white font-bold text-xs sm:text-sm transition-all shadow-md shrink-0 w-full sm:w-auto"
+                >
+                  <FileText className="w-4 h-4 text-amber-300" />
+                  <span>See Bharat Pratibha Sammaan Nomination PDF</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </a>
               </div>
             </div>
 
@@ -289,12 +333,21 @@ export default function NominationCitation({ page = "home" }) {
                   <span className="text-slate-500">
                     Official Citation filed with the Bharat Pratibha Sammaan Council &bull; State &ndash; Odisha
                   </span>
-                  <div className="flex items-center gap-4">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <a
+                      href="/documents/nominee-dr-radhamadhab-sahu.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold transition-colors shrink-0 shadow-xs"
+                    >
+                      <FileText className="w-3.5 h-3.5" />
+                      <span>See NOMINEE PDF</span>
+                    </a>
                     <Link
                       href="/contact"
                       className="font-bold text-[#14746F] hover:underline inline-flex items-center gap-1.5"
                     >
-                      <span>Schedule Clinical Consultation with Dr. Sahu</span>
+                      <span>Schedule Clinical Consultation</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
@@ -308,13 +361,24 @@ export default function NominationCitation({ page = "home" }) {
                 <span className="text-slate-600 font-medium">
                   State-level breakthroughs &bull; 5 procedures pioneered in Odisha &bull; National orations
                 </span>
-                <Link
-                  href="/about#citation"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#0B2545] text-white text-xs font-semibold hover:bg-[#14746F] transition-colors shrink-0 shadow-xs"
-                >
-                  <span>Explore 5 Landmark Odisha Firsts &amp; Honors on About Page</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href="/documents/nominee-dr-radhamadhab-sahu.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold transition-colors shrink-0 shadow-xs"
+                  >
+                    <FileText className="w-3.5 h-3.5" />
+                    <span>See NOMINEE PDF</span>
+                  </a>
+                  <Link
+                    href="/about#citation"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#0B2545] text-white text-xs font-semibold hover:bg-[#14746F] transition-colors shrink-0 shadow-xs"
+                  >
+                    <span>Explore 5 Landmark Odisha Firsts on About Page</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
               </div>
             )}
           </div>
