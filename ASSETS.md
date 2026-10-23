@@ -47,6 +47,7 @@ This document records the provenance, attribution, dimensions, and usage permiss
 | `dr-sahu-fess-sinus-cme-award.jpg` | Dr. Sahu receiving award at AOI CME on Recent Updates on Endoscopic Sinus Surgery & Allergic Rhinitis (12 July 2025) | 1086 × 1448 px, Progressive JPEG | Authentic FESS & Rhinology CME award photo provided by doctor | Featured in Sinus & Nasal Care specialty hero, Landing Page Section 4, Patient Resources, and Research Page. |
 | `clinic-head-silhouette-awards-wall.jpg` | Wide interior photograph of the iconic head-silhouette awards wall in the clinic | 1447 × 1087 px, Progressive JPEG | Authentic clinic interior photograph provided by doctor | Featured in Sleep-Related ENT Disorders specialty hero, Landing Page Section 4, and Patient Resources. |
 | `clinic-official-brochure.jpg` | Authentic printed clinical brochure photo: E.N.T. & Cancer Super-Speciality Clinic (Skull Base Surgery Head & Neck Cancer Center) | 770 × 1024 px, Progressive JPEG | Official printed clinic brochure provided directly by Dr. Radhamadhab Sahu | Featured in Landing Page Section 5 (ClinicBrochureCareGuide), Contact Details, and Clinic Directory. |
+| `bharat-pratibha-healthcare-nominee-award.png` | Official Bharat Pratibha Sammaan Award Nomination Document Artwork (Healthcare & Medicine: ENT & Skull Base Surgery) | 1774 × 887 px (2:1 Widescreen), PNG | Official award nomination document provided directly by doctor / council | Featured in Landing Page Section 3 and About Page official council citation sections. |
 
 ---
 

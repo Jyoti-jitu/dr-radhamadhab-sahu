@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AppointmentCTA from "@/components/AppointmentCTA";
+import NominationCitation from "@/components/NominationCitation";
 import { DOCTOR } from "@/lib/doctor";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -308,6 +309,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Official Bharat Pratibha Sammaan Award Nomination & State Firsts Citation */}
+      <NominationCitation page="about" />
 
       {/* Clinical Environment & Surgical Leadership Gallery */}
       <section className="py-14 sm:py-20 bg-white border-t border-slate-200">

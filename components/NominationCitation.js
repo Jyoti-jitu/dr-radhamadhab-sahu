@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { DOCTOR } from "@/lib/doctor";
 
-export default function NominationCitation() {
+export default function NominationCitation({ page = "home" }) {
   return (
     <section className="relative py-16 sm:py-24 bg-gradient-to-b from-white via-amber-50/25 to-white border-b border-slate-200 overflow-hidden">
       {/* Decorative ambient background */}
@@ -77,6 +77,22 @@ export default function NominationCitation() {
 
           {/* Citation Body */}
           <div className="p-6 sm:p-10 space-y-10 bg-white">
+            {/* Official Nomination Award Certificate Banner */}
+            <div className="relative rounded-2xl overflow-hidden border-2 border-amber-300/80 shadow-xl bg-slate-950 aspect-[2/1] w-full">
+              <Image
+                src="/images/bharat-pratibha-healthcare-nominee-award.png"
+                alt="Bharat Pratibha Sammaan Award Nomination - Official Citation - Dr. Radhamadhab Sahu (Healthcare & Medicine: ENT & Skull Base Surgery)"
+                fill
+                sizes="(max-width: 1200px) 100vw, 1100px"
+                className="object-contain"
+                priority
+              />
+              <div className="absolute top-3 right-3 bg-slate-900/85 backdrop-blur-xs px-3 py-1 rounded-full border border-amber-300/40 text-[11px] font-bold text-amber-300 flex items-center gap-1.5 shadow-md">
+                <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                <span>Official Nomination Document</span>
+              </div>
+            </div>
+
             {/* Introduction Quote */}
             <div className="p-6 sm:p-7 rounded-2xl bg-amber-50/50 border border-amber-200/80 relative">
               <div className="space-y-3">
@@ -271,13 +287,23 @@ export default function NominationCitation() {
                 Official Citation filed with the Bharat Pratibha Sammaan Council &bull; State &ndash; Odisha
               </span>
               <div className="flex items-center gap-4">
-                <Link
-                  href="/about"
-                  className="font-bold text-[#14746F] hover:underline inline-flex items-center gap-1.5"
-                >
-                  <span>Read Doctor&apos;s Full Narrative Biography</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                {page === "home" ? (
+                  <Link
+                    href="/about"
+                    className="font-bold text-[#14746F] hover:underline inline-flex items-center gap-1.5"
+                  >
+                    <span>Read Doctor&apos;s Full Narrative Biography</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                ) : (
+                  <Link
+                    href="/contact"
+                    className="font-bold text-[#14746F] hover:underline inline-flex items-center gap-1.5"
+                  >
+                    <span>Schedule Clinical Consultation with Dr. Sahu</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                )}
               </div>
             </div>
           </div>
