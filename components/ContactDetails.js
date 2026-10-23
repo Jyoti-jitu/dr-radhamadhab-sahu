@@ -203,7 +203,7 @@ export default function ContactDetails() {
             </a>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Dr.+Radhamadhab+ENT+and+Cancer+Clinic+Ghatikia+Bhubaneswar"
+              href={DOCTOR.clinic.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs sm:text-sm font-semibold hover:bg-slate-200 transition-colors"

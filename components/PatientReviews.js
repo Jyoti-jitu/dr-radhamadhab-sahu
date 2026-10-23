@@ -34,7 +34,7 @@ export default function PatientReviews() {
             Authentic, publicly verified feedback from Google Maps patient reviews, photographed directly in Dr. Radhamadhab Sahu’s consultation chamber in Bhubaneswar following successful treatments.
           </p>
 
-          <div className="flex items-center gap-3 pt-2">
+          <div className="flex flex-wrap items-center gap-3 pt-2">
             <div className="flex items-center text-amber-400">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-4 h-4 fill-amber-400" />
@@ -42,7 +42,15 @@ export default function PatientReviews() {
             </div>
             <span className="text-xs font-bold text-[#0B2545]">5.0 / 5.0 Rating</span>
             <span className="text-slate-300">•</span>
-            <span className="text-xs text-slate-500">Google Maps Verified Practice</span>
+            <a
+              href="https://maps.app.goo.gl/iyFUSCm5hVAiDjkn6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-[#14746F] hover:underline inline-flex items-center gap-1"
+            >
+              <span>Google Maps Verified Listing</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
           </div>
         </div>
 
@@ -123,9 +131,15 @@ export default function PatientReviews() {
 
               {/* Card Footer */}
               <div className="px-5 py-3.5 bg-slate-50/70 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
-                <span className="font-medium text-slate-600">
-                  {rev.verifiedPlatform}
-                </span>
+                <a
+                  href={rev.mapsReviewUrl || "https://maps.app.goo.gl/iyFUSCm5hVAiDjkn6"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-slate-600 hover:text-[#0B2545] flex items-center gap-1"
+                >
+                  <span>{rev.verifiedPlatform}</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
+                </a>
                 <button
                   type="button"
                   onClick={() => setSelectedImage(rev.fullScreenshot)}
@@ -145,12 +159,12 @@ export default function PatientReviews() {
             * These reviews and chamber photographs reflect genuine patient experiences shared publicly on Google Maps for Dr. Radhamadhab Sahu’s practice in Bhubaneswar. Individual surgical results depend upon unique diagnosis and pathology.
           </p>
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Dr.+Radhamadhab+Sahu+Bhubaneswar"
+            href="https://maps.app.goo.gl/iyFUSCm5hVAiDjkn6"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#14746F] font-bold hover:underline inline-flex items-center gap-1 shrink-0"
           >
-            <span>View All Google Reviews</span>
+            <span>View All Reviews on Google Maps (Dr. Radhamadhab Sahu)</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

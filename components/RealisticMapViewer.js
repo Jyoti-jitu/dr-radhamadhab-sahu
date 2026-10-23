@@ -202,7 +202,7 @@ export default function RealisticMapViewer() {
               href={
                 selectedLocation === "hospital"
                   ? DOCTOR.hospital.mapsUrl
-                  : "https://www.google.com/maps/search/?api=1&query=Dr.+Radhamadhab+ENT+and+Cancer+Clinic+Ghatikia+Bhubaneswar"
+                  : DOCTOR.clinic.mapsUrl
               }
               target="_blank"
               rel="noopener noreferrer"
