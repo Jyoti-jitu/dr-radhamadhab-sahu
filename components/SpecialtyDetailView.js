@@ -235,8 +235,8 @@ export default function SpecialtyDetailView({ specialty }) {
               <div className="medical-card p-0 bg-white border-2 border-[#0B2545]/20 shadow-md overflow-hidden">
                 <div className="relative aspect-[16/10] w-full bg-slate-100">
                   <Image
-                    src="/images/clinic-awards-wall-wide.jpg"
-                    alt="Dr. Radhamadhab Sahu Consultation Room and National Honors Wall"
+                    src="/images/clinic-head-silhouette-awards-wall.jpg"
+                    alt="Dr. Radhamadhab Sahu Consultation Room and Head Silhouette Honors Wall"
                     fill
                     sizes="(max-width: 1024px) 100vw, 360px"
                     className="object-cover"

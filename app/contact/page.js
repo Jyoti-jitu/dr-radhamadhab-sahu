@@ -94,8 +94,8 @@ export default function ContactPage() {
               <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between">
                 <div className="relative aspect-[4/3] w-full bg-slate-100">
                   <Image
-                    src="/images/clinic-awards-wall-wide.jpg"
-                    alt="Dr. Radhamadhab Sahu consultation chamber and awards wall"
+                    src="/images/clinic-head-silhouette-awards-wall.jpg"
+                    alt="Dr. Radhamadhab Sahu consultation chamber and head silhouette awards wall"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
                     className="object-cover"
@@ -106,10 +106,10 @@ export default function ContactPage() {
                 </div>
                 <div className="p-3.5 space-y-1 bg-white border-t border-slate-100">
                   <h4 className="text-xs font-bold text-[#0B2545]">
-                    Awards Wall &amp; Chamber
+                    Head Silhouette Honors Wall
                   </h4>
                   <p className="text-[11px] text-slate-600 leading-tight">
-                    Wall of surgical honors (ISOCON, Global EES) &amp; patient consultation desk.
+                    Iconic head silhouette honors wall &amp; patient consultation desk at Ghatikia clinic.
                   </p>
                 </div>
               </div>
