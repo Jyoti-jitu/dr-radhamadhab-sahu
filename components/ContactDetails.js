@@ -54,6 +54,23 @@ export default function ContactDetails() {
               </div>
             </div>
 
+            {/* Verified Hospital Campus Photo Thumbnail */}
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3">
+              <div className="relative w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-slate-200">
+                <Image
+                  src="/images/sum-ultimate-medicare.jpg"
+                  alt="SUM Ultimate Medicare Quaternary Care Hospital Exterior"
+                  fill
+                  sizes="64px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="text-[11px] text-slate-600 leading-tight">
+                <strong className="text-[#0B2545] block font-semibold">SUM Ultimate Medicare Hospital Campus</strong>
+                <span>NABH &amp; NABL Accredited Quaternary Super-Specialty Center at K-8 Kalinga Nagar.</span>
+              </div>
+            </div>
+
             <div className="space-y-3.5 text-xs sm:text-sm text-slate-700">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#14746F] shrink-0 mt-0.5" />

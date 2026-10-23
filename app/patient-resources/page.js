@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   FileText,
@@ -9,6 +10,7 @@ import {
   BookOpen,
   Info,
   ShieldCheck,
+  Stethoscope,
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AppointmentCTA from "@/components/AppointmentCTA";
@@ -34,6 +36,9 @@ const articles = [
     title: "Understanding Chronic Sinusitis: Causes, Symptoms & Modern Care",
     category: "Rhinology & Sinus Health",
     readTime: "5 min read",
+    image: "/images/clinic-consultation-desk.jpg",
+    imageCaption: "In-office endoscopic assessment and magnification loupes for chronic sinus and nasal evaluations.",
+    imageBadge: "Diagnostic Rhinology",
     summary:
       "What causes paranasal sinus blockage, when medical therapies suffice, and how Functional Endoscopic Sinus Surgery (FESS) restores natural sinus ventilation without external incisions.",
     content: [
@@ -52,6 +57,9 @@ const articles = [
     title: "Deviated Nasal Septum (DNS) & Chronic Nasal Obstruction",
     category: "Nasal Airway",
     readTime: "4 min read",
+    image: "/images/ent-clinic-suite.jpg",
+    imageCaption: "Modern ENT outpatient examination suite equipped for video-endoscopy and airway evaluation.",
+    imageBadge: "Surgical Examination Suite",
     summary:
       "How a deviated midline septum disrupts nasal airflow, causes unilateral congestion, and how endoscopic septoplasty straightens the cartilage with minimal recovery time.",
     content: [
@@ -69,6 +77,9 @@ const articles = [
     title: "When Should You Consult an ENT Specialist? 7 Red Flag Symptoms",
     category: "Clinical Guidance",
     readTime: "4 min read",
+    image: "/images/clinic-awards-wall-wide.jpg",
+    imageCaption: "Dr. Radhamadhab Sahu's consultation chamber and diagnostic review suite at Ghatikia Main Road, Bhubaneswar.",
+    imageBadge: "Consultation Chamber",
     summary:
       "Learn which ear, nose, throat, and neck symptoms warrant prompt specialist evaluation rather than continued self-medication.",
     content: [
@@ -90,6 +101,9 @@ const articles = [
     title: "Understanding Ear Symptoms: Perforations, Cholesteatoma & Implants",
     category: "Otology & Hearing",
     readTime: "6 min read",
+    image: "/images/dr-sahu-patient-abhishek-rao.jpg",
+    imageCaption: "Long-term hearing restoration: Patient Abhishek Rao with Dr. Sahu at 2-year post-mastoidectomy follow-up.",
+    imageBadge: "Verified Clinical Follow-Up",
     summary:
       "A guide to eardrum repair (tympanoplasty), cholesteatoma risks, and how cochlear and bone-anchored hearing aids restore auditory connection.",
     content: [
@@ -108,6 +122,9 @@ const articles = [
     title: "What is Endoscopic Skull Base Surgery? A Patient's Primer",
     category: "Skull Base Surgery",
     readTime: "6 min read",
+    image: "/images/dr-sahu-skullbasecon-2025.jpg",
+    imageCaption: "Dr. Radhamadhab Sahu presenting Endoscope-Assisted Skull Base Surgery at SKULLBASECON 2025, Chennai.",
+    imageBadge: "SKULLBASECON 2025 Keynote",
     summary:
       "How surgeons access deep pituitary tumors, clival chordomas, and cranial base leaks through the nostrils without opening the skull.",
     content: [
@@ -145,11 +162,58 @@ export default function PatientResourcesPage() {
         </div>
       </section>
 
+      {/* Visual Guide Navigation Directory */}
+      <section className="py-8 bg-slate-50 border-b border-slate-200">
+        <div className="medical-container">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
+              Quick Topic Directory (Select to Jump to Clinical Guide)
+            </span>
+            <span className="text-xs text-[#14746F] font-semibold hidden sm:inline">
+              5 Comprehensive Clinical Primers
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {articles.map((art) => (
+              <a
+                key={art.id}
+                href={`#${art.id}`}
+                className="group rounded-xl border border-slate-200 bg-white overflow-hidden shadow-2xs hover:border-[#14746F] hover:shadow-md transition-all flex flex-col justify-between"
+              >
+                <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
+                  <Image
+                    src={art.image}
+                    alt={art.title}
+                    fill
+                    sizes="(max-width: 640px) 50vw, 240px"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute bottom-1.5 left-2 right-2 text-white text-[10px] font-semibold truncate">
+                    {art.category}
+                  </div>
+                </div>
+                <div className="p-3 space-y-1">
+                  <h3 className="text-xs font-bold text-[#0B2545] group-hover:text-[#14746F] transition-colors line-clamp-2 leading-tight">
+                    {art.title}
+                  </h3>
+                  <span className="text-[10px] font-semibold text-[#14746F] flex items-center gap-0.5 pt-1">
+                    <span>Read Guide</span>
+                    <ArrowRight className="w-2.5 h-2.5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Articles Section */}
       <section className="py-14 sm:py-20">
         <div className="medical-container">
           <div className="space-y-12">
-            {articles.map((art, idx) => (
+            {articles.map((art) => (
               <article
                 key={art.id}
                 id={art.id}
@@ -164,35 +228,81 @@ export default function PatientResourcesPage() {
                   </span>
                 </div>
 
-                <div className="space-y-2">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-[#0B2545] tracking-tight">
-                    {art.title}
-                  </h2>
-                  <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
-                    {art.summary}
-                  </p>
-                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                  {/* Left Column: Narrative & Content */}
+                  <div className="lg:col-span-7 space-y-4">
+                    <div className="space-y-2">
+                      <h2 className="text-2xl sm:text-3xl font-bold text-[#0B2545] tracking-tight">
+                        {art.title}
+                      </h2>
+                      <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
+                        {art.summary}
+                      </p>
+                    </div>
 
-                <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed pt-2">
-                  {art.content.map((paragraph, pIdx) => (
-                    <p key={pIdx}>{paragraph}</p>
-                  ))}
-                </div>
+                    <div className="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed pt-2">
+                      {art.content.map((paragraph, pIdx) => (
+                        <p key={pIdx}>{paragraph}</p>
+                      ))}
+                    </div>
 
-                {/* Key Takeaways Card */}
-                <div className="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
-                  <p className="text-xs font-bold uppercase tracking-wider text-[#0B2545] flex items-center gap-1.5">
-                    <Info className="w-4 h-4 text-[#14746F]" />
-                    <span>Clinical Pearls &amp; Key Takeaways</span>
-                  </p>
-                  <ul className="space-y-1.5 text-xs text-slate-600">
-                    {art.keyTakeaways.map((point, kIdx) => (
-                      <li key={kIdx} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[#14746F] shrink-0 mt-0.5" />
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
+                    {/* Key Takeaways Card */}
+                    <div className="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                      <p className="text-xs font-bold uppercase tracking-wider text-[#0B2545] flex items-center gap-1.5">
+                        <Info className="w-4 h-4 text-[#14746F]" />
+                        <span>Clinical Pearls &amp; Key Takeaways</span>
+                      </p>
+                      <ul className="space-y-1.5 text-xs text-slate-600">
+                        {art.keyTakeaways.map((point, kIdx) => (
+                          <li key={kIdx} className="flex items-start gap-2">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-[#14746F] shrink-0 mt-0.5" />
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Right Column: Visual Photo Card */}
+                  <div className="lg:col-span-5 space-y-4">
+                    {art.image && (
+                      <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-xs">
+                        <div className="relative aspect-[16/10] w-full bg-slate-900">
+                          <Image
+                            src={art.image}
+                            alt={art.title}
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 420px"
+                            className="object-cover"
+                          />
+                          <div className="absolute top-2.5 left-2.5 bg-slate-900/85 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
+                            {art.imageBadge}
+                          </div>
+                        </div>
+                        <div className="p-4 bg-white border-t border-slate-100">
+                          <p className="text-xs text-slate-600 leading-relaxed italic">
+                            {art.imageCaption}
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="p-4 rounded-xl bg-[#EDF4FA] border border-[#D5E5F2] text-xs text-slate-700 space-y-2">
+                      <strong className="text-[#0B2545] font-semibold flex items-center gap-1.5">
+                        <Stethoscope className="w-3.5 h-3.5 text-[#14746F]" />
+                        <span>Have Symptoms of this Condition?</span>
+                      </strong>
+                      <p className="text-[11px] text-slate-600">
+                        Evaluations are conducted with advanced high-definition endoscopy at SUM Ultimate Medicare and Dr. Radhamadhab ENT and Cancer Clinic.
+                      </p>
+                      <Link
+                        href="/contact"
+                        className="inline-flex items-center gap-1 font-bold text-[#14746F] hover:underline text-xs"
+                      >
+                        <span>Schedule Clinical Review →</span>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="pt-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-slate-500 border-t border-slate-100">

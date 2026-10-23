@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Brain,
   Wind,
@@ -57,38 +58,92 @@ export default function SpecialitiesPage() {
         </div>
       </section>
 
-      {/* Diagnostic & Technology Guarantee Section */}
-      <section className="py-14 bg-white border-y border-slate-200">
-        <div className="medical-container">
-          <div className="max-w-4xl mx-auto text-center space-y-3 mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#0B2545]">
+      {/* Diagnostic & Technology Guarantee Section with Authentic Clinic Photography */}
+      <section className="py-16 bg-white border-y border-slate-200">
+        <div className="medical-container space-y-12">
+          <div className="max-w-4xl mx-auto text-center space-y-3">
+            <span className="medical-badge">
+              Diagnostic Standards
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight">
               Diagnostic Precision Before Surgical Recommendation
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Surgery is recommended only when conservative medical management has been exhausted or when structural pathology clearly mandates operative intervention.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs sm:text-sm">
-            <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-slate-200 space-y-2">
-              <span className="font-bold text-[#0B2545] text-sm block">1. High-Definition Endoscopy</span>
-              <p className="text-slate-600">
-                In-office zero-degree and angled rigid HD endoscopes to visually map the sinonasal cavities, Eustachian tubes, and vocal fold dynamics.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Step 1: In-office loupes and examination */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/50 transition-all group">
+              <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
+                <Image
+                  src="/images/clinic-consultation-desk.jpg"
+                  alt="Specialist In-Office Endoscopic and Loupe Diagnostic Examination Unit"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 380px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Step 1: In-Office Diagnostic
+                </div>
+              </div>
+              <div className="p-5 space-y-2 bg-white border-t border-slate-100">
+                <h3 className="text-base font-bold text-[#0B2545]">
+                  1. High-Definition Endoscopy
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  In-office zero-degree and angled rigid HD endoscopes to visually map the sinonasal cavities, Eustachian tubes, and vocal fold dynamics without discomfort.
+                </p>
+              </div>
             </div>
 
-            <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-slate-200 space-y-2">
-              <span className="font-bold text-[#0B2545] text-sm block">2. Thin-Cut Protocol Imaging</span>
-              <p className="text-slate-600">
-                High-Resolution CT of the temporal bone and paranasal sinuses, and 3T MRI with neuronavigation for safe cranial base corridors.
-              </p>
+            {/* Step 2: Skull base and temporal bone imaging */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/50 transition-all group">
+              <div className="relative aspect-[16/10] w-full bg-slate-900 overflow-hidden">
+                <Image
+                  src="/images/skull-base-anatomy.jpg"
+                  alt="Thin-Cut Cranial Base and Paranasal Sinus CT MRI Protocol Mapping"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 380px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Step 2: Anatomical Mapping
+                </div>
+              </div>
+              <div className="p-5 space-y-2 bg-white border-t border-slate-100">
+                <h3 className="text-base font-bold text-[#0B2545]">
+                  2. Thin-Cut Protocol Imaging
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  High-Resolution CT (HRCT) of the temporal bone and paranasal sinuses, paired with 3T MRI neuronavigation to outline safe surgical corridors.
+                </p>
+              </div>
             </div>
 
-            <div className="p-5 rounded-2xl bg-[#F8FAFC] border border-slate-200 space-y-2">
-              <span className="font-bold text-[#0B2545] text-sm block">3. Audiological &amp; Sleep Profiling</span>
-              <p className="text-slate-600">
-                Formal Pure Tone Audiometry (PTA), tympanometry, and overnight polysomnography to objectively measure disease severity.
-              </p>
+            {/* Step 3: Clinical Consultation & Audiological Profiling */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/50 transition-all group">
+              <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
+                <Image
+                  src="/images/dr-sahu-patient-consultation.jpg"
+                  alt="Doctor Discussing Symptoms and Pure Tone Audiometry Profile with Patient"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 380px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Step 3: Specialist Evaluation
+                </div>
+              </div>
+              <div className="p-5 space-y-2 bg-white border-t border-slate-100">
+                <h3 className="text-base font-bold text-[#0B2545]">
+                  3. Audiological &amp; Sleep Profiling
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Formal Pure Tone Audiometry (PTA), tympanometry, and overnight sleep apnea polysomnography to objectively document functional deficit.
+                </p>
+              </div>
             </div>
           </div>
         </div>

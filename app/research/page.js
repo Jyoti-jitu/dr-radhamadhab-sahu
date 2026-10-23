@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   BookOpen,
   Newspaper,
@@ -96,7 +97,7 @@ export default function ResearchPage() {
             </div>
           </div>
 
-          {/* Section 3: National Conference Presentations (AOICON) */}
+          {/* Section 3: National Conference Presentations (AOICON & SKULLBASECON) */}
           <div className="space-y-6">
             <div className="flex items-center justify-between border-b border-slate-200 pb-3">
               <div>
@@ -105,15 +106,101 @@ export default function ResearchPage() {
                   <span>National Conference Presentations &amp; Faculty Roles</span>
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                  Invited faculty, panelist, and session chair at the Association of Otolaryngologists of India (AOI) national conventions.
+                  Invited keynote faculty, panelist, and session chair at the Skull Base Surgery Society of India and AOI national conventions.
                 </p>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {DOCTOR.academicPresentations.map((conf, idx) => (
                 <ConferenceCard key={idx} conference={conf} />
               ))}
+            </div>
+          </div>
+
+          {/* Section 4: Conclave Honors & Awards Photographic Showcase */}
+          <div className="space-y-6 pt-4 border-t border-slate-200">
+            <div className="space-y-2">
+              <span className="medical-badge">
+                National Accreditations &amp; Trophies
+              </span>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#0B2545]">
+                Faculty Felicitations &amp; Conclave Honors
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600">
+                Visual record of national otolaryngology honours presented to Dr. Radhamadhab Sahu across leading surgical conventions in India.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
+                <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+                  <Image
+                    src="/images/clinic-national-honors-awards.jpg"
+                    alt="MENTCON, ISOCON Agra 2024 and UPAOICON Honors"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 360px"
+                    className="object-cover group-hover:scale-104 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                    State &amp; National Conclaves
+                  </div>
+                </div>
+                <div className="p-4 space-y-1 bg-white border-t border-slate-100">
+                  <h4 className="text-sm font-bold text-[#0B2545]">
+                    National Conclave Felicitations
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-tight">
+                    Recognitions from MENTCON, ISOCON Agra 2024, UPAOICON, and Jewels of Odisha.
+                  </p>
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
+                <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+                  <Image
+                    src="/images/clinic-awards-trophies-detail.jpg"
+                    alt="PHONOCON and AOI Regional Conclave Trophies"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 360px"
+                    className="object-cover group-hover:scale-104 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                    Specialist Trophies
+                  </div>
+                </div>
+                <div className="p-4 space-y-1 bg-white border-t border-slate-100">
+                  <h4 className="text-sm font-bold text-[#0B2545]">
+                    PHONOCON &amp; AOI Honors
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-tight">
+                    Trophies from PHONOCON, 48th AOI Bihar &amp; Jharkhand 2024, and AOIBBCON 2023.
+                  </p>
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
+                <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+                  <Image
+                    src="/images/clinic-awards-wall-wide.jpg"
+                    alt="Full Consultation Suite Wall of Honors"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 360px"
+                    className="object-cover group-hover:scale-104 transition-transform duration-500"
+                  />
+                  <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                    Chamber Honors Wall
+                  </div>
+                </div>
+                <div className="p-4 space-y-1 bg-white border-t border-slate-100">
+                  <h4 className="text-sm font-bold text-[#0B2545]">
+                    Awards Wall in Chamber
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-tight">
+                    Surgical awards display with sacred Lord Jagannath shrine at Ghatikia Main Road clinic.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   Phone,
@@ -73,6 +74,119 @@ export default function ContactPage() {
 
           {/* Dual Locations & Details with Realistic Map Thumbnails */}
           <ContactDetails />
+
+          {/* Clinic Interior & Consultation Environment Showcase */}
+          <div className="space-y-6 pt-4 border-t border-slate-200">
+            <div className="space-y-2">
+              <span className="medical-badge">
+                Consultation Facility Tour
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B2545] tracking-tight">
+                Inside Dr. Radhamadhab Sahu’s Consultation Chamber
+              </h2>
+              <p className="text-sm text-slate-600 leading-relaxed max-w-3xl">
+                Experience the patient-centered clinical consultation suite at Ghatikia Main Road, Kalinga Nagar — equipped with diagnostic otology units, high-magnification loupes, and national surgical recognitions.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {/* Image 1: Full Chamber & Awards */}
+              <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between">
+                <div className="relative aspect-[4/3] w-full bg-slate-100">
+                  <Image
+                    src="/images/clinic-awards-wall-wide.jpg"
+                    alt="Dr. Radhamadhab Sahu consultation chamber and awards wall"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
+                    className="object-cover"
+                  />
+                  <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                    Consultation Room
+                  </div>
+                </div>
+                <div className="p-3.5 space-y-1 bg-white border-t border-slate-100">
+                  <h4 className="text-xs font-bold text-[#0B2545]">
+                    Awards Wall &amp; Chamber
+                  </h4>
+                  <p className="text-[11px] text-slate-600 leading-tight">
+                    Wall of surgical honors (ISOCON, Global EES) &amp; patient consultation desk.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 2: Consultation Desk Setup */}
+              <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between">
+                <div className="relative aspect-[4/3] w-full bg-slate-100">
+                  <Image
+                    src="/images/clinic-consultation-desk.jpg"
+                    alt="Doctor's consultation desk with surgical headlamp and ear models"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
+                    className="object-cover"
+                  />
+                  <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                    Diagnostic Setup
+                  </div>
+                </div>
+                <div className="p-3.5 space-y-1 bg-white border-t border-slate-100">
+                  <h4 className="text-xs font-bold text-[#0B2545]">
+                    Examination Desk &amp; Loupes
+                  </h4>
+                  <p className="text-[11px] text-slate-600 leading-tight">
+                    Precision surgical loupes, ear anatomical model, and clinical diagnostic workspace.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 3: National Faculty Honors */}
+              <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between">
+                <div className="relative aspect-[4/3] w-full bg-slate-100">
+                  <Image
+                    src="/images/clinic-national-honors-awards.jpg"
+                    alt="National otolaryngology surgical honors and conclave trophies"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
+                    className="object-cover"
+                  />
+                  <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                    National Recognition
+                  </div>
+                </div>
+                <div className="p-3.5 space-y-1 bg-white border-t border-slate-100">
+                  <h4 className="text-xs font-bold text-[#0B2545]">
+                    Faculty Honors &amp; Conclaves
+                  </h4>
+                  <p className="text-[11px] text-slate-600 leading-tight">
+                    MENTCON, AOICON, Jewels of Odisha, and ENT Conclave citations.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image 4: Google Maps Verified Banner */}
+              <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between">
+                <div className="relative aspect-[4/3] w-full bg-slate-100">
+                  <Image
+                    src="/images/google-maps-clinic-banner.jpg"
+                    alt="Official Google Maps verified clinic listing card"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
+                    className="object-cover"
+                  />
+                  <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                    Google Maps Verified
+                  </div>
+                </div>
+                <div className="p-3.5 space-y-1 bg-white border-t border-slate-100">
+                  <h4 className="text-xs font-bold text-[#0B2545]">
+                    Verified Practice Profile
+                  </h4>
+                  <p className="text-[11px] text-slate-600 leading-tight">
+                    Verified listing at K8 Kalinga Nagar with 4.9★ rating from 980+ patient reviews.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Realistic Digital Map Viewer Section */}
           <RealisticMapViewer />

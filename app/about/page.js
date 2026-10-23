@@ -191,6 +191,62 @@ export default function AboutPage() {
                 </p>
               </div>
 
+              {/* National Faculty Honors & Conclave Recognitions */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-[#0B2545] flex items-center gap-2">
+                  <Award className="w-5 h-5 text-[#14746F]" />
+                  <span>National Faculty Recognitions &amp; Trophies</span>
+                </h3>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="rounded-xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
+                    <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
+                      <Image
+                        src="/images/clinic-national-honors-awards.jpg"
+                        alt="National Conclave Awards MENTCON and ISOCON"
+                        fill
+                        sizes="(max-width: 640px) 100vw, 300px"
+                        className="object-cover group-hover:scale-104 transition-transform duration-500"
+                      />
+                      <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                        State &amp; National Honors
+                      </div>
+                    </div>
+                    <div className="p-3.5 space-y-1">
+                      <h4 className="text-xs font-bold text-[#0B2545]">
+                        MENTCON &amp; ISOCON Agra
+                      </h4>
+                      <p className="text-[11px] text-slate-600 leading-tight">
+                        Recognitions from MENTCON, ISOCON Agra 2024, UPAOICON, and Jewels of Odisha.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="rounded-xl border border-slate-200 overflow-hidden bg-white shadow-xs group">
+                    <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
+                      <Image
+                        src="/images/clinic-awards-trophies-detail.jpg"
+                        alt="PHONOCON and AOI Conclave Trophies"
+                        fill
+                        sizes="(max-width: 640px) 100vw, 300px"
+                        className="object-cover group-hover:scale-104 transition-transform duration-500"
+                      />
+                      <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                        Surgical Trophies
+                      </div>
+                    </div>
+                    <div className="p-3.5 space-y-1">
+                      <h4 className="text-xs font-bold text-[#0B2545]">
+                        PHONOCON &amp; AOI Honors
+                      </h4>
+                      <p className="text-[11px] text-slate-600 leading-tight">
+                        Trophies from PHONOCON, 48th AOI Bihar &amp; Jharkhand, and AOIBBCON 2023.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Areas of Verified Clinical Focus */}
               <div className="space-y-4">
                 <h3 className="text-xl font-bold text-[#0B2545] flex items-center gap-2">
@@ -264,75 +320,99 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Photo 1: Consultation Chamber & Awards Wall */}
-            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all">
-              <div className="relative aspect-[4/3] w-full bg-slate-100">
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
+              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
                 <Image
                   src="/images/dr-sahu-clinic-office-awards.jpg"
                   alt="Dr. Radhamadhab Sahu in clinic consultation chamber with patient and awards wall"
                   fill
-                  sizes="(max-width: 768px) 100vw, 380px"
-                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
                 />
                 <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  Consultation Chamber &amp; Honors
+                  Consultation Chamber
                 </div>
               </div>
               <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
                 <h3 className="text-sm font-bold text-[#0B2545]">
-                  Clinic Chamber &amp; Honors Wall
+                  Chamber &amp; Honors Wall
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Dr. Sahu in consultation with post-operative patient and family, seated before his wall of surgical honors (ISOCON, Global EES Summit) and sacred Jagannath artwork.
+                  Doctor in consultation before wall of surgical honors and Lord Jagannath artwork.
                 </p>
               </div>
             </div>
 
             {/* Photo 2: SKULLBASECON 2025 Keynote */}
-            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all">
-              <div className="relative aspect-[4/3] w-full bg-slate-900">
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
+              <div className="relative aspect-[4/3] w-full bg-slate-900 overflow-hidden">
                 <Image
                   src="/images/dr-sahu-skullbasecon-2025.jpg"
                   alt="Dr. Radhamadhab Sahu delivering keynote at SKULLBASECON 2025, Chennai"
                   fill
-                  sizes="(max-width: 768px) 100vw, 380px"
-                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
                 />
                 <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  SKULLBASECON 2025 Keynote
+                  SKULLBASECON 2025
                 </div>
               </div>
               <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
                 <h3 className="text-sm font-bold text-[#0B2545]">
-                  National Skull Base Keynote
+                  National Keynote
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Delivering invited faculty address on &ldquo;Endoscope-assisted Management of Jugular Foramen Tumors&rdquo; at the Leela Palace, Chennai.
+                  Invited address on &ldquo;Jugular Foramen Tumors&rdquo; at The Leela Palace, Chennai.
                 </p>
               </div>
             </div>
 
             {/* Photo 3: Pediatric Post-Op Recovery */}
-            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all">
-              <div className="relative aspect-[4/3] w-full bg-slate-100">
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
+              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
                 <Image
                   src="/images/dr-sahu-pediatric-patients-chamber.jpg"
                   alt="Pediatric post-operative recovery follow-up with Dr. Radhamadhab Sahu"
                   fill
-                  sizes="(max-width: 768px) 100vw, 380px"
-                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
                 />
                 <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  Pediatric Ear Recovery
+                  Pediatric Care
                 </div>
               </div>
               <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
                 <h3 className="text-sm font-bold text-[#0B2545]">
-                  Compassionate Patient Care
+                  Pediatric Recovery
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Young reconstructive ear surgery patients smiling during post-operative clinical review in Dr. Sahu’s chamber in Bhubaneswar.
+                  Smiles during post-operative ear reconstruction follow-up in Bhubaneswar.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 4: Adult Clinical Consultation */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/40 transition-all group">
+              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+                <Image
+                  src="/images/dr-sahu-patient-consultation.jpg"
+                  alt="Clinical second opinion and symptom mapping consultation with Dr. Sahu"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Clinical Consultation
+                </div>
+              </div>
+              <div className="p-4 space-y-1.5 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  Airway Evaluation
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  In-depth clinical symptom evaluation and endoscopic planning in private suite.
                 </p>
               </div>
             </div>

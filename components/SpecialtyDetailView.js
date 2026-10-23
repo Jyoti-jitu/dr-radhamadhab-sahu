@@ -27,20 +27,45 @@ export default function SpecialtyDetailView({ specialty }) {
 
   return (
     <div className="bg-[#FDFBF7]">
-      {/* Top Breadcrumb & Header Banner */}
-      <section className="bg-white border-b border-slate-200 py-8">
+      {/* Top Breadcrumb & Header Banner with Authentic Clinical Visual */}
+      <section className="bg-white border-b border-slate-200 py-8 lg:py-10">
         <div className="medical-container">
           <Breadcrumbs items={breadcrumbItems} />
-          <div className="max-w-4xl mt-3 space-y-3">
-            <span className="medical-badge">
-              {specialty.eyebrow}
-            </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight">
-              {specialty.title}
-            </h1>
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-              {specialty.shortDescription}
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-4">
+            <div className="lg:col-span-8 space-y-3">
+              <span className="medical-badge">
+                {specialty.eyebrow}
+              </span>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B2545] tracking-tight">
+                {specialty.title}
+              </h1>
+              <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+                {specialty.shortDescription}
+              </p>
+            </div>
+
+            {/* Top Header Thumbnail Badge */}
+            {specialty.heroImage && (
+              <div className="lg:col-span-4 hidden lg:block">
+                <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-md aspect-[16/10] bg-slate-900 group">
+                  <Image
+                    src={specialty.heroImage}
+                    alt={specialty.title}
+                    fill
+                    sizes="360px"
+                    className="object-cover group-hover:scale-104 transition-transform duration-500"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+                  <div className="absolute bottom-2.5 left-3 right-3 text-white text-[11px] font-medium flex items-center justify-between">
+                    <span className="bg-[#14746F] px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">
+                      Verified Procedure
+                    </span>
+                    <span className="text-teal-200 text-[10px]">Clinical Protocol</span>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -151,6 +176,27 @@ export default function SpecialtyDetailView({ specialty }) {
                   </h2>
                 </div>
 
+                {/* Diagnostic Suite Visual Banner */}
+                <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-xs">
+                  <div className="relative aspect-[21/9] sm:aspect-[16/7] w-full bg-slate-100">
+                    <Image
+                      src="/images/ent-clinic-suite.jpg"
+                      alt="Modern ENT Outpatient Surgical Examination Suite"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 760px"
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute bottom-2.5 left-3 right-3 text-white text-xs font-semibold flex items-center justify-between">
+                      <span className="flex items-center gap-1.5">
+                        <Activity className="w-3.5 h-3.5 text-teal-400" />
+                        <span>High-Definition Endoscopic Diagnostic Suite</span>
+                      </span>
+                      <span className="text-teal-200 text-[11px] hidden sm:inline">Rigid &amp; Angled Optics</span>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {specialty.diagnosticPathway.map((diag, idx) => (
                     <div
@@ -185,36 +231,51 @@ export default function SpecialtyDetailView({ specialty }) {
 
             {/* Right 4 Columns: Sticky Consultation Box & Quick Internal Links */}
             <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
-              {/* Consultation Card */}
-              <div className="medical-card p-6 bg-white border-2 border-[#0B2545]/20 shadow-md space-y-5">
-                <div className="space-y-2">
-                  <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#14746F]">
-                    <ShieldCheck className="w-4 h-4" />
-                    <span>Specialist Consultation</span>
-                  </span>
-                  <h3 className="text-lg font-bold text-[#0B2545]">
-                    Discuss Your Symptoms with Dr. Radhamadhab Sahu
-                  </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Evaluations available at SUM Ultimate Medicare and Dr. Radhamadhab ENT and Cancer Clinic, Bhubaneswar.
-                  </p>
+              {/* Consultation Card with Authentic Chamber Preview */}
+              <div className="medical-card p-0 bg-white border-2 border-[#0B2545]/20 shadow-md overflow-hidden">
+                <div className="relative aspect-[16/10] w-full bg-slate-100">
+                  <Image
+                    src="/images/clinic-awards-wall-wide.jpg"
+                    alt="Dr. Radhamadhab Sahu Consultation Room and National Honors Wall"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 360px"
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-2 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                    Consultation Room &amp; Honors
+                  </div>
                 </div>
 
-                <div className="space-y-2.5 pt-2">
-                  <Link
-                    href="/contact"
-                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0B2545] text-white text-xs sm:text-sm font-semibold hover:bg-[#14746F] transition-colors shadow-xs"
-                  >
-                    <Calendar className="w-4 h-4" />
-                    <span>Book an Evaluation</span>
-                  </Link>
+                <div className="p-6 space-y-5">
+                  <div className="space-y-2">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#14746F]">
+                      <ShieldCheck className="w-4 h-4" />
+                      <span>Specialist Consultation</span>
+                    </span>
+                    <h3 className="text-lg font-bold text-[#0B2545]">
+                      Discuss Your Symptoms with Dr. Radhamadhab Sahu
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Evaluations available at SUM Ultimate Medicare and Dr. Radhamadhab ENT and Cancer Clinic, Bhubaneswar.
+                    </p>
+                  </div>
 
-                  <a
-                    href="tel:+919716772703"
-                    className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors"
-                  >
-                    <span>Clinic Call: +91 97167 72703</span>
-                  </a>
+                  <div className="space-y-2.5 pt-2">
+                    <Link
+                      href="/contact"
+                      className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0B2545] text-white text-xs sm:text-sm font-semibold hover:bg-[#14746F] transition-colors shadow-xs"
+                    >
+                      <Calendar className="w-4 h-4" />
+                      <span>Book an Evaluation</span>
+                    </Link>
+
+                    <a
+                      href="tel:+919716772703"
+                      className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors"
+                    >
+                      <span>Clinic Call: +91 97167 72703</span>
+                    </a>
+                  </div>
                 </div>
               </div>
 

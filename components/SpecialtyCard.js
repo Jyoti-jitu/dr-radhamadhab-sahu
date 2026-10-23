@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -22,58 +23,65 @@ const iconMap = {
 
 export default function SpecialtyCard({ specialty }) {
   const IconComponent = iconMap[specialty.slug] || Stethoscope;
+  const cardImage = specialty.featuredMedia?.imageUrl || specialty.heroImage;
 
   return (
-    <article className="medical-card p-6 sm:p-7 flex flex-col justify-between group hover:border-[#14746F]/40 transition-all duration-300">
-      <div className="space-y-4">
-        {/* Top Icon & Eyebrow */}
-        <div className="flex items-center justify-between gap-3">
-          <div className="w-12 h-12 rounded-xl bg-[#EDF4FA] text-[#0B2545] flex items-center justify-center group-hover:bg-[#14746F] group-hover:text-white transition-colors duration-300">
-            <IconComponent className="w-6 h-6" />
+    <article className="medical-card overflow-hidden flex flex-col justify-between group hover:border-[#14746F]/50 transition-all duration-300 shadow-xs hover:shadow-md">
+      <div>
+        {/* Photo Banner */}
+        {cardImage && (
+          <div className="relative aspect-[16/9] w-full bg-slate-100 overflow-hidden">
+            <Image
+              src={cardImage}
+              alt={specialty.title}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
+              className="object-cover group-hover:scale-104 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-xs text-[#0B2545] flex items-center justify-center shadow-xs">
+              <IconComponent className="w-5 h-5 text-[#14746F]" />
+            </div>
+            <div className="absolute bottom-2.5 right-3 bg-slate-900/85 backdrop-blur-xs px-2.5 py-0.5 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
+              {specialty.eyebrow}
+            </div>
           </div>
-          <span className="text-[11px] font-semibold tracking-wider uppercase text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md">
-            Specialist Care
-          </span>
-        </div>
+        )}
 
-        {/* Title */}
-        <div>
-          <p className="text-xs font-semibold text-[#14746F] uppercase tracking-wide">
-            {specialty.eyebrow}
-          </p>
-          <h3 className="text-xl font-bold text-[#0B2545] mt-1 group-hover:text-[#14746F] transition-colors">
-            <Link href={`/specialities/${specialty.slug}`} className="focus:outline-hidden">
-              {specialty.title}
-            </Link>
-          </h3>
-        </div>
+        <div className="p-6 space-y-4">
+          <div>
+            <h3 className="text-xl font-bold text-[#0B2545] group-hover:text-[#14746F] transition-colors">
+              <Link href={`/specialities/${specialty.slug}`} className="focus:outline-hidden">
+                {specialty.title}
+              </Link>
+            </h3>
+            <p className="text-sm text-slate-600 leading-relaxed mt-2">
+              {specialty.shortDescription}
+            </p>
+          </div>
 
-        {/* Short Description */}
-        <p className="text-sm text-slate-600 leading-relaxed">
-          {specialty.shortDescription}
-        </p>
-
-        {/* Selected Highlight Procedures */}
-        <div className="pt-2 border-t border-slate-100 space-y-1.5">
-          <p className="text-xs font-semibold text-slate-700">
-            Selected Clinical Approaches:
-          </p>
-          <ul className="space-y-1">
-            {specialty.procedures.slice(0, 3).map((proc, idx) => (
-              <li
-                key={idx}
-                className="text-xs text-slate-600 flex items-start gap-1.5"
-              >
-                <ChevronRight className="w-3.5 h-3.5 text-[#14746F] shrink-0 mt-0.5" />
-                <span className="line-clamp-1">{proc.name}</span>
-              </li>
-            ))}
-          </ul>
+          {/* Selected Highlight Procedures */}
+          <div className="pt-2 border-t border-slate-100 space-y-1.5">
+            <p className="text-xs font-semibold text-slate-700">
+              Selected Clinical Approaches:
+            </p>
+            <ul className="space-y-1">
+              {specialty.procedures.slice(0, 3).map((proc, idx) => (
+                <li
+                  key={idx}
+                  className="text-xs text-slate-600 flex items-start gap-1.5"
+                >
+                  <ChevronRight className="w-3.5 h-3.5 text-[#14746F] shrink-0 mt-0.5" />
+                  <span className="line-clamp-1">{proc.name}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 
       {/* Link to detail page */}
-      <div className="pt-6 mt-4 border-t border-slate-100">
+      <div className="px-6 pb-6 pt-2">
         <Link
           href={`/specialities/${specialty.slug}`}
           className="inline-flex items-center gap-2 text-sm font-semibold text-[#0B2545] group-hover:text-[#14746F] transition-colors"

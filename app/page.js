@@ -151,8 +151,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-100 aspect-video">
+            <div className="lg:col-span-6 space-y-4">
+              <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-slate-100 aspect-[16/10]">
                 <Image
                   src="/images/dr-sahu-clinic-office-awards.jpg"
                   alt="Dr. Radhamadhab Sahu Consultation Chamber & Honors Suite"
@@ -165,6 +165,35 @@ export default function HomePage() {
                   <p className="text-slate-300 text-[11px]">
                     Equipped with advanced diagnostic ENT instrumentation at Ghatikia Main Road, Bhubaneswar.
                   </p>
+                </div>
+              </div>
+
+              {/* In-Office Diagnostic Desk Setup */}
+              <div className="grid grid-cols-2 gap-3.5">
+                <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
+                  <Image
+                    src="/images/clinic-consultation-desk.jpg"
+                    alt="Specialist Examination Loupes and Middle Ear Anatomy Unit"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 300px"
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-1.5 left-1.5 right-1.5 bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded text-[10px] text-teal-300 font-semibold truncate">
+                    High-Power Surgical Loupes
+                  </div>
+                </div>
+
+                <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
+                  <Image
+                    src="/images/clinic-awards-trophies-detail.jpg"
+                    alt="National Otolaryngology Honors & Trophies"
+                    fill
+                    sizes="(max-width: 1024px) 50vw, 300px"
+                    className="object-cover"
+                  />
+                  <div className="absolute bottom-1.5 left-1.5 right-1.5 bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded text-[10px] text-teal-300 font-semibold truncate">
+                    National Conclave Honors
+                  </div>
                 </div>
               </div>
             </div>
@@ -223,7 +252,131 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. Verified Patient Reviews & Chamber Outcomes */}
+      {/* 7. Clinical Environment & Surgical Leadership Gallery */}
+      <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
+        <div className="medical-container space-y-12">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div className="max-w-3xl space-y-3">
+              <span className="medical-badge">
+                Clinical Environment &amp; Surgical Practice
+              </span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight">
+                Inside the Consultation Chamber &amp; Surgical Conclaves
+              </h2>
+              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                Authentic photographic documentation from Dr. Radhamadhab Sahu’s consultation rooms at Ghatikia Main Road, patient follow-up reviews, and his national skull base surgical keynotes.
+              </p>
+            </div>
+
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#14746F] hover:underline shrink-0"
+            >
+              <span>Explore Doctor&apos;s Full Biography &amp; Practice →</span>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Photo 1: Patient Consultation */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between group">
+              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+                <Image
+                  src="/images/dr-sahu-patient-consultation.jpg"
+                  alt="Clinical Second Opinion and Airway Consultation with Dr. Radhamadhab Sahu"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Patient Consultation
+                </div>
+              </div>
+              <div className="p-4 space-y-1 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  Airway &amp; Endoscopy Review
+                </h3>
+                <p className="text-xs text-slate-600 leading-tight">
+                  In-depth clinical second opinion and symptom mapping in private chamber.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 2: SKULLBASECON 2025 Keynote */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between group">
+              <div className="relative aspect-[4/3] w-full bg-slate-900 overflow-hidden">
+                <Image
+                  src="/images/dr-sahu-skullbasecon-2025.jpg"
+                  alt="Dr. Radhamadhab Sahu presenting Keynote Address at SKULLBASECON 2025 Chennai"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  National Keynote
+                </div>
+              </div>
+              <div className="p-4 space-y-1 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  SKULLBASECON 2025 Keynote
+                </h3>
+                <p className="text-xs text-slate-600 leading-tight">
+                  Presenting jugular foramen surgery at The Leela Palace, Chennai.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 3: Pediatric Recovery */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between group">
+              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+                <Image
+                  src="/images/dr-sahu-pediatric-patients-chamber.jpg"
+                  alt="Pediatric Ear Reconstructive Recovery Follow-up with Dr. Sahu"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Pediatric Care
+                </div>
+              </div>
+              <div className="p-4 space-y-1 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  Pediatric Ear Recovery
+                </h3>
+                <p className="text-xs text-slate-600 leading-tight">
+                  Smiles during post-operative review for young reconstructive ear patients.
+                </p>
+              </div>
+            </div>
+
+            {/* Photo 4: State & National Honors */}
+            <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between group">
+              <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
+                <Image
+                  src="/images/clinic-national-honors-awards.jpg"
+                  alt="National Otolaryngology Honors, MENTCON and ISOCON Awards"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                />
+                <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
+                  Surgical Honors
+                </div>
+              </div>
+              <div className="p-4 space-y-1 bg-white border-t border-slate-100">
+                <h3 className="text-sm font-bold text-[#0B2545]">
+                  Conclave Accreditations
+                </h3>
+                <p className="text-xs text-slate-600 leading-tight">
+                  MENTCON, ISOCON Agra 2024, UPAOICON, and Jewels of Odisha awards.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. Verified Patient Reviews & Chamber Outcomes */}
       <PatientReviews />
 
       {/* 8. Patient Frequently Asked Questions */}
