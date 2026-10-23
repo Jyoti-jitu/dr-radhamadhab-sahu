@@ -80,20 +80,20 @@ export default function BrochurePage() {
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <a
-              href={DOCTOR.clinic.telLink}
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-md hover:shadow-lg"
-            >
-              <Phone className="w-4 h-4" />
-              <span>Call Clinic: {DOCTOR.clinic.telephoneDisplay}</span>
-            </a>
-            <a
-              href="/images/clinic-official-brochure.jpg"
+              href="/images/ent-cancer-clinic-care-poster.png"
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-md hover:shadow-lg"
+            >
+              <FileText className="w-4 h-4 text-slate-950" />
+              <span>See ENT &amp; Cancer Clinic Care Poster</span>
+            </a>
+            <a
+              href={DOCTOR.clinic.telLink}
               className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-xs sm:text-sm transition-all"
             >
-              <ExternalLink className="w-4 h-4 text-teal-300" />
-              <span>View Full Brochure Image &rarr;</span>
+              <Phone className="w-4 h-4 text-teal-300" />
+              <span>Call Clinic: {DOCTOR.clinic.telephoneDisplay}</span>
             </a>
             <Link
               href="/contact"
@@ -411,12 +411,12 @@ export default function BrochurePage() {
 
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto">
               <a
-                href="/images/clinic-official-brochure.jpg"
+                href="/images/ent-cancer-clinic-care-poster.png"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-5 py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs sm:text-sm text-center transition-colors shadow-md"
               >
-                View Full Brochure Image &rarr;
+                See ENT &amp; Cancer Clinic Care Poster &rarr;
               </a>
               <a
                 href={DOCTOR.clinic.telLink}
