@@ -14,9 +14,6 @@ import {
   CheckCircle2,
   HelpCircle,
   FileText,
-  Phone,
-  Newspaper,
-  BookOpen,
   Award,
 } from "lucide-react";
 import Hero from "@/components/Hero";
@@ -27,7 +24,6 @@ import SpecialtyCard from "@/components/SpecialtyCard";
 import AppointmentCTA from "@/components/AppointmentCTA";
 import FAQ from "@/components/FAQ";
 import PatientReviews from "@/components/PatientReviews";
-import { MediaCard, PublicationCard, ConferenceCard } from "@/components/ResearchCard";
 import { DOCTOR } from "@/lib/doctor";
 import { SPECIALTIES } from "@/lib/specialties";
 
@@ -212,53 +208,7 @@ export default function HomePage() {
       {/* 6. Doctor Biography & Career Section */}
       <DoctorProfile detailed={false} />
 
-      {/* 6. Verified Media & Publications Spotlight */}
-      <section className="py-16 sm:py-24 bg-[#F8FAFC] border-b border-slate-200">
-        <div className="medical-container">
-          <div className="max-w-3xl space-y-3 mb-12">
-            <span className="medical-badge">
-              Verified Case Coverage &amp; Medical Literature
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight">
-              Published Research &amp; Clinical Impact
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Dr. Radhamadhab Sahu’s clinical work is grounded in verifiable peer-reviewed literature, national academic presentations, and published surgical milestones.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            {/* Media Highlight (Cameroon SC Judge Case) */}
-            <div className="lg:col-span-7 space-y-6">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                Verified News Coverage
-              </p>
-              {DOCTOR.mediaCoverage.map((item, idx) => (
-                <MediaCard key={idx} media={item} />
-              ))}
-            </div>
-
-            {/* Selected Peer-Reviewed Publication */}
-            <div className="lg:col-span-5 space-y-6">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                Selected Medical Literature
-              </p>
-              {DOCTOR.publications.slice(0, 2).map((pub, idx) => (
-                <PublicationCard key={idx} publication={pub} />
-              ))}
-
-              <div className="pt-2 text-right">
-                <Link
-                  href="/research"
-                  className="text-xs font-bold text-[#14746F] hover:underline inline-flex items-center gap-1"
-                >
-                  <span>View All Academic Publications &amp; Conferences →</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 7. Clinical Environment & Surgical Leadership Gallery */}
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
