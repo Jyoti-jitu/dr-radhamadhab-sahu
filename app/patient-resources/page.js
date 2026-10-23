@@ -37,6 +37,8 @@ const articles = [
     category: "Rhinology & Sinus Health",
     readTime: "5 min read",
     image: "/images/dr-sahu-fess-sinus-cme-award.jpg",
+    imageAspect: "aspect-[3/4] sm:aspect-[4/5]",
+    imagePosition: "object-top",
     imageCaption: "Dr. Radhamadhab Sahu honored on stage at the AOI State CME on Endoscopic Sinus Surgery (FESS) & Allergic Rhinitis.",
     imageBadge: "Sinus Surgery CME",
     summary:
@@ -123,6 +125,8 @@ const articles = [
     category: "Skull Base Surgery",
     readTime: "6 min read",
     image: "/images/dr-sahu-eboss-skullbase-faculty.jpg",
+    imageAspect: "aspect-[3/4] sm:aspect-[4/5]",
+    imagePosition: "object-top",
     imageCaption: "Dr. Radhamadhab Sahu serving as expert faculty at EBOSS 2.0 (Endoscopic Ear & Skull Base Surgery).",
     imageBadge: "EBOSS 2.0 Faculty",
     summary:
@@ -181,13 +185,13 @@ export default function PatientResourcesPage() {
                 href={`#${art.id}`}
                 className="group rounded-xl border border-slate-200 bg-white overflow-hidden shadow-2xs hover:border-[#14746F] hover:shadow-md transition-all flex flex-col justify-between"
               >
-                <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
+                <div className="relative aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                   <Image
                     src={art.image}
                     alt={art.title}
                     fill
                     sizes="(max-width: 640px) 50vw, 240px"
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className={`object-cover ${art.imagePosition || "object-center"} group-hover:scale-105 transition-transform duration-300`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
                   <div className="absolute bottom-1.5 left-2 right-2 text-white text-[10px] font-semibold truncate">
@@ -267,13 +271,13 @@ export default function PatientResourcesPage() {
                   <div className="lg:col-span-5 space-y-4">
                     {art.image && (
                       <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-xs">
-                        <div className="relative aspect-[16/10] w-full bg-slate-900">
+                        <div className={`relative ${art.imageAspect || "aspect-[16/10] sm:aspect-[4/3]"} w-full bg-slate-900 overflow-hidden`}>
                           <Image
                             src={art.image}
                             alt={art.title}
                             fill
                             sizes="(max-width: 1024px) 100vw, 420px"
-                            className="object-cover"
+                            className={`object-cover ${art.imagePosition || "object-center"}`}
                           />
                           <div className="absolute top-2.5 left-2.5 bg-slate-900/85 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700">
                             {art.imageBadge}
