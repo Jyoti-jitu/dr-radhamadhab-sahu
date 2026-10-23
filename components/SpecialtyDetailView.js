@@ -95,7 +95,7 @@ export default function SpecialtyDetailView({ specialty }) {
                       alt={specialty.featuredMedia.title}
                       fill
                       sizes="(max-width: 1024px) 100vw, 760px"
-                      className="object-cover"
+                      className={`object-cover ${specialty.featuredMedia.imagePosition || "object-center"}`}
                     />
                     <div className="absolute top-3 left-3 bg-[#0B2545]/90 backdrop-blur-xs px-3 py-1 rounded-full text-white text-[11px] font-semibold border border-white/20 flex items-center gap-1.5 shadow-sm">
                       <ShieldCheck className="w-3.5 h-3.5 text-teal-400" />

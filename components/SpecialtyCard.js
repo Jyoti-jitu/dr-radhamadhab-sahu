@@ -36,7 +36,7 @@ export default function SpecialtyCard({ specialty }) {
               alt={specialty.title}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 380px"
-              className="object-cover group-hover:scale-104 transition-transform duration-500"
+              className={`object-cover ${specialty.featuredMedia?.imagePosition || specialty.imagePosition || "object-center"} group-hover:scale-104 transition-transform duration-500`}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
             <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/95 backdrop-blur-xs text-[#0B2545] flex items-center justify-center shadow-xs">
