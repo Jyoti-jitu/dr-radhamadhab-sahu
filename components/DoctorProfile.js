@@ -16,17 +16,22 @@ export default function DoctorProfile({ detailed = false }) {
     <section className="py-14 sm:py-20 bg-white border-b border-slate-200">
       <div className="medical-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Column: Authentic Portrait & Quick Credentials */}
+          {/* Left Column: Authentic Conference Keynote Visual & Quick Credentials */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-50">
-              <div className="relative aspect-[4/5] w-full">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-50 group">
+              <div className="relative aspect-[4/3] w-full bg-slate-900 overflow-hidden">
                 <Image
-                  src={DOCTOR.portraitUrl}
-                  alt={DOCTOR.portraitAlt}
+                  src="/images/dr-sahu-national-conference-lectern.jpg"
+                  alt="Dr. Radhamadhab Sahu delivering keynote presentation on minimally invasive skull base surgery at conference lectern"
                   fill
-                  sizes="(max-width: 1024px) 100vw, 420px"
-                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 460px"
+                  className="object-cover group-hover:scale-104 transition-transform duration-500"
+                  priority
                 />
+                <div className="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-xs px-2.5 py-1 rounded-md text-[10px] text-teal-300 font-semibold border border-slate-700 flex items-center gap-1.5 shadow-xs">
+                  <Award className="w-3 h-3 text-teal-400" />
+                  <span>Invited Faculty Keynote Speaker</span>
+                </div>
               </div>
 
               <div className="p-5 bg-white border-t border-slate-200 space-y-2">
