@@ -131,17 +131,21 @@ export default function AboutPage() {
             <div className="lg:col-span-7 space-y-10">
               {/* Introduction Narrative */}
               <div className="space-y-4 text-sm sm:text-base text-slate-700 leading-relaxed bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-xs font-bold uppercase tracking-wider">
+                  <Award className="w-3.5 h-3.5 text-amber-600" />
+                  <span>Nominee &ndash; Bharat Pratibha Sammaan Award</span>
+                </div>
                 <h2 className="text-2xl font-bold text-[#0B2545] tracking-tight">
                   Professional Journey &amp; Surgical Philosophy
                 </h2>
                 <p>
-                  Dr. Radhamadhab Sahu is an internationally recognized specialist in Otorhinolaryngology, Head &amp; Neck Oncology, and Endoscopic Skull Base Surgery. Serving as the Senior Consultant and Head of Department at SUM Ultimate Medicare in Bhubaneswar, he has played a pivotal role in establishing advanced minimally invasive skull base and endoscopic ear surgery programs in Odisha and Eastern India.
+                  Dr. Radhamadhab Sahu is a Senior Consultant and Head of the Department of ENT &amp; Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar. With over 17 years of clinical and surgical experience and more than 800 skull base operations performed for patients from over 20 countries, he is nominated for the Bharat Pratibha Sammaan Award in Healthcare &amp; Medicine in recognition of his pioneering contributions to advanced ENT and Skull Base Surgery.
                 </p>
                 <p>
-                  Dr. Sahu’s clinical philosophy centers upon <strong>anatomical preservation</strong> and <strong>minimally invasive access</strong>. Rather than employing disfiguring facial incisions or traumatic cranial bone flaps, he utilizes high-definition endoscopic corridors through the natural nasal cavity to address pituitary adenomas, anterior skull base malignancies, and complex cerebrospinal fluid leaks.
+                  Dr. Sahu’s clinical philosophy centers upon <strong>anatomical preservation</strong> and <strong>minimally invasive access</strong>. Rather than employing disfiguring facial incisions or traumatic cranial bone flaps, he utilizes high-definition endoscopic corridors through the natural nasal cavity to address pituitary adenomas, chordomas, trigeminal schwannomas, and complex cerebrospinal fluid leaks.
                 </p>
                 <p>
-                  In head and neck care, he pioneered scarless transoral thyroid surgery (TOETVA), allowing patients with thyroid disease to achieve complete surgical cure without visible neck scars.
+                  In head and neck care, he introduced <strong>five landmark procedures for the first time in Odisha</strong>: Transoral Endoscopic Thyroid Surgery (TOETVA), Balloon Eustachian Tuboplasty (BET), Endoscopic Transnasal Trigeminal Schwannoma Excision, Sialendoscopy, and Endoscopic Transoral Submandibular Gland Excision.
                 </p>
               </div>
 

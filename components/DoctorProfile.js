@@ -82,20 +82,20 @@ export default function DoctorProfile({ detailed = false }) {
                 Pioneering Minimally Invasive ENT &amp; Skull Base Surgery in Odisha
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed pt-1">
-                Dr. Radhamadhab Sahu is an internationally acclaimed ENT and Skull Base Surgeon with more than 12 years of specialized clinical and surgical expertise. He currently heads the Department of ENT and Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar, one of Eastern India’s leading quaternary care hospitals.
+                Dr. Radhamadhab Sahu is a Senior Consultant and Head of the Department of ENT and Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar. With over 17 years of clinical and surgical experience and more than 800 skull base surgeries performed for patients from over 20 countries, he is nominated for the prestigious Bharat Pratibha Sammaan Award in Healthcare &amp; Medicine.
               </p>
             </div>
 
             {/* Surgical Training & Career Journey */}
             <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
               <p>
-                After earning his MBBS from the historic <strong>S.C.B. Medical College &amp; Hospital, Cuttack</strong>, Dr. Sahu completed his postgraduate residency in Otorhinolaryngology (DNB ENT) at the prestigious <strong>Vardhman Mahavir Medical College (VMMC) &amp; Safdarjung Hospital, New Delhi</strong>.
+                After completing his MBBS from the historic <strong>S.C.B. Medical College &amp; Hospital, Cuttack (2002&ndash;2008)</strong>, Dr. Sahu pursued postgraduate surgical residency in Otorhinolaryngology (DNB ENT) at <strong>Vardhman Mahavir Medical College (VMMC) &amp; Safdarjung Hospital, New Delhi</strong>.
               </p>
               <p>
-                Recognizing the critical need for advanced cranial base surgical expertise, he underwent a rigorous <strong>3-year specialized neurosurgical skull base fellowship</strong> at Safdarjung Hospital, mastering endoscopic brain and skull base corridors. He subsequently worked as an independent consultant for Endoscopic Skull Base Surgery alongside internationally revered neurosurgeon <strong>Padmashree Dr. (Prof.) V.S. Mehta</strong> at Paras Hospital, Gurugram.
+                Recognizing the critical need for advanced cranial base surgical expertise, he developed a rare dual expertise by undergoing <strong>three years of dedicated Neurosurgery training in Skull Base Surgery (2012&ndash;2015)</strong> at Safdarjung Hospital. He subsequently served as an independent consultant for Endoscopic Skull Base Surgery with internationally renowned neurosurgeon <strong>Padmashree Dr. (Prof.) V. S. Mehta</strong> at Paras Hospital, Gurgaon.
               </p>
               <p>
-                Dr. Sahu has demonstrated extensive expertise in complex endoscopic skull base surgeries, including pituitary macroadenomas, craniopharyngiomas, clival chordomas, juvenile angiofibromas, CSF leak repairs, and scarless transoral endoscopic thyroidectomies (TOETVA).
+                Dr. Sahu has introduced several pioneering procedures for the first time in Odisha, including Transoral Endoscopic Thyroid Surgery (TOETVA), Balloon Eustachian Tuboplasty (BET), Endoscopic Transnasal Trigeminal Schwannoma Excision, Sialendoscopy, and Endoscopic Transoral Submandibular Gland Excision.
               </p>
             </div>
 

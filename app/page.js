@@ -20,6 +20,7 @@ import {
   Award,
 } from "lucide-react";
 import Hero from "@/components/Hero";
+import NominationCitation from "@/components/NominationCitation";
 import DoctorProfile from "@/components/DoctorProfile";
 import SpecialtyCard from "@/components/SpecialtyCard";
 import AppointmentCTA from "@/components/AppointmentCTA";
@@ -87,7 +88,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. Clinical Specialities Overview */}
+      {/* 3. Official Bharat Pratibha Sammaan Award Nomination & State Firsts Citation */}
+      <NominationCitation />
+
+      {/* 4. Clinical Specialities Overview */}
       <section className="py-16 sm:py-24 bg-[#FDFBF7]">
         <div className="medical-container">
           <div className="max-w-3xl space-y-3 mb-12 sm:mb-16">

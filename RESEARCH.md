@@ -17,8 +17,30 @@
 | **Undergraduate Medical College** | S.C.B. Medical College & Hospital, Cuttack, Odisha | SUM Ultimate Medicare Profile |
 | **Postgraduate Medical Training** | Vardhman Mahavir Medical College (VMMC) & Safdarjung Hospital, New Delhi (DNB ENT) | SUM Ultimate Medicare Profile, PubMed authorship records |
 | **Fellowship / Super-Specialized Training**| 3-Year Advanced Neurosurgery & Endoscopic Skull Base Surgery Training at VMMC & Safdarjung Hospital, New Delhi | SUM Ultimate Medicare Profile |
-| **Mentorship & Senior Experience** | Worked as Independent Consultant for Endoscopic Skull Base Surgery alongside Padmashree Dr. (Prof.) V.S. Mehta at Paras Hospital, Gurugram / Gurgaon | SUM Ultimate Medicare Profile |
-| **Clinical Experience** | 12+ years of clinical and surgical expertise in ENT & Advanced Skull Base Surgery | SUM Ultimate Medicare Official Record |
+| **Mentorship & Senior Experience** | Worked as Independent Consultant for Endoscopic Skull Base Surgery alongside Padmashree Dr. (Prof.) V.S. Mehta at Paras Hospital, Gurugram / Gurgaon | Official Citation & Hospital Record |
+| **Clinical Experience** | Over 17 years of clinical and surgical expertise (MBBS 2002–2008, Safdarjung Neurosurgery 2012–2015) | Official Citation for Bharat Pratibha Sammaan Award Nomination |
+| **Skull Base Surgical Volume** | 800+ complex skull base surgeries performed | Official Citation Record |
+| **International Patient Reach** | Treated patients from over 20 countries | Official Citation Record |
+| **National Recognition** | Nominee – Bharat Pratibha Sammaan Award (Healthcare & Medicine: ENT & Skull Base Surgery \| State – Odisha) | Bharat Pratibha Sammaan Council Citation Document |
+| **Firsts in Odisha** | Introduced 5 landmark procedures: TOETVA Scarless Thyroidectomy, Balloon Eustachian Tuboplasty (BET), Endoscopic Transnasal Trigeminal Schwannoma Excision, Sialendoscopy, Endoscopic Transoral Submandibular Gland Excision | Official Citation Record |
+
+---
+
+## 1B. Official Bharat Pratibha Sammaan Award Citation
+
+* **Nominee:** Dr. Radhamadhab Sahu
+* **Awarding Body:** Bharat Pratibha Sammaan Council
+* **Category:** Healthcare & Medicine (ENT & Skull Base Surgery) | State – Odisha
+* **Key Achievements Documented in Official Citation:**
+  1. Performed more than 800 skull base surgeries, treating patients from over 20 countries.
+  2. Introduced several procedures for the first time in Odisha: Transoral Endoscopic Thyroid Surgery (TOETVA), Balloon Eustachian Tuboplasty (BET), Endoscopic Transnasal Excision of Trigeminal Schwannoma, Sialendoscopy, and Endoscopic Transoral Submandibular Gland Excision.
+  3. Developed rare dual expertise combining postgraduate ENT training at VMMC & Safdarjung Hospital, New Delhi, with three years of dedicated Neurosurgery training in Skull Base Surgery at the same institution (2012–2015).
+  4. Worked as an independent consultant for Endoscopic Skull Base Surgery with Padmashree Dr. (Prof.) V. S. Mehta at Paras Hospital, Gurgaon.
+  5. Served as Organising Secretary of AOIBBCON 2024 in Bhubaneswar, delivering keynote on Advanced Skull Base Surgery & conducting live surgeries.
+  6. Delivered the Dr. H. K. Kukreja Oration at the 41st Rajasthan AOICON in 2024.
+  7. Won 1st Prize in the Prakash and Ved Monga Temporal Bone Dissection Competition (2011).
+  8. Recipient of honors: Utkal Gaurav Samman, Debadutta Samman, Vikas Odia Samman, and Odia Gaurav Samman (Mumbai, 2023).
+  9. Published research in national and international journals, including *Auris Nasus Larynx*.
 
 ---
 
