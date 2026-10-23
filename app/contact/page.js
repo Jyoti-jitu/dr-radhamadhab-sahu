@@ -114,26 +114,26 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Image 2: Official Practice Brochure */}
+              {/* Image 2: Consultation & Diagnostic Suite */}
               <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between">
-                <div className="relative aspect-[4/3] w-full bg-slate-900">
+                <div className="relative aspect-[4/3] w-full bg-slate-100">
                   <Image
-                    src="/images/clinic-official-brochure.jpg"
-                    alt="Official printed brochure of E.N.T. & Cancer Super-Speciality Clinic"
+                    src="/images/dr-sahu-patient-consultation.jpg"
+                    alt="Dr. Radhamadhab Sahu conducting clinical diagnostic consultation in his chamber"
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
                     className="object-cover"
                   />
                   <div className="absolute top-2 left-2 bg-slate-900/80 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
-                    Official Care Guide
+                    Clinical Consultation
                   </div>
                 </div>
                 <div className="p-3.5 space-y-1 bg-white border-t border-slate-100">
                   <h4 className="text-xs font-bold text-[#0B2545]">
-                    Official Clinic Brochure
+                    Consultation &amp; Diagnostic Suite
                   </h4>
                   <p className="text-[11px] text-slate-600 leading-tight">
-                    Printed practice brochure detailing 17 symptoms, 22 procedures, and active hours.
+                    Personalized diagnostic consultation and endoscopic symptom review with Dr. Radhamadhab Sahu.
                   </p>
                 </div>
               </div>
