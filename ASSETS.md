@@ -22,10 +22,20 @@ This document records the provenance, attribution, dimensions, and usage permiss
 | `ent-clinic-suite.jpg` | Modern otolaryngology examination & HD video-endoscopic consultation suite | 16:9 Landscape (High-res JPEG) | Clinical diagnostic suite visualization with ergonomic patient examination unit | Used in clinic consultation sections, diagnostic procedures overview, and patient guidance. |
 | `skull-base-anatomy.jpg` | Educational anatomical diagram illustrating endoscopic endonasal skull base and paranasal sinus pathways | 16:9 Landscape (High-res JPEG) | High-precision scientific medical textbook style anatomical schematic | Used exclusively in educational patient resources and speciality pages (Skull Base Surgery, Endoscopic Sinus Care). |
 
+## 3. Verified Patient Reviews & Chamber Photography (From Google Maps)
+
+| Asset File | Subject / Description | Resolution & Format | Source & Provenance | Usage Context |
+| :--- | :--- | :--- | :--- | :--- |
+| `patient-review-deepak-barik.png` | Authentic photograph of patient Deepak Kumar Barik & family with Dr. Radhamadhab Sahu | 770 × 525 px, PNG | Uploaded by patient Deepak Kumar Barik on Google Maps reviews for Dr. Radhamadhab Sahu | Displays verified patient outcome after oral cavity lesion excision & benign biopsy. Faces completely preserved without alteration. |
+| `patient-review-abhishek-rao.png` | Authentic photograph of patient Abhishek Rao with Dr. Radhamadhab Sahu in consultation room | 770 × 525 px, PNG | Uploaded by patient Abhishek Rao on Google Maps reviews for Dr. Radhamadhab Sahu | Displays 2-year post-operative follow-up following mastoidectomy & tympanoplasty ear surgery. Faces completely preserved. |
+| `patient-review-clinic-consult.png` | In-chamber clinical consultation setting with Dr. Sahu and national surgical honors (AOICON, ISOCON, Global FESS) | 770 × 525 px, PNG | Public Google Maps review photo gallery for Dr. Radhamadhab Sahu's practice | Contextual proof of Dr. Sahu's genuine clinic chamber and academic accolades. |
+| `google-review-deepak-barik-full.png` | Complete uncropped Google Maps 5-star review card & chamber photograph | 1024 × 640 px, PNG | Direct capture of live Google Maps review interface | Full-screen verifiable review modal viewer. |
+| `google-review-abhishek-rao-full.png` | Complete uncropped Google Maps 5-star review card & chamber photograph | 1024 × 640 px, PNG | Direct capture of live Google Maps review interface | Full-screen verifiable review modal viewer. |
+
 ---
 
-## 3. Compliance and Ethical Medical Standards
+## 4. Compliance and Ethical Medical Standards
 
-* **No Synthetic Physician Faces:** No AI-generated persona or stock model was passed off as the physician. The doctor's authentic likeness is preserved as published by SUM Ultimate Medicare.
-* **No Identifiable Patient Photographs:** In compliance with patient privacy and medical ethics, no unconsented clinical photographs or patient identifiers are stored or rendered.
-* **Responsive Optimization:** All images utilize Next.js `<Image />` component with `sizes`, `priority` (for hero), and `quality={90}` for optimal performance and Core Web Vitals.
+* **Authentic Clinician & Patient Likenesses:** All patient review photographs are genuine public Google Maps reviews uploaded by actual patients. In strict accordance with user instructions, no faces were altered, generated, or swapped.
+* **No Manufactured Reviews:** Reviews reflect authentic public feedback with verbatim quotes, actual reviewer names, and verified procedure categories.
+* **Responsive Optimization:** All images utilize Next.js `<Image />` component with `sizes` and proper lazy loading.

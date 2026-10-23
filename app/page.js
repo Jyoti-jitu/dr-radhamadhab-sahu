@@ -24,6 +24,7 @@ import DoctorProfile from "@/components/DoctorProfile";
 import SpecialtyCard from "@/components/SpecialtyCard";
 import AppointmentCTA from "@/components/AppointmentCTA";
 import FAQ from "@/components/FAQ";
+import PatientReviews from "@/components/PatientReviews";
 import { MediaCard, PublicationCard, ConferenceCard } from "@/components/ResearchCard";
 import { DOCTOR } from "@/lib/doctor";
 import { SPECIALTIES } from "@/lib/specialties";
@@ -222,7 +223,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. Patient Frequently Asked Questions */}
+      {/* 7. Verified Patient Reviews & Chamber Outcomes */}
+      <PatientReviews />
+
+      {/* 8. Patient Frequently Asked Questions */}
       <section className="py-16 sm:py-24 bg-white border-b border-slate-200">
         <div className="medical-container max-w-4xl">
           <div className="text-center space-y-3 mb-12">
