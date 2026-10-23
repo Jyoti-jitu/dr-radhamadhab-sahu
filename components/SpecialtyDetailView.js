@@ -180,8 +180,8 @@ export default function SpecialtyDetailView({ specialty }) {
                 <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-xs">
                   <div className="relative aspect-[21/9] sm:aspect-[16/7] w-full bg-slate-100">
                     <Image
-                      src="/images/ent-clinic-suite.jpg"
-                      alt="Modern ENT Outpatient Surgical Examination Suite"
+                      src="/images/dr-sahu-patient-consultation.jpg"
+                      alt="Dr. Radhamadhab Sahu conducting clinical diagnostic airway consultation"
                       fill
                       sizes="(max-width: 1024px) 100vw, 760px"
                       className="object-cover"
@@ -190,9 +190,9 @@ export default function SpecialtyDetailView({ specialty }) {
                     <div className="absolute bottom-2.5 left-3 right-3 text-white text-xs font-semibold flex items-center justify-between">
                       <span className="flex items-center gap-1.5">
                         <Activity className="w-3.5 h-3.5 text-teal-400" />
-                        <span>High-Definition Endoscopic Diagnostic Suite</span>
+                        <span>High-Definition Clinical Diagnostic &amp; Airway Suite</span>
                       </span>
-                      <span className="text-teal-200 text-[11px] hidden sm:inline">Rigid &amp; Angled Optics</span>
+                      <span className="text-teal-200 text-[11px] hidden sm:inline">Endoscopic Evaluation</span>
                     </div>
                   </div>
                 </div>

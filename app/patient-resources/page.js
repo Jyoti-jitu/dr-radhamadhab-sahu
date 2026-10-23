@@ -57,9 +57,9 @@ const articles = [
     title: "Deviated Nasal Septum (DNS) & Chronic Nasal Obstruction",
     category: "Nasal Airway",
     readTime: "4 min read",
-    image: "/images/ent-clinic-suite.jpg",
-    imageCaption: "Modern ENT outpatient examination suite equipped for video-endoscopy and airway evaluation.",
-    imageBadge: "Surgical Examination Suite",
+    image: "/images/dr-sahu-national-conference-lectern.jpg",
+    imageCaption: "Dr. Radhamadhab Sahu delivering an invited lecture on endoscopic septoplasty and airway reconstruction corridors.",
+    imageBadge: "Airway Surgery Faculty",
     summary:
       "How a deviated midline septum disrupts nasal airflow, causes unilateral congestion, and how endoscopic septoplasty straightens the cartilage with minimal recovery time.",
     content: [

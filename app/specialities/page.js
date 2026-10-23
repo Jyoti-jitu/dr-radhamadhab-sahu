@@ -74,18 +74,18 @@ export default function SpecialitiesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Step 1: In-office loupes and examination */}
+            {/* Step 1: In-office endoscopic examination */}
             <div className="rounded-2xl border border-slate-200 overflow-hidden bg-slate-50 flex flex-col justify-between shadow-xs hover:border-[#14746F]/50 transition-all group">
-              <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
+              <div className="relative aspect-[16/10] w-full bg-slate-900 overflow-hidden">
                 <Image
-                  src="/images/clinic-consultation-desk.jpg"
-                  alt="Specialist In-Office Endoscopic and Loupe Diagnostic Examination Unit"
+                  src="/images/clinic-national-honors-awards.jpg"
+                  alt="Dr. Radhamadhab Sahu Clinical Suite & Practice Credentials"
                   fill
                   sizes="(max-width: 768px) 100vw, 380px"
                   className="object-cover group-hover:scale-104 transition-transform duration-500"
                 />
                 <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-xs px-2.5 py-0.5 rounded text-[10px] text-teal-300 font-semibold border border-slate-700">
-                  Step 1: In-Office Diagnostic
+                  Step 1: Clinical Diagnostic Suite
                 </div>
               </div>
               <div className="p-5 space-y-2 bg-white border-t border-slate-100">

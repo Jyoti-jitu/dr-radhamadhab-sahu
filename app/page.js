@@ -177,27 +177,27 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-3.5">
                 <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
                   <Image
-                    src="/images/clinic-consultation-desk.jpg"
-                    alt="Specialist Examination Loupes and Middle Ear Anatomy Unit"
+                    src="/images/dr-sahu-cme-award-presentation.jpg"
+                    alt="Dr. Radhamadhab Sahu receiving surgical honours at State ENT CME"
                     fill
                     sizes="(max-width: 1024px) 50vw, 300px"
                     className="object-cover"
                   />
                   <div className="absolute bottom-1.5 left-1.5 right-1.5 bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded text-[10px] text-teal-300 font-semibold truncate">
-                    High-Power Surgical Loupes
+                    State Surgical CME Honor
                   </div>
                 </div>
 
                 <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 aspect-[4/3]">
                   <Image
-                    src="/images/dr-sahu-fess-sinus-cme-award.jpg"
-                    alt="AOI State CME on Endoscopic Sinus Surgery Felicitation"
+                    src="/images/dr-sahu-aoi-odisha-state-award.jpg"
+                    alt="Dr. Radhamadhab Sahu receiving AOI Odisha State Surgical Honors"
                     fill
                     sizes="(max-width: 1024px) 50vw, 300px"
                     className="object-cover"
                   />
                   <div className="absolute bottom-1.5 left-1.5 right-1.5 bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded text-[10px] text-teal-300 font-semibold truncate">
-                    AOI Sinus CME Award
+                    AOI State Surgical Honor
                   </div>
                 </div>
               </div>
