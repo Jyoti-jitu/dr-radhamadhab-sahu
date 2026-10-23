@@ -251,18 +251,24 @@ export default function ClinicBrochureCareGuide() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 w-full md:w-auto">
+              <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
+                <Link
+                  href="/brochure"
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs text-center transition-colors shadow-xs"
+                >
+                  Full Brochure Page &rarr;
+                </Link>
                 <a
                   href="/images/clinic-official-brochure.jpg"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full md:w-auto px-4 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs text-center transition-colors shadow-xs"
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs text-center transition-colors"
                 >
                   View Full Brochure Image &rarr;
                 </a>
                 <a
                   href={DOCTOR.clinic.telLink}
-                  className="w-full md:w-auto px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs text-center transition-colors"
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-xs text-center transition-colors"
                 >
                   Call Clinic: {DOCTOR.clinic.telephoneDisplay}
                 </a>

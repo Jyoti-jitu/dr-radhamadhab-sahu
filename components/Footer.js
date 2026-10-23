@@ -164,6 +164,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/brochure" className="hover:text-white transition-colors">
+                  Official Practice Brochure
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
                   Appointment Desk &amp; Directions
                 </Link>

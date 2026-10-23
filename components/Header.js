@@ -58,6 +58,7 @@ export default function Header() {
     },
     { name: "Research & Media", href: "/research" },
     { name: "Patient Resources", href: "/patient-resources" },
+    { name: "Clinic Brochure", href: "/brochure" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -121,7 +122,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-1" aria-label="Main Navigation">
+        <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1" aria-label="Main Navigation">
           {navLinks.map((link) => {
             if (link.hasDropdown) {
               return (
@@ -133,14 +134,14 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className={`inline-flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    className={`inline-flex items-center gap-1 px-2.5 xl:px-3 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors ${
                       isActive(link.href)
                         ? "text-[#0B2545] bg-slate-100 font-semibold"
                         : "text-slate-700 hover:text-[#0B2545] hover:bg-slate-50"
                     }`}
                   >
                     <span>{link.name}</span>
-                    <ChevronDown className="w-4 h-4 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
+                    <ChevronDown className="w-3.5 h-3.5 opacity-70 group-hover:rotate-180 transition-transform duration-200" />
                   </Link>
 
                   {/* Dropdown Menu */}
@@ -177,7 +178,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`px-2.5 xl:px-3 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors ${
                   isActive(link.href)
                     ? "text-[#0B2545] bg-slate-100 font-semibold"
                     : "text-slate-700 hover:text-[#0B2545] hover:bg-slate-50"

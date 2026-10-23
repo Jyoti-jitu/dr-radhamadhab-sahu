@@ -9,6 +9,7 @@ export default function sitemap() {
     "/specialities",
     "/research",
     "/patient-resources",
+    "/brochure",
     "/contact",
     "/privacy-policy",
     "/disclaimer",
