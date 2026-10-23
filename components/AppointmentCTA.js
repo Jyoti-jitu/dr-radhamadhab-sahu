@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   Calendar,
@@ -9,6 +10,7 @@ import {
   MapPin,
   FileText,
   AlertCircle,
+  Navigation,
 } from "lucide-react";
 import { DOCTOR } from "@/lib/doctor";
 
@@ -51,6 +53,25 @@ export default function AppointmentCTA({ variant = "full" }) {
                 <p className="text-xs text-slate-500 mt-0.5">
                   Department of ENT and Skull Base Surgery
                 </p>
+              </div>
+
+              {/* Realistic Map Preview Badge */}
+              <div className="relative aspect-[16/7] w-full rounded-xl overflow-hidden border border-slate-200 shadow-inner group">
+                <Image
+                  src="/images/map-sum-ultimate-medicare.jpg"
+                  alt="Satellite GPS Map of SUM Ultimate Medicare, Ghatikia"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 480px"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-[10px] font-semibold bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded-md">
+                  <span className="flex items-center gap-1">
+                    <MapPin className="w-3 h-3 text-rose-400" />
+                    <span>K-8, Ghatikia Main Road</span>
+                  </span>
+                  <span className="text-teal-300">GPS Map</span>
+                </div>
               </div>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -114,6 +135,25 @@ export default function AppointmentCTA({ variant = "full" }) {
                 </p>
               </div>
 
+              {/* Realistic Map Preview Badge */}
+              <div className="relative aspect-[16/7] w-full rounded-xl overflow-hidden border border-slate-200 shadow-inner group">
+                <Image
+                  src="/images/map-clinic-kalinga-nagar.jpg"
+                  alt="Realistic Road Map of Dr. Radhamadhab ENT and Cancer Clinic, Ghatikia"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 480px"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white text-[10px] font-semibold bg-slate-900/80 backdrop-blur-xs px-2 py-1 rounded-md">
+                  <span className="flex items-center gap-1">
+                    <MapPin className="w-3 h-3 text-teal-400" />
+                    <span>Plot K8/118, Ghatikia Main Road</span>
+                  </span>
+                  <span className="text-teal-300">Street Map</span>
+                </div>
+              </div>
+
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Dedicated private clinic for personalized ENT assessments, endoscopic examinations, post-operative surgical reviews, and surgical consultations.
               </p>
@@ -146,7 +186,7 @@ export default function AppointmentCTA({ variant = "full" }) {
                 href="/contact"
                 className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200 transition-colors"
               >
-                <span>View Full Directions &amp; Map</span>
+                <span>View Full Directions &amp; Satellite Map</span>
               </Link>
             </div>
           </div>

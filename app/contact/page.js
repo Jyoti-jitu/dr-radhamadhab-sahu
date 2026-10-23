@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import ContactDetails from "@/components/ContactDetails";
+import RealisticMapViewer from "@/components/RealisticMapViewer";
 import { DOCTOR } from "@/lib/doctor";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -70,83 +71,11 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Dual Locations & Details */}
+          {/* Dual Locations & Details with Realistic Map Thumbnails */}
           <ContactDetails />
 
-          {/* Interactive Google Map Directions Area */}
-          <div className="space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-200 pb-3">
-              <div>
-                <h2 className="text-xl sm:text-2xl font-bold text-[#0B2545] flex items-center gap-2">
-                  <Navigation className="w-5 h-5 text-[#14746F]" />
-                  <span>Interactive Map &amp; Navigation Guidance</span>
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-600 mt-0.5">
-                  Both centers are situated in the Kalinga Nagar / Ghatikia sector of Bhubaneswar, easily accessible from Khandagiri and NH-16.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Map 1: SUM Ultimate Medicare */}
-              <div className="medical-card p-4 space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#0B2545]">
-                    SUM Ultimate Medicare (K-8)
-                  </span>
-                  <a
-                    href={DOCTOR.hospital.mapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-semibold text-[#14746F] hover:underline inline-flex items-center gap-1"
-                  >
-                    <span>Open in Google Maps</span>
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-                </div>
-                <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-slate-100 border border-slate-200">
-                  <iframe
-                    title="SUM Ultimate Medicare Location Map"
-                    src="https://maps.google.com/maps?q=SUM+Ultimate+Medicare+Kalinga+Nagar+Bhubaneswar&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
-                </div>
-              </div>
-
-              {/* Map 2: Dr. Radhamadhab ENT and Cancer Clinic */}
-              <div className="medical-card p-4 space-y-3">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-bold text-[#0B2545]">
-                    Dr. Radhamadhab ENT &amp; Cancer Clinic (K8/118)
-                  </span>
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=Dr.+Radhamadhab+ENT+and+Cancer+Clinic+Ghatikia+Bhubaneswar"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-semibold text-[#14746F] hover:underline inline-flex items-center gap-1"
-                  >
-                    <span>Open in Google Maps</span>
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-                </div>
-                <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-slate-100 border border-slate-200">
-                  <iframe
-                    title="Dr. Radhamadhab ENT and Cancer Clinic Location Map"
-                    src="https://maps.google.com/maps?q=Ghatikia+Main+Road+Kalinga+Nagar+Bhubaneswar&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Realistic Digital Map Viewer Section */}
+          <RealisticMapViewer />
         </div>
       </section>
     </div>
