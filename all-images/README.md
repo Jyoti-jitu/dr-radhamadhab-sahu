@@ -1,63 +1,47 @@
-# Complete Image Archive: Dr. Radhamadhab Sahu Practice
+# Verified Active Image Archive: Dr. Radhamadhab Sahu Practice
 
-This directory contains the complete collection of photographic, document, and visual assets for the Dr. Radhamadhab Sahu clinical and surgical practice website.
-
----
-
-## Directory Contents
-
-### 1. High-Resolution Master Photos (Original Direct Uploads)
-- **`33f221af-f145-4de9-9881-8b1507349693.png`** – Dr. Sahu delivering podium address at IAOHNS Chennai (Original Master PNG).
-- **`48th AOI Annual Conference Stage.png`** – Dr. Sahu on the main stage receiving national honors at the 48th Annual Conference of AOI.
-- **`8cd1fbf6-32ad-402b-80ac-7c79b934c1b9.png`** – Dr. Sahu receiving gold memento shield at 46th Annual Conference AOI Odisha State Chapter.
-- **`Award-Filled Clinic Consultation Portrait.png`** – Authentic high-resolution consultation chamber portrait with patient and family.
-- **`Award-Winning Clinic Portrait.png`** – Wide clinical interior photograph showing honors shelves and patient care area.
-- **`Award-Winning Office Portrait.png`** – Dr. Sahu in executive consultation chamber with national awards and mementos.
-- **`Bharat Pratibha Healthcare Nominee Award.png`** – Official Bharat Pratibha Sammaan Award Nomination Document Artwork (Healthcare & Medicine: ENT & Skull Base Surgery).
-- **`Conference Award Presentation 2025.png`** – PHONOCON 2025 award memento presentation at Mayfair Lagoon, Bhubaneswar.
-- **`Conference Award Presentation.png`** – National conference felicitation and memento ceremony.
-- **`Doctor and Children Among Awards.png`** – Pediatric recovery and post-operative review with young ear surgery patients in chamber.
-- **`ENT & Cancer Clinic Care Poster.png`** – Official clinic care poster detailing 17 symptoms, 22 procedures, and consultation timings.
-- **`ENT CME Award Presentation.png`** – Expert Surgical CME Conclave Award & Memento Presentation on Stage.
-- **`ISOCON Conference Speaker at the Podium.png`** – ISOCON National Otology Conference Keynote Address at the Speaker Podium.
-- **`Professional Conference Speaker at Lectern.png`** – Invited faculty scientific keynote address at national conference lectern.
-- **`WhatsApp Image 2026-10-23 at 10.45.43 PM.png`** – Master wide view of clinic honors wall and surgical certificates.
-- **`WhatsApp Image 2026-10-23 at 10.45.44 PM.jpeg`** – Clinic interior consultation room.
-- **`WhatsApp Image 2026-10-23 at 10.46.05 PM.jpeg`** – Dr. Sahu with pediatric recovery patients.
-- **`WhatsApp Image 2026-10-23 at 10.46.06 PM.jpeg`** – Patient Deepak Barik consultation chamber review.
-- **`WhatsApp Image 2026-10-23 at 10.46.07 PM.jpeg`** – National otolaryngology honors shelves.
-- **`WhatsApp Image 2026-10-23 at 10.46.08 PM.jpeg`** – Faculty trophies and mementos close-up.
-- **`afb2ac7f-0cb2-4266-830a-3367f5f5d4e1.png`** – Dr. Sahu receiving award at AOI CME on Recent Updates on Endoscopic Sinus Surgery & Allergic Rhinitis.
-- **`b1a0334d-ef76-4b25-8ebf-427af3fbe183.png`** – Wide interior photo of the head-silhouette awards wall.
+This directory contains the 30 active, high-resolution photographic, document, and visual assets powering the official website of Dr. Radhamadhab Sahu.
 
 ---
 
-### 2. Web-Ready Clinical Assets (Referenced by Next.js in `/public/images/`)
-- **`dr-radhamadhab-sahu.jpg`** – Verified clinician portrait from SUM Ultimate Medicare hospital registry.
-- **`sum-ultimate-medicare.jpg`** – Quaternary care hospital campus of SUM Ultimate Medicare.
+## Catalog of Active Assets (30 Images)
+
+### 1. Clinician Identity & Institutional Affiliation
+- **`dr-radhamadhab-sahu.jpg`** – Verified professional clinician portrait of Dr. Radhamadhab Sahu from SUM Ultimate Medicare registry.
+- **`sum-ultimate-medicare.jpg`** – High-resolution photograph of the SUM Ultimate Medicare hospital campus.
 - **`map-sum-ultimate-medicare.jpg`** – Satellite GPS navigation map to SUM Ultimate Medicare.
 - **`map-clinic-kalinga-nagar.jpg`** – Road map navigation view to K8/118 Ghatikia Main Road clinic.
-- **`skull-base-anatomy.jpg`** – Endoscopic skull base & sinus anatomical diagram.
-- **`clinic-official-brochure.png` / `.jpg`** – Master clinic brochure scans.
-- **`bharat-pratibha-healthcare-nominee-award.png`** – Award nomination banner.
-- **`dr-sahu-patient-deepak-barik.jpg`** – Verified consultation portrait with patient Deepak Barik.
-- **`dr-sahu-patient-abhishek-rao.jpg`** – Post-operative follow-up with patient Abhishek Rao.
-- **`dr-sahu-patient-consultation.jpg`** – Clinical review in Bhubaneswar consultation room.
-- **`dr-sahu-pediatric-patients-chamber.jpg`** – Pediatric otology recovery portrait.
-- **`dr-sahu-skullbasecon-2025.jpg`** – SKULLBASECON 2025 keynote address (The Leela Palace, Chennai).
+
+### 2. Clinical Honors, Conclaves & Keynotes
+- **`33f221af-f145-4de9-9881-8b1507349693.png`** – Dr. Sahu delivering podium address at IAOHNS Chennai (High-resolution master PNG).
+- **`dr-sahu-iaohns-chennai-podium.jpg`** – Dr. Sahu at the podium of the Indian Academy of Otorhinolaryngology Head and Neck Surgery (IAOHNS Chennai).
+- **`dr-sahu-skullbasecon-2025.jpg`** – Dr. Sahu delivering invited keynote on *"Endoscope-assisted Management of Jugular Foramen Tumors"* at SKULLBASECON 2025 (The Leela Palace, Chennai).
+- **`dr-sahu-eboss-skullbase-faculty.jpg`** – Dr. Sahu seated as faculty with official badge: *"EBOSS 2.0 - Endoscopic Ear and Skull Base Surgery - Faculty"*.
 - **`dr-sahu-aoicon-stage-felicitation.jpg`** – 48th Annual Conference of AOI Main Stage Felicitation.
-- **`dr-sahu-cme-award-presentation.jpg`** – Expert Surgical CME award presentation.
-- **`dr-sahu-isocon-speaker-podium.jpg`** – ISOCON speaker podium keynote address.
-- **`dr-sahu-national-conference-lectern.jpg`** – Scientific faculty lecture at the lectern.
-- **`dr-sahu-iaohns-chennai-podium.jpg`** – IAOHNS Chennai conference podium lecture.
-- **`dr-sahu-eboss-skullbase-faculty.jpg`** – EBOSS 2.0 endoscopic skull base faculty portrait.
-- **`dr-sahu-aoi-odisha-state-award.jpg`** – 46th Annual Conference AOI Odisha State gold memento.
-- **`dr-sahu-phonocon-2025-award.jpg`** – PHONOCON 2025 award memento presentation.
-- **`dr-sahu-fess-sinus-cme-award.jpg`** – AOI FESS & Sinus CME award presentation.
-- **`clinic-awards-wall-wide.jpg`** – Wide clinic interior with head-silhouette awards wall.
-- **`clinic-head-silhouette-awards-wall.jpg`** – Close wide photo of surgical awards wall.
-- **`clinic-national-honors-awards.jpg`** – Honors shelves: MENTCON, ISOCON, UPAOICON, AOICON.
-- **`clinic-awards-trophies-detail.jpg`** – PHONOCON, 48th AOI, AOIBBCON surgical faculty trophies.
-- **`google-maps-clinic-banner.jpg`** – Official Google Maps verified practice listing badge.
-- **`google-review-abhishek-rao-full.png`** – Verified 5-star patient testimonial screenshot.
-- **`google-review-deepak-barik-full.png`** – Verified 5-star patient testimonial screenshot.
+- **`dr-sahu-cme-award-presentation.jpg`** – Expert Surgical CME Conclave Award & Memento Presentation on Stage.
+- **`dr-sahu-isocon-speaker-podium.jpg`** – ISOCON National Otology Conference Keynote Address at the Speaker Podium.
+- **`dr-sahu-national-conference-lectern.jpg`** – Invited faculty scientific keynote address at national conference lectern.
+- **`dr-sahu-aoi-odisha-state-award.jpg`** – Dr. Sahu receiving gold memento shield at 46th Annual Conference AOI Odisha State Chapter.
+- **`dr-sahu-phonocon-2025-award.jpg`** – Dr. Sahu receiving PHONOCON 2025 award memento at Mayfair Lagoon, Bhubaneswar.
+- **`dr-sahu-fess-sinus-cme-award.jpg`** – Dr. Sahu receiving award at AOI CME on Recent Updates on Endoscopic Sinus Surgery & Allergic Rhinitis.
+
+### 3. Consultation Chamber & Practice Environment
+- **`dr-sahu-clinic-office-awards.jpg`** – Dr. Sahu in his Bhubaneswar executive consultation chamber with wall of national honors.
+- **`clinic-head-silhouette-awards-wall.jpg`** – Wide clinical interior photograph of the head-silhouette awards wall.
+- **`clinic-national-honors-awards.jpg`** – Verified photograph of national honors shelves: MENTCON, ISOCON, UPAOICON, AOICON.
+- **`clinic-awards-trophies-detail.jpg`** – Close-up of faculty trophies: PHONOCON, 48th AOI Bihar & Jharkhand, AOIBBCON.
+- **`google-maps-clinic-banner.jpg`** – Verified practice listing badge with address and phone number on Google Maps.
+
+### 4. Patient Outcomes, Reviews & Consultations
+- **`dr-sahu-patient-deepak-barik.jpg`** – High-resolution consultation chamber portrait with Dr. Sahu, patient & family before wall of surgical awards.
+- **`dr-sahu-patient-abhishek-rao.jpg`** – Patient Abhishek Rao with Dr. Sahu at 2-year post-operative surgical follow-up.
+- **`dr-sahu-patient-consultation.jpg`** – Post-operative airway consultation and clinical review at Bhubaneswar clinic.
+- **`dr-sahu-pediatric-patients-chamber.jpg`** – Compassionate pediatric post-operative recovery: Dr. Sahu with 3 young ear surgery patients.
+- **`google-review-abhishek-rao-full.png`** – Verified Google review testimonial screenshot from patient Abhishek Rao.
+- **`google-review-deepak-barik-full.png`** – Verified Google review testimonial screenshot from patient Deepak Barik.
+
+### 5. Practice Brochure, Awards & Anatomy
+- **`clinic-official-brochure.jpg`** – Official practice brochure preview showing timings and clinic details.
+- **`ent-cancer-clinic-care-poster.png`** – Full high-resolution master scan of the official clinic care poster detailing 17 symptoms and 22 procedures.
+- **`bharat-pratibha-healthcare-nominee-award.png`** – Official Bharat Pratibha Sammaan Award Nomination Document Artwork (Healthcare & Medicine: ENT & Skull Base Surgery).
+- **`skull-base-anatomy.jpg`** – High-precision anatomical diagram illustrating endoscopic skull base and paranasal sinus pathways.
