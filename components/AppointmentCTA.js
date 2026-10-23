@@ -128,10 +128,10 @@ export default function AppointmentCTA({ variant = "full" }) {
 
               <div>
                 <h3 className="text-xl font-bold text-[#0B2545]">
-                  Dr. Radhamadhab ENT and Cancer Clinic
+                  E.N.T. &amp; Cancer Super-Speciality Clinic
                 </h3>
-                <p className="text-xs text-slate-500 mt-0.5">
-                  Specialist Consultation &amp; Second Opinions
+                <p className="text-xs text-teal-700 font-semibold mt-0.5">
+                  Skull Base Surgery Head &amp; Neck Cancer Center
                 </p>
               </div>
 
@@ -139,7 +139,7 @@ export default function AppointmentCTA({ variant = "full" }) {
               <div className="relative aspect-[16/7] w-full rounded-xl overflow-hidden border border-slate-200 shadow-inner group">
                 <Image
                   src="/images/map-clinic-kalinga-nagar.jpg"
-                  alt="Realistic Road Map of Dr. Radhamadhab ENT and Cancer Clinic, Ghatikia"
+                  alt="Realistic Road Map of E.N.T. & Cancer Super-Speciality Clinic, Ghatikia"
                   fill
                   sizes="(max-width: 768px) 100vw, 480px"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -155,7 +155,7 @@ export default function AppointmentCTA({ variant = "full" }) {
               </div>
 
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Dedicated private clinic for personalized ENT assessments, endoscopic examinations, post-operative surgical reviews, and surgical consultations.
+                Dedicated private clinic for personalized ENT assessments, endoscopic examinations, post-operative surgical reviews, and specialized skull base consultations.
               </p>
 
               <div className="space-y-2.5 pt-3 border-t border-slate-100 text-xs text-slate-600">
@@ -165,9 +165,11 @@ export default function AppointmentCTA({ variant = "full" }) {
                 </div>
                 <div className="flex items-start gap-2">
                   <Clock className="w-4 h-4 text-[#14746F] shrink-0 mt-0.5" />
-                  <span>
-                    <strong>Consultation Hours:</strong> Evening Sessions (Prior telephone confirmation required)
-                  </span>
+                  <div className="space-y-0.5">
+                    <strong className="text-[#0B2545] block font-semibold">Consultation Hours:</strong>
+                    <span className="block text-slate-700 font-medium">Mon &ndash; Sat: 8:00 AM &ndash; 11:00 AM &amp; 6:00 PM &ndash; 9:00 PM</span>
+                    <span className="block text-amber-800 font-semibold">Sunday: 8:00 AM &ndash; 12:30 PM</span>
+                  </div>
                 </div>
               </div>
             </div>

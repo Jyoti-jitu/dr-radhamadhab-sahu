@@ -141,10 +141,10 @@ export default function ContactDetails() {
                   <span>Private Consultation Clinic · 4.9 ★ Google Maps</span>
                 </span>
                 <h3 className="text-2xl font-bold text-[#0B2545]">
-                  Dr. Radhamadhab ENT and Cancer Clinic
+                  E.N.T. &amp; Cancer Super-Speciality Clinic
                 </h3>
-                <p className="text-xs text-slate-500 font-medium">
-                  Specialist Consultation &amp; Second Opinions
+                <p className="text-xs text-teal-700 font-semibold">
+                  Skull Base Surgery Head &amp; Neck Cancer Center
                 </p>
               </div>
             </div>
@@ -153,7 +153,7 @@ export default function ContactDetails() {
             <div className="relative aspect-[16/8] w-full rounded-xl overflow-hidden border border-slate-200 shadow-inner group">
               <Image
                 src="/images/map-clinic-kalinga-nagar.jpg"
-                alt="Realistic Road Map of Dr. Radhamadhab ENT and Cancer Clinic, Ghatikia"
+                alt="Realistic Road Map of E.N.T. & Cancer Super-Speciality Clinic, Ghatikia"
                 fill
                 sizes="(max-width: 768px) 100vw, 550px"
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -172,8 +172,8 @@ export default function ContactDetails() {
             <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3">
               <div className="relative w-16 h-12 rounded-lg overflow-hidden shrink-0 border border-slate-200">
                 <Image
-                  src="/images/dr-sahu-clinic-office-awards.jpg"
-                  alt="Dr. Radhamadhab Sahu consultation chamber"
+                  src="/images/clinic-head-silhouette-awards-wall.jpg"
+                  alt="Dr. Radhamadhab Sahu consultation chamber and awards wall"
                   fill
                   sizes="64px"
                   className="object-cover"
@@ -203,11 +203,14 @@ export default function ContactDetails() {
                 <Clock className="w-4 h-4 text-[#14746F] shrink-0 mt-0.5" />
                 <div>
                   <strong className="text-[#0B2545] block font-semibold">Clinic Consultation Hours:</strong>
-                  <p className="text-slate-600">
-                    Evening Consultation Sessions (Monday – Saturday)
+                  <p className="text-slate-700 font-medium">
+                    Monday &ndash; Saturday: 8:00 AM &ndash; 11:00 AM &amp; 6:00 PM &ndash; 9:00 PM
                   </p>
-                  <p className="text-[11px] text-amber-700 font-medium">
-                    *Please call prior to arriving to confirm active clinic timing and slot.
+                  <p className="text-amber-800 font-semibold">
+                    Sunday Morning: 8:00 AM &ndash; 12:30 PM
+                  </p>
+                  <p className="text-[11px] text-slate-500 pt-0.5">
+                    *Prior telephone confirmation is recommended before arriving to confirm appointment slot.
                   </p>
                 </div>
               </div>

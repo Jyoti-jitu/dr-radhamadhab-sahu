@@ -46,6 +46,7 @@ This document records the provenance, attribution, dimensions, and usage permiss
 | `dr-sahu-phonocon-2025-award.jpg` | Dr. Sahu receiving PHONOCON 2025 award memento at Mayfair Lagoon, Bhubaneswar (07-09 Feb 2025) | 1447 × 1087 px, Progressive JPEG | Authentic PHONOCON 2025 award presentation photo provided by doctor | Featured in Voice & Laryngeal Disorders specialty hero, About Page Honors, and Research Page. |
 | `dr-sahu-fess-sinus-cme-award.jpg` | Dr. Sahu receiving award at AOI CME on Recent Updates on Endoscopic Sinus Surgery & Allergic Rhinitis (12 July 2025) | 1086 × 1448 px, Progressive JPEG | Authentic FESS & Rhinology CME award photo provided by doctor | Featured in Sinus & Nasal Care specialty hero, Landing Page Section 4, Patient Resources, and Research Page. |
 | `clinic-head-silhouette-awards-wall.jpg` | Wide interior photograph of the iconic head-silhouette awards wall in the clinic | 1447 × 1087 px, Progressive JPEG | Authentic clinic interior photograph provided by doctor | Featured in Sleep-Related ENT Disorders specialty hero, Landing Page Section 4, and Patient Resources. |
+| `clinic-official-brochure.jpg` | Authentic printed clinical brochure photo: E.N.T. & Cancer Super-Speciality Clinic (Skull Base Surgery Head & Neck Cancer Center) | 770 × 1024 px, Progressive JPEG | Official printed clinic brochure provided directly by Dr. Radhamadhab Sahu | Featured in Landing Page Section 5 (ClinicBrochureCareGuide), Contact Details, and Clinic Directory. |
 
 ---
 

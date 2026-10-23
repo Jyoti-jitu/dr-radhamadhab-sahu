@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import Hero from "@/components/Hero";
 import NominationCitation from "@/components/NominationCitation";
+import ClinicBrochureCareGuide from "@/components/ClinicBrochureCareGuide";
 import DoctorProfile from "@/components/DoctorProfile";
 import SpecialtyCard from "@/components/SpecialtyCard";
 import AppointmentCTA from "@/components/AppointmentCTA";
@@ -33,14 +34,14 @@ import { SPECIALTIES } from "@/lib/specialties";
 export const metadata = {
   title: "Dr. Radhamadhab Sahu | Senior ENT & Skull Base Surgeon, Bhubaneswar",
   description:
-    "Official website of Dr. Radhamadhab Sahu, Senior Consultant & HOD of ENT & Skull Base Surgery at SUM Ultimate Medicare and Dr. Radhamadhab ENT and Cancer Clinic, Bhubaneswar, Odisha.",
+    "Official website of Dr. Radhamadhab Sahu, Senior Consultant & HOD of ENT & Skull Base Surgery at SUM Ultimate Medicare and E.N.T. & Cancer Super-Speciality Clinic, Bhubaneswar, Odisha.",
 };
 
 const homeFaqs = [
   {
     question: "Where does Dr. Radhamadhab Sahu consult patients in Bhubaneswar?",
     answer:
-      "Dr. Sahu consults across two clinical locations in Kalinga Nagar, Bhubaneswar: (1) Outpatient OPD and inpatient surgical care at SUM Ultimate Medicare (Monday to Saturday, 9:30 AM to 5:30 PM), and (2) Evening specialist consultations at Dr. Radhamadhab ENT and Cancer Clinic (K8/118, Ghatikia Main Road, Kalinga Nagar).",
+      "Dr. Sahu consults across two clinical locations in Kalinga Nagar, Bhubaneswar: (1) Outpatient OPD and inpatient surgical care at SUM Ultimate Medicare (Monday to Saturday, 9:30 AM to 5:30 PM), and (2) E.N.T. & Cancer Super-Speciality Clinic at K8/118, Ghatikia Main Road with dedicated morning sessions (Monday to Saturday, 8:00 AM – 11:00 AM), evening sessions (Monday to Saturday, 6:00 PM – 9:00 PM), and Sunday morning clinics (8:00 AM – 12:30 PM).",
   },
   {
     question: "How do I schedule an appointment with Dr. Sahu?",
@@ -205,7 +206,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. Doctor Biography & Career Section */}
+      {/* 5. E.N.T. & Cancer Super-Speciality Clinic Official Practice Brochure & Care Guide */}
+      <ClinicBrochureCareGuide />
+
+      {/* 6. Doctor Biography & Career Section */}
       <DoctorProfile detailed={false} />
 
       {/* 6. Verified Media & Publications Spotlight */}
