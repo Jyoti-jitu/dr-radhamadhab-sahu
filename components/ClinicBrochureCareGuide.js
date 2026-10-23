@@ -4,14 +4,9 @@ import {
   Clock,
   Phone,
   MapPin,
-  CheckCircle2,
-  Stethoscope,
-  ShieldAlert,
   Sparkles,
   ArrowRight,
   FileText,
-  Calendar,
-  Building2,
 } from "lucide-react";
 import { DOCTOR } from "@/lib/doctor";
 
@@ -198,92 +193,7 @@ export default function ClinicBrochureCareGuide() {
               </div>
             </div>
 
-            {/* Two-Column Grid: Symptoms vs. Advanced Care Spectrum */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
-              {/* Left Column: 17 Symptoms Checklist */}
-              <div className="lg:col-span-5 rounded-2xl bg-slate-50 border border-slate-200 p-4 sm:p-6 space-y-4">
-                <div className="border-b border-slate-200 pb-3 space-y-1">
-                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 uppercase tracking-wide">
-                    <ShieldAlert className="w-4 h-4 text-amber-600 shrink-0" />
-                    <span>Clinical Consultation Indicators</span>
-                  </div>
-                  <h3 className="text-base sm:text-lg font-extrabold text-[#0B2545] leading-snug">
-                    Consult Dr. RADHAMADHAB SAHU If You Have The Following Symptoms:
-                  </h3>
-                  <p className="text-[11px] text-slate-500">
-                    Documented symptom directory from the official printed clinic brochure.
-                  </p>
-                </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
-                  {DOCTOR.clinic.brochureSymptoms.map((symptom, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-start gap-2.5 p-2 rounded-lg bg-white border border-slate-200/80 text-xs text-slate-800 hover:border-[#14746F] transition-colors"
-                    >
-                      <span className="w-4 h-4 rounded-full bg-teal-50 text-[#14746F] font-bold text-[10px] flex items-center justify-center shrink-0 mt-0.5 border border-teal-200">
-                        {idx + 1}
-                      </span>
-                      <span className="font-medium">{symptom}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="pt-2">
-                  <a
-                    href={DOCTOR.clinic.telLink}
-                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#0B2545] text-white text-xs font-semibold hover:bg-[#14746F] transition-colors shadow-sm text-center"
-                  >
-                    <Calendar className="w-4 h-4" />
-                    <span>Schedule Symptom Evaluation</span>
-                  </a>
-                </div>
-              </div>
-
-              {/* Right Column: 22 Advanced Care Services */}
-              <div className="lg:col-span-7 rounded-2xl bg-white border border-slate-200 p-4 sm:p-6 space-y-4 shadow-sm">
-                <div className="border-b border-slate-200 pb-3 space-y-1">
-                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#14746F] uppercase tracking-wide">
-                    <Stethoscope className="w-4 h-4 text-[#14746F] shrink-0" />
-                    <span>Super-Speciality Procedures</span>
-                  </div>
-                  <h3 className="text-base sm:text-lg font-extrabold text-[#0B2545] leading-snug">
-                    ADVANCED CARE &ndash; Surgical &amp; Interventional Directory
-                  </h3>
-                  <p className="text-[11px] text-slate-500">
-                    Comprehensive procedural spectrum offered at the Skull Base Surgery Head &amp; Neck Cancer Center.
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                  {DOCTOR.clinic.brochureAdvancedCare.map((procedure, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-start gap-2 p-2 sm:p-2.5 rounded-xl bg-slate-50/70 border border-slate-200/80 text-xs text-slate-800 hover:bg-teal-50/50 hover:border-teal-300 transition-all"
-                    >
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#14746F] shrink-0 mt-0.5" />
-                      <span className="font-semibold text-[#0B2545]">{procedure}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="p-3.5 sm:p-4 rounded-xl bg-amber-50/60 border border-amber-200/80 text-xs text-amber-950 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-                  <div className="flex items-center gap-2">
-                    <FileText className="w-4 h-4 text-amber-700 shrink-0" />
-                    <span>
-                      Original printed clinic brochure issued by <strong>Dr. Radhamadhab Sahu</strong>.
-                    </span>
-                  </div>
-                  <Link
-                    href="/contact"
-                    className="shrink-0 font-bold text-[#14746F] hover:underline flex items-center gap-1"
-                  >
-                    <span>View Map &amp; Clinic Directions</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </Link>
-                </div>
-              </div>
-            </div>
 
             {/* Authentic Printed Brochure Preview Bar */}
             <div className="p-4 sm:p-6 rounded-2xl bg-slate-900 text-white flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
