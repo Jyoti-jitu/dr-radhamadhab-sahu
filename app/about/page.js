@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AppointmentCTA from "@/components/AppointmentCTA";
-import NominationCitation from "@/components/NominationCitation";
+import SurgicalMilestones from "@/components/SurgicalMilestones";
 import { DOCTOR } from "@/lib/doctor";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -132,15 +132,15 @@ export default function AboutPage() {
             <div className="lg:col-span-7 space-y-6 sm:space-y-10">
               {/* Introduction Narrative */}
               <div className="space-y-3 sm:space-y-4 text-xs sm:text-base text-slate-700 leading-relaxed bg-white p-4 sm:p-6 lg:p-8 rounded-2xl border border-slate-200">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-[11px] sm:text-xs font-bold uppercase tracking-wider">
-                  <Award className="w-3.5 h-3.5 text-amber-600 shrink-0" />
-                  <span>Nominee &ndash; Bharat Pratibha Sammaan Award</span>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-[#14746F] text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#14746F] shrink-0" />
+                  <span>Senior Consultant &amp; HOD &bull; Skull Base Surgeon</span>
                 </div>
                 <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545] tracking-tight">
                   Professional Journey &amp; Surgical Philosophy
                 </h2>
                 <p>
-                  Dr. Radhamadhab Sahu is a Senior Consultant and Head of the Department of ENT &amp; Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar. With over 17 years of clinical and surgical experience and more than 800 skull base operations performed for patients from over 20 countries, he is nominated for the Bharat Pratibha Sammaan Award in Healthcare &amp; Medicine in recognition of his pioneering contributions to advanced ENT and Skull Base Surgery.
+                  Dr. Radhamadhab Sahu is a Senior Consultant and Head of the Department of ENT &amp; Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar. With over 17 years of clinical and surgical experience and more than 800 skull base operations performed for patients from over 20 countries, he is widely recognized for his pioneering contributions to advanced ENT and Skull Base Surgery.
                 </p>
                 <p>
                   Dr. Sahu’s clinical philosophy centers upon <strong>anatomical preservation</strong> and <strong>minimally invasive access</strong>. Rather than employing disfiguring facial incisions or traumatic cranial bone flaps, he utilizes high-definition endoscopic corridors through the natural nasal cavity to address pituitary adenomas, chordomas, trigeminal schwannomas, and complex cerebrospinal fluid leaks.
@@ -148,18 +148,6 @@ export default function AboutPage() {
                 <p>
                   In head and neck care, he introduced <strong>five landmark procedures for the first time in Odisha</strong>: Transoral Endoscopic Thyroid Surgery (TOETVA), Balloon Eustachian Tuboplasty (BET), Endoscopic Transnasal Trigeminal Schwannoma Excision, Sialendoscopy, and Endoscopic Transoral Submandibular Gland Excision.
                 </p>
-
-                <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3">
-                  <a
-                    href="/documents/nominee-dr-radhamadhab-sahu.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-xs w-full sm:w-auto text-center"
-                  >
-                    <FileText className="w-4 h-4 text-slate-950 shrink-0" />
-                    <span>See Nomination PDF (NOMINEE - DR. RADHAMADHAB SAHU.pdf) &rarr;</span>
-                  </a>
-                </div>
               </div>
 
               {/* Education & Academic Timeline */}
@@ -322,8 +310,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Official Bharat Pratibha Sammaan Award Nomination & State Firsts Citation */}
-      <NominationCitation page="about" />
+      {/* Surgical Milestones & State Firsts Citation */}
+      <SurgicalMilestones page="about" />
 
       {/* Clinical Environment & Surgical Leadership Gallery */}
       <section className="py-14 sm:py-20 bg-white border-t border-slate-200">

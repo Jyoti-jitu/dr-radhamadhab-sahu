@@ -43,5 +43,4 @@ This directory contains the 30 active, high-resolution photographic, document, a
 ### 5. Practice Brochure, Awards & Anatomy
 - **`clinic-official-brochure.jpg`** – Official practice brochure preview showing timings and clinic details.
 - **`ent-cancer-clinic-care-poster.png`** – Full high-resolution master scan of the official clinic care poster detailing 17 symptoms and 22 procedures.
-- **`bharat-pratibha-healthcare-nominee-award.png`** – Official Bharat Pratibha Sammaan Award Nomination Document Artwork (Healthcare & Medicine: ENT & Skull Base Surgery).
 - **`skull-base-anatomy.jpg`** – High-precision anatomical diagram illustrating endoscopic skull base and paranasal sinus pathways.

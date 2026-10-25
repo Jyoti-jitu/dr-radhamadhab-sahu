@@ -47,20 +47,11 @@ This document records the provenance, attribution, dimensions, and usage permiss
 | `dr-sahu-fess-sinus-cme-award.jpg` | Dr. Sahu receiving award at AOI CME on Recent Updates on Endoscopic Sinus Surgery & Allergic Rhinitis (12 July 2025) | 1086 × 1448 px, Progressive JPEG | Authentic FESS & Rhinology CME award photo provided by doctor | Featured in Sinus & Nasal Care specialty hero, Landing Page Section 4, Patient Resources, and Research Page. |
 | `clinic-head-silhouette-awards-wall.jpg` | Wide interior photograph of the iconic head-silhouette awards wall in the clinic | 1447 × 1087 px, Progressive JPEG | Authentic clinic interior photograph provided by doctor | Featured in Sleep-Related ENT Disorders specialty hero, Landing Page Section 4, and Patient Resources. |
 | `clinic-official-brochure.jpg` / `.png` | High-resolution digital master scan of official clinic care poster: E.N.T. & Cancer Super-Speciality Clinic (Skull Base Surgery Head & Neck Cancer Center) | 1088 × 1445 px, Master Graphic PNG / High-Quality Progressive JPEG | Replaced angled photo `WhatsApp Image 2026-10-23 at 9.52.56 PM.jpeg` with pristine digital master asset `ENT & Cancer Clinic Care Poster.png` | Featured in Landing Page Section 5 (ClinicBrochureCareGuide), Contact Details, and Clinic Directory. |
-| `bharat-pratibha-healthcare-nominee-award.png` | Official Bharat Pratibha Sammaan Award Nomination Document Artwork (Healthcare & Medicine: ENT & Skull Base Surgery) | 1774 × 887 px (2:1 Widescreen), PNG | Official award nomination document provided directly by doctor / council | Featured in Landing Page Section 3 and About Page official council citation sections. |
 | `33f221af-f145-4de9-9881-8b1507349693.png` | Pristine original master conference photograph of Dr. Radhamadhab Sahu delivering podium address at IAOHNS Chennai | 1312 × 1199 px, Master PNG | Official live conference photograph provided directly by user | Featured in Voice & Laryngeal Disorders specialty page and landing page card. |
 
 ---
 
-## 4. Official Clinical & Council Documents
-
-| Asset File | Subject / Description | Resolution / Size | Source & Provenance | Usage Context |
-| :--- | :--- | :--- | :--- | :--- |
-| `nominee-dr-radhamadhab-sahu.pdf` / `NOMINEE - DR. RADHAMADHAB SAHU.pdf` | Official Bharat Pratibha Sammaan Award Nomination Document (Healthcare & Medicine: ENT & Skull Base Surgery) | 209 KB, PDF | Official Council Nomination Document provided directly by doctor / council | Accessible via direct download/view buttons in Landing Page Section 3 and About Page official council citation sections. |
-
----
-
-## 5. Compliance and Ethical Medical Standards
+## 4. Compliance and Ethical Medical Standards
 
 * **Authentic Clinician & Patient Likenesses:** All patient review photographs are genuine public Google Maps reviews uploaded by actual patients. In strict accordance with user instructions, no faces were altered, generated, or swapped.
 * **No Manufactured Reviews:** Reviews reflect authentic public feedback with verbatim quotes, actual reviewer names, and verified procedure categories.

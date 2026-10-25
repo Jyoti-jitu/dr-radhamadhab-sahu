@@ -82,7 +82,7 @@ export default function DoctorProfile({ detailed = false }) {
                 Pioneering Minimally Invasive ENT &amp; Skull Base Surgery in Odisha
               </h2>
               <p className="text-xs sm:text-base text-slate-700 leading-relaxed pt-1">
-                Dr. Radhamadhab Sahu is a Senior Consultant and Head of the Department of ENT and Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar. With over 17 years of clinical and surgical experience and more than 800 skull base surgeries performed for patients from over 20 countries, he is nominated for the prestigious Bharat Pratibha Sammaan Award in Healthcare &amp; Medicine.
+                Dr. Radhamadhab Sahu is a Senior Consultant and Head of the Department of ENT and Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar. With over 17 years of clinical and surgical experience, he has performed more than 800 skull base surgeries for patients from over 20 countries, pioneering minimally invasive cranial base procedures in Eastern India.
               </p>
             </div>
 

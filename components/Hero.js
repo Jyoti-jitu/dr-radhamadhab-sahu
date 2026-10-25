@@ -30,12 +30,8 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* Left Column: Editorial Medical Copy */}
           <div className="lg:col-span-7 space-y-4 sm:space-y-6">
-            {/* Nomination & Eyebrow */}
+            {/* Eyebrow */}
             <div className="flex flex-wrap items-center gap-2">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-300/80 text-amber-900 text-[11px] sm:text-xs font-bold tracking-wider uppercase shadow-xs">
-                <Award className="w-3.5 h-3.5 text-amber-600 shrink-0" />
-                <span>Nominee: Bharat Pratibha Sammaan Award</span>
-              </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EDF4FA] border border-[#D5E5F2] text-[#0B2545] text-[11px] sm:text-xs font-bold tracking-wider uppercase">
                 <span className="w-2 h-2 rounded-full bg-[#14746F] animate-pulse" />
                 <span>ENT &amp; Skull Base Surgery</span>
