@@ -222,6 +222,22 @@ export default function Footer() {
               </Link>
             </div>
           </div>
+
+          {/* Jovix Technologies Credit */}
+          <div className="pt-3 border-t border-slate-800/50 text-center text-xs text-slate-400">
+            <p>
+              Developed with ❤️ by{" "}
+              <a
+                href="https://www.jovix.co.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal-400 hover:text-teal-300 font-semibold transition-colors underline underline-offset-2"
+              >
+                JOVIX Technologies
+              </a>{" "}
+              &bull; Technology for a Brighter Tomorrow
+            </p>
+          </div>
         </div>
       </div>
     </footer>
