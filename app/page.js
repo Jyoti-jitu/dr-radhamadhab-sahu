@@ -234,6 +234,54 @@ export default function HomePage() {
             </Link>
           </div>
 
+          {/* Bharat Pratibha Sammaan Feature Highlight */}
+          <div className="rounded-3xl border border-amber-200/90 bg-gradient-to-br from-amber-50/60 via-white to-slate-50 p-6 sm:p-8 lg:p-10 shadow-lg overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              {/* Award Image */}
+              <div className="lg:col-span-6">
+                <div className="relative rounded-2xl overflow-hidden border border-amber-300/60 shadow-xl aspect-[16/10] bg-slate-900 group">
+                  <Image
+                    src="/images/awardtaking.jpeg"
+                    alt="Dr. Radhamadhab Sahu receiving the Bharat Pratibha Sammaan from Hon'ble Smt. Meenakshi Lekhi"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 600px"
+                    className="object-cover group-hover:scale-103 transition-transform duration-500"
+                  />
+                  <div className="absolute top-3 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-full border border-amber-400/40 text-[11px] font-bold text-amber-300 flex items-center gap-1.5 shadow-md">
+                    <Award className="w-3.5 h-3.5 text-amber-400" />
+                    <span>Bharat Pratibha Sammaan</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Award Citation & Details */}
+              <div className="lg:col-span-6 space-y-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/90 border border-amber-300 text-amber-900 text-xs font-bold uppercase tracking-wider">
+                  <Award className="w-3.5 h-3.5 text-amber-700" />
+                  <span>National Honor Conferment</span>
+                </div>
+
+                <h3 className="text-xl sm:text-2xl font-extrabold text-[#0B2545] tracking-tight leading-snug">
+                  Conferment of the &ldquo;Bharat Pratibha Sammaan&rdquo;
+                </h3>
+
+                <blockquote className="relative p-4 sm:p-5 rounded-2xl bg-white border border-amber-100 shadow-xs">
+                  <p className="text-sm sm:text-base text-slate-800 italic leading-relaxed font-serif">
+                    &ldquo;As the Chairperson of the Selection Committee of the Bharat Pratibha Sammaan Council, I hereby confer upon you the <span className="font-semibold text-[#0B2545] not-italic">Bharat Pratibha Sammaan</span>, to be presented by <span className="font-semibold text-[#0B2545] not-italic">Hon&apos;ble Smt. Meenakshi Lekhi</span>, Former Union Minister of State for External Affairs and Culture, in recognition of your outstanding contribution to Medicine.&rdquo;
+                  </p>
+                  <footer className="mt-3 text-xs text-slate-500 font-sans font-medium flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                    <span>Chairperson, Selection Committee · Bharat Pratibha Sammaan Council</span>
+                  </footer>
+                </blockquote>
+
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Conferred upon Dr. Radhamadhab Sahu for his distinguished contributions to skull base and endoscopic sinus surgery, surgical mentorship, and advancing modern minimally invasive healthcare in Eastern India.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Photo 1: Patient Consultation */}
             <div className="rounded-2xl border border-slate-200 overflow-hidden bg-white shadow-xs hover:border-[#14746F]/50 transition-all flex flex-col justify-between group">
