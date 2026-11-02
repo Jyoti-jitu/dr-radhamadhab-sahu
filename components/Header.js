@@ -14,6 +14,7 @@ import {
   Stethoscope,
   ShieldAlert,
 } from "lucide-react";
+import Image from "next/image";
 import { DOCTOR } from "@/lib/doctor";
 
 export default function Header() {
@@ -102,8 +103,14 @@ export default function Header() {
       <div className="medical-container py-2.5 sm:py-3.5 flex items-center justify-between gap-3 sm:gap-4">
         {/* Brand / Doctor Identity */}
         <Link href="/" className="group flex items-center gap-2.5 sm:gap-3 min-w-0">
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[#0B2545] text-white flex items-center justify-center font-serif text-base sm:text-lg font-bold shadow-xs group-hover:bg-[#14746F] transition-colors shrink-0">
-            DR
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg overflow-hidden shadow-xs shrink-0">
+            <Image
+              src="/images/logo.jpg"
+              alt="Dr. Radhamadhab Sahu ENT Clinic Logo"
+              width={40}
+              height={40}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex flex-col min-w-0">
             <span className="text-base sm:text-xl font-bold tracking-tight text-[#0B2545] leading-tight group-hover:text-[#14746F] transition-colors truncate">

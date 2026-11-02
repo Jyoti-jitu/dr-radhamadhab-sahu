@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { generatePhysicianSchema, generateClinicSchema } from "@/lib/seo";
 import { Phone, Calendar } from "lucide-react";
 import { DOCTOR } from "@/lib/doctor";
+import HonorPopup from "@/components/HonorPopup";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -92,6 +93,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="min-h-screen flex flex-col bg-[#FDFBF7] text-slate-800 antialiased selection:bg-[#E6F4F3] selection:text-[#0B2545]">
         <Header />
+        <HonorPopup />
 
         <main className="flex-1" id="main-content">
           {children}
