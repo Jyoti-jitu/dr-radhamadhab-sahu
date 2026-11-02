@@ -110,3 +110,17 @@
 .font-serif-heading {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
+
+/* 5s Slider progress animation */
+@keyframes slideProgress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-slide-progress {
+  animation: slideProgress 5s linear forwards;
+}
