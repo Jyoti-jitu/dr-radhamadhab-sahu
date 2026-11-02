@@ -15,6 +15,13 @@ const POPUP_SLIDES = [
     label: "Honors & Recognition",
   },
   {
+    src: "/images/awardtaking.jpeg",
+    alt: "Dr. Radhamadhab Sahu – Receiving Prestigious Award",
+    width: 1579,
+    height: 996,
+    label: "Award Ceremony",
+  },
+  {
     src: "/images/award.jpeg",
     alt: "Dr. Radhamadhab Sahu – Surgical Excellence Award",
     width: 1155,
@@ -86,7 +93,7 @@ export default function HonorPopup() {
     >
       {/* Popup Container */}
       <div
-        className="relative w-full max-w-sm sm:max-w-md md:max-w-lg flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-200"
+        className="relative w-full max-w-sm sm:max-w-lg md:max-w-xl flex flex-col items-center justify-center animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -129,7 +136,7 @@ export default function HonorPopup() {
                   height={slide.height}
                   priority={idx === 0 || idx === currentIndex}
                   className="rounded-xl object-contain max-h-[74vh] sm:max-h-[78vh] w-auto h-auto max-w-full shadow-lg"
-                  sizes="(max-width: 640px) 92vw, (max-width: 768px) 460px, 512px"
+                  sizes="(max-width: 640px) 94vw, (max-width: 768px) 512px, 576px"
                 />
               </div>
             ))}
