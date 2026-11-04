@@ -98,9 +98,9 @@ export function MediaCard({ media }) {
           href={media.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-xs font-bold text-[#14746F] hover:underline"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#14746F] hover:underline"
         >
-          <span>Read Full Article on New Indian Express</span>
+          <span>Read on {media.outlet}</span>
           <ExternalLink className="w-3.5 h-3.5" />
         </a>
       </div>

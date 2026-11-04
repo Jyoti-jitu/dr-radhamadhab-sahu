@@ -69,7 +69,7 @@ export default function ResearchPage() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 max-w-4xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {DOCTOR.mediaCoverage.map((media, idx) => (
                 <MediaCard key={idx} media={media} />
               ))}
