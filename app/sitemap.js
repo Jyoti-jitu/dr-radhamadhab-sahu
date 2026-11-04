@@ -7,6 +7,7 @@ export default function sitemap() {
     "",
     "/about",
     "/specialities",
+    "/awards",
     "/research",
     "/patient-resources",
     "/brochure",

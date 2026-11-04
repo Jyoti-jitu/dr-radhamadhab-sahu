@@ -154,6 +154,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/awards" className="hover:text-white transition-colors">
+                  Awards &amp; Felicitations
+                </Link>
+              </li>
+              <li>
                 <Link href="/research" className="hover:text-white transition-colors">
                   Academic Papers &amp; Media Coverage
                 </Link>

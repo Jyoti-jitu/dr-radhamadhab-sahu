@@ -57,6 +57,7 @@ export default function Header() {
         { name: "Sleep & Snoring Disorders", href: "/specialities/sleep-related-ent-disorders" },
       ],
     },
+    { name: "Awards", href: "/awards" },
     { name: "Research & Media", href: "/research" },
     { name: "Patient Resources", href: "/patient-resources" },
     { name: "Clinic Brochure", href: "/brochure" },
