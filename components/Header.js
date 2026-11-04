@@ -72,8 +72,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
       {/* Top Clinical Notification Bar */}
-      <div className="bg-[#0B2545] text-slate-100 text-[11px] sm:text-xs py-1.5 sm:py-2 px-3 sm:px-4">
-        <div className="medical-container flex items-center justify-between gap-2">
+      <div className="bg-[#0B2545] text-slate-100 text-[11px] sm:text-xs py-1.5 sm:py-2 px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div className="w-full max-w-[1680px] mx-auto flex items-center justify-between gap-2">
           <div className="flex items-center gap-2 text-slate-200 truncate min-w-0">
             <Building2 className="w-3.5 h-3.5 text-teal-400 shrink-0" />
             <span className="truncate">SUM Ultimate Medicare OPD: 9:30 AM – 5:30 PM (Mon–Sat)</span>
@@ -101,9 +101,9 @@ export default function Header() {
       </div>
 
       {/* Main Navigation Bar */}
-      <div className="medical-container py-2.5 sm:py-3.5 flex items-center justify-between gap-3 sm:gap-4">
+      <div className="w-full max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-2.5 sm:py-3.5 flex items-center justify-between gap-4">
         {/* Brand / Doctor Identity */}
-        <Link href="/" className="group flex items-center gap-2.5 sm:gap-3 min-w-0">
+        <Link href="/" className="group flex items-center gap-2.5 sm:gap-3 shrink-0">
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg overflow-hidden shadow-xs shrink-0">
             <Image
               src="/images/logo.jpg"
@@ -114,7 +114,7 @@ export default function Header() {
             />
           </div>
           <div className="flex flex-col min-w-0">
-            <span className="text-base sm:text-xl font-bold tracking-tight text-[#0B2545] leading-tight group-hover:text-[#14746F] transition-colors truncate">
+            <span className="text-base sm:text-lg xl:text-xl font-bold tracking-tight text-[#0B2545] leading-tight group-hover:text-[#14746F] transition-colors truncate">
               Dr. Radhamadhab Sahu
             </span>
             <span className="text-[10px] sm:text-xs text-slate-600 font-medium tracking-normal truncate">
@@ -124,7 +124,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1" aria-label="Main Navigation">
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-2 2xl:gap-3" aria-label="Main Navigation">
           {navLinks.map((link) => {
             if (link.hasDropdown) {
               return (
@@ -136,9 +136,9 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className={`inline-flex items-center gap-1 px-2.5 xl:px-3 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors ${
+                    className={`inline-flex items-center gap-1 px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap ${
                       isActive(link.href)
-                        ? "text-[#0B2545] bg-slate-100 font-semibold"
+                        ? "text-[#0B2545] bg-slate-100 font-bold"
                         : "text-slate-700 hover:text-[#0B2545] hover:bg-slate-50"
                     }`}
                   >
@@ -180,9 +180,9 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`px-2.5 xl:px-3 py-2 rounded-md text-xs xl:text-sm font-medium transition-colors ${
+                className={`px-2.5 xl:px-3 py-2 rounded-lg text-xs xl:text-sm font-semibold transition-colors whitespace-nowrap ${
                   isActive(link.href)
-                    ? "text-[#0B2545] bg-slate-100 font-semibold"
+                    ? "text-[#0B2545] bg-slate-100 font-bold"
                     : "text-slate-700 hover:text-[#0B2545] hover:bg-slate-50"
                 }`}
               >
@@ -193,10 +193,10 @@ export default function Header() {
         </nav>
 
         {/* CTA Button */}
-        <div className="hidden sm:flex items-center gap-3">
+        <div className="hidden sm:flex items-center gap-3 shrink-0">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0B2545] text-white text-xs sm:text-sm font-semibold hover:bg-[#14746F] transition-all shadow-xs hover:shadow-md"
+            className="inline-flex items-center gap-2 px-4 xl:px-5 py-2.5 rounded-xl bg-[#0B2545] text-white text-xs sm:text-sm font-semibold hover:bg-[#14746F] transition-all shadow-xs hover:shadow-md shrink-0 whitespace-nowrap"
           >
             <Calendar className="w-4 h-4" />
             <span>Book Appointment</span>
