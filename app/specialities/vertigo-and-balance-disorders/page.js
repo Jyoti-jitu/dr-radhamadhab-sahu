@@ -27,3 +27,4 @@ export const metadata = buildPageMetadata({
 export default function VertigoAndBalanceDisordersPage() {
   return <SpecialtyDetailView specialty={specialty} />;
 }
+

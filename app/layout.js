@@ -48,6 +48,17 @@ export const metadata = {
     address: true,
     telephone: true,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+      { url: "/images/logo.jpg", sizes: "1024x1024" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   alternates: {
     canonical: "https://drradhamadhabsahu.com",
   },
