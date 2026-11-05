@@ -9,6 +9,7 @@ import {
   Mic2,
   Moon,
   ChevronRight,
+  Activity,
 } from "lucide-react";
 
 // Icon mapping based on specialty slug
@@ -19,6 +20,7 @@ const iconMap = {
   "head-and-neck-surgery": Stethoscope,
   "voice-and-laryngeal-disorders": Mic2,
   "sleep-related-ent-disorders": Moon,
+  "vertigo-and-balance-disorders": Activity,
 };
 
 export default function SpecialtyCard({ specialty }) {

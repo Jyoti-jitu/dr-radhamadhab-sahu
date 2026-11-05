@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative">
       <h1 className="sr-only">
-        Dr. Radhamadhab Sahu | Senior Consultant &amp; Head of Department – ENT and Skull Base Surgery | Bhubaneswar, Odisha
+        Dr. Radhamadhab Sahu – ENT &amp; Skull Base Surgeon in Bhubaneswar
       </h1>
       <Image
         src="/images/hero-image.png"

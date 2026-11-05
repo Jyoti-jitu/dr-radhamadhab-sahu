@@ -239,6 +239,16 @@ export default function RealisticMapViewer() {
 
             <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
               <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
+                06m
+              </span>
+              <div>
+                <strong className="text-[#0B2545] block font-semibold">AIIMS Bhubaneswar &amp; Sijua</strong>
+                <span className="text-slate-500 text-[11px]">Direct via Kalinga Nagar–AIIMS Link Corridor (3.2 km)</span>
+              </div>
+            </div>
+
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
                 08m
               </span>
               <div>

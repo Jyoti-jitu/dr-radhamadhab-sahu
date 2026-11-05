@@ -5,12 +5,15 @@ import { buildPageMetadata } from "@/lib/seo";
 const specialty = SPECIALTIES.find((s) => s.slug === "sinus-and-nasal-care");
 
 export const metadata = buildPageMetadata({
-  title: "Sinus Specialist in Bhubaneswar & Rhinology Care | Dr. Radhamadhab Sahu",
+  title:
+    "Best Sinus Surgeon in Bhubaneswar | Sinus Specialist | Dr. Radhamadhab Sahu",
   description:
-    "Consult leading Sinus Specialist in Bhubaneswar & Rhinology Specialist in Odisha Dr. Radhamadhab Sahu. Advanced FESS for chronic sinusitis, septoplasty, balloon sinuplasty, and nasal polyps.",
+    "Consult leading Sinus Specialist in Bhubaneswar & Best Sinus Surgeon in Odisha Dr. Radhamadhab Sahu. Advanced FESS for chronic sinusitis, septoplasty, balloon sinuplasty & nasal polyps.",
   pathname: "/specialities/sinus-and-nasal-care",
   keywords: [
+    "Best Sinus Surgeon in Bhubaneswar",
     "Sinus Specialist in Bhubaneswar",
+    "Best Rhinology Specialist in Odisha",
     "Rhinology Specialist in Odisha",
     "Doctor for chronic sinusitis in Bhubaneswar",
     "FESS surgery Odisha",

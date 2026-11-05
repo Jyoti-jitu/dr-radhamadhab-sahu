@@ -29,26 +29,41 @@ import { SPECIALTIES } from "@/lib/specialties";
 
 export const metadata = {
   title: {
-    absolute: "Dr. Radhamadhab Sahu | ENT & Skull Base Surgeon in Bhubaneswar",
+    absolute:
+      "Dr. Radhamadhab Sahu | ENT Specialist & Skull Base Surgeon in Bhubaneswar",
   },
   description:
-    "Consult Dr. Radhamadhab Sahu, premier ENT Specialist & Skull Base Surgeon in Bhubaneswar, Odisha. Senior Consultant & HOD at SUM Ultimate Medicare and Dr. Radhamadhab ENT & Cancer Clinic. Specialising in endoscopic skull base surgery, FESS, otology, scarless thyroid (TOETVA), voice, and sleep apnea care.",
+    "Consult Dr. Radhamadhab Sahu, ENT and Skull Base Surgeon in Bhubaneswar, specializing in advanced ENT care, sinus disorders, ear surgery and head & neck conditions.",
   keywords: [
-    "ENT Specialist in Bhubaneswar",
-    "ENT Surgeon in Bhubaneswar",
-    "Dr Radhamadhab Sahu",
-    "Skull Base Surgeon in Odisha",
     "Best ENT Doctor in Bhubaneswar",
-    "Head and Neck Surgeon in Bhubaneswar",
+    "Best ENT Specialist in Bhubaneswar",
+    "Best ENT Surgeon in Bhubaneswar",
+    "Top ENT Doctor in Bhubaneswar",
+    "Experienced ENT Specialist in Bhubaneswar",
+    "Dr Radhamadhab Sahu",
+    "Dr. Radhamadhab Sahu ENT",
+    "Skull Base Surgeon in Odisha",
+    "Best Skull Base Surgeon in Odisha",
+    "Best Head and Neck Surgeon in Bhubaneswar",
+    "Best Sinus Surgeon in Bhubaneswar",
+    "Best Ear Specialist in Bhubaneswar",
+    "Best Hearing Loss Doctor in Bhubaneswar",
+    "Best Vertigo Specialist in Bhubaneswar",
+    "ENT Specialist Near Me",
+    "ENT Doctor in Kalinga Nagar",
+    "ENT Specialist near Ghatikia",
+    "ENT Surgeon near AIIMS Bhubaneswar",
+    "ENT Specialist in Khandagiri",
     "Where to consult an ENT specialist in Bhubaneswar",
   ],
   alternates: {
     canonical: "https://drradhamadhabsahu.com",
   },
   openGraph: {
-    title: "Dr. Radhamadhab Sahu | ENT & Skull Base Surgeon in Bhubaneswar",
+    title:
+      "Dr. Radhamadhab Sahu | ENT Specialist & Skull Base Surgeon in Bhubaneswar",
     description:
-      "Official website of Dr. Radhamadhab Sahu — Senior Consultant & HOD, ENT & Skull Base Surgery, SUM Ultimate Medicare. Specialising in endoscopic skull base surgery, FESS, otology, TOETVA, voice surgery, and sleep apnea care.",
+      "Consult Dr. Radhamadhab Sahu, ENT and Skull Base Surgeon in Bhubaneswar, specializing in advanced ENT care, sinus disorders, ear surgery and head & neck conditions.",
     url: "https://drradhamadhabsahu.com",
     siteName: "Dr. Radhamadhab Sahu Medical Practice",
     locale: "en_IN",
@@ -64,9 +79,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Radhamadhab Sahu | ENT & Skull Base Surgeon in Bhubaneswar",
+    title:
+      "Dr. Radhamadhab Sahu | ENT Specialist & Skull Base Surgeon in Bhubaneswar",
     description:
-      "Senior Consultant & HOD, ENT & Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar. Endoscopic skull base surgery, FESS, otology, TOETVA, and more.",
+      "Consult Dr. Radhamadhab Sahu, ENT and Skull Base Surgeon in Bhubaneswar, specializing in advanced ENT care, sinus disorders, ear surgery and head & neck conditions.",
     images: ["https://drradhamadhabsahu.com/images/dr-radhamadhab-sahu.jpg"],
   },
   robots: {
@@ -84,29 +100,49 @@ export const metadata = {
 
 const homeFaqs = [
   {
-    question: "Where does Dr. Radhamadhab Sahu consult patients in Bhubaneswar?",
+    question: "Who is an ENT specialist in Bhubaneswar?",
     answer:
-      "Dr. Sahu consults across two clinical locations in Kalinga Nagar, Bhubaneswar: (1) Outpatient OPD and inpatient surgical care at SUM Ultimate Medicare (Monday to Saturday, 9:30 AM to 5:30 PM), and (2) E.N.T. & Cancer Super-Speciality Clinic at K8/118, Ghatikia Main Road with dedicated morning sessions (Monday to Saturday, 8:00 AM – 11:00 AM), evening sessions (Monday to Saturday, 6:00 PM – 9:00 PM), and Sunday morning clinics (8:00 AM – 12:30 PM).",
+      "Dr. Radhamadhab Sahu, MBBS, DNB (Otorhinolaryngology/ENT), is a Senior Consultant and Head of the Department of ENT & Skull Base Surgery at SUM Ultimate Medicare and founder of Dr. Radhamadhab ENT and Cancer Clinic. With over 17 years of surgical experience and 3 years of specialized neurosurgical skull base training at Safdarjung Hospital, New Delhi, he provides comprehensive care for ear, nose, throat, head & neck, and cranial base conditions.",
   },
   {
-    question: "How do I schedule an appointment with Dr. Sahu?",
+    question: "Where can I consult Dr. Radhamadhab Sahu in Bhubaneswar?",
     answer:
-      "For consultations at SUM Ultimate Medicare, you can call the hospital appointment desk at +91 0674 3 500 500 or book online through the official hospital portal. For private clinic consultations at Ghatikia Main Road, please call +91 97167 72703 in advance to schedule your evening appointment slot.",
+      "Dr. Sahu consults across two accessible locations in Bhubaneswar: (1) Outpatient OPD and surgical admissions at SUM Ultimate Medicare, Kalinga Nagar (Monday to Saturday, 9:30 AM – 5:30 PM), and (2) E.N.T. & Cancer Super-Speciality Clinic at K8/118, Ghatikia Main Road (close to AIIMS Bhubaneswar and Khandagiri) during morning sessions (Mon–Sat, 8:00 AM – 11:00 AM), evening sessions (Mon–Sat, 6:00 PM – 9:00 PM), and Sunday morning clinics (8:00 AM – 12:30 PM).",
   },
   {
-    question: "What is minimally invasive endoscopic skull base surgery?",
+    question: "What conditions does an ENT specialist treat?",
     answer:
-      "Endoscopic skull base surgery is an advanced surgical technique where specialized high-definition endoscopes are passed through the natural nasal passages to reach the base of the brain and pituitary gland. This approach eliminates external facial incisions, eliminates brain retraction, and significantly shortens recovery time.",
+      "An ENT specialist (otorhinolaryngologist) diagnoses and treats disorders of the ears (hearing loss, eardrum perforations, ear discharge, tinnitus, vertigo), nose and sinuses (chronic sinusitis, nasal polyps, deviated septum, allergies), throat and voice (chronic hoarseness, tonsillitis, vocal polyps), head and neck (thyroid nodules, salivary stones, neck masses), and complex skull base disorders (pituitary tumours, CSF leaks).",
   },
   {
-    question: "What should I bring to my first consultation?",
+    question: "When should I consult an ENT surgeon?",
     answer:
-      "Please bring all previous medical documentation, including CT or MRI scan films/CDs (such as Brain, Paranasal Sinus, or Neck scans), prior hearing tests (Pure Tone Audiometry), endoscopy records, and a list of all current medications.",
+      "You should consult an ENT surgeon when symptoms do not improve with routine medications, including nasal obstruction persisting over 3 months, recurrent ear drainage, hoarseness lasting longer than 3 weeks, visible neck or thyroid swellings, sudden dizziness, or severe snoring with witnessed sleep choking.",
   },
   {
-    question: "Does Dr. Sahu treat pediatric ENT conditions and perform cochlear implants?",
+    question: "What is skull base surgery and why is it performed?",
     answer:
-      "Yes. Dr. Sahu evaluates pediatric patients with chronic tonsillitis, adenoid hypertrophy, recurrent ear infections (otitis media), speech delay, and congenital profound sensorineural hearing loss requiring Cochlear Implantation or BAHA evaluation.",
+      "Skull base surgery treats complex lesions at the junction between the brain and facial sinuses. Using high-definition 4K endoscopes through the natural nostrils, Dr. Sahu accesses and removes pituitary adenomas, chordomas, and repairs CSF leaks without external facial incisions or brain retraction, ensuring significantly faster recovery.",
+  },
+  {
+    question: "When is sinus surgery (FESS) recommended for chronic sinusitis?",
+    answer:
+      "Functional Endoscopic Sinus Surgery (FESS) is recommended when chronic sinusitis or nasal polyposis fails to resolve with medical therapies (steroid rinses, antihistamines) and high-resolution CT imaging shows blocked sinus ostia (ventilation pathways). FESS re-establishes natural drainage while preserving healthy mucosa.",
+  },
+  {
+    question: "Which doctor should I consult for hearing loss and ear discharge?",
+    answer:
+      "You should consult an otologist / ear surgeon. Dr. Radhamadhab Sahu provides specialized microscopic and endoscopic ear examinations, Pure Tone Audiometry, tympanoplasty for eardrum perforation closure, mastoidectomy for cholesteatoma, and advanced hearing implant evaluations (Cochlear Implants and BAHA).",
+  },
+  {
+    question: "What are the modern treatment options for chronic sinusitis?",
+    answer:
+      "Modern treatment follows a stepwise approach: initial medical therapy according to EPOS 2020 international guidelines, followed by minimally invasive endoscopic sinus surgery (FESS) or balloon sinuplasty to reopen natural drainage pathways without external cuts.",
+  },
+  {
+    question: "How can I book an ENT consultation in Bhubaneswar?",
+    answer:
+      "To schedule a consultation at SUM Ultimate Medicare, call the hospital desk at +91 0674 3 500 500. For private clinic consultations at Ghatikia Main Road, call or WhatsApp +91 97167 72703 for appointment slots.",
   },
 ];
 
@@ -142,10 +178,10 @@ export default function HomePage() {
         <div className="medical-container">
           <div className="max-w-3xl space-y-3 mb-12 sm:mb-16">
             <span className="medical-badge">
-              Clinical Specialities &amp; Surgical Domains
+              Clinical Specialities &amp; Surgical Care
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight">
-              Specialized Care Across Comprehensive ENT &amp; Skull Base Disorders
+              Ear, Nose and Throat Conditions Treated
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed pt-1">
               From advanced microscopic ear procedures to complex endoscopic skull base and scarless neck interventions, care is tailored through rigorous diagnostic investigation and minimally invasive surgical principles.
@@ -179,7 +215,7 @@ export default function HomePage() {
                 Technology &amp; Surgical Corridors
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight">
-                Advanced Endoscopic Technology &amp; Surgical Excellence
+                Advanced ENT and Skull Base Surgical Expertise
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Modern otolaryngology has progressed from large open surgical incisions to ultra-precise, magnified endoscopic corridor techniques. Utilizing state-of-the-art rigid endoscopes, optical neuronavigation, micro-debriders, and low-temperature coblation systems, Dr. Sahu delivers interventions with minimal tissue trauma and faster recovery.

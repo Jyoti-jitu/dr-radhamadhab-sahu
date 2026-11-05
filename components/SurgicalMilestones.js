@@ -39,7 +39,7 @@ export default function SurgicalMilestones({ page = "home" }) {
                   <span>Clinical Leadership &bull; State &ndash; Odisha</span>
                 </div>
                 <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight">
-                  Surgical Milestones &amp; Landmark State Firsts
+                  Head and Neck Surgery &amp; Landmark Surgical Milestones
                 </h2>
                 <p className="text-teal-100/90 text-xs sm:text-base font-medium">
                   Dr. Radhamadhab Sahu &bull; Senior Consultant &amp; Head of Department, ENT &amp; Skull Base Surgery

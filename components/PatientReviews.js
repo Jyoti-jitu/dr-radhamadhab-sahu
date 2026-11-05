@@ -28,7 +28,7 @@ export default function PatientReviews() {
             <span>Verified Patient Experiences</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B2545] tracking-tight">
-            Real Patient Reviews &amp; Clinical Outcomes
+            Why Patients Consult Dr. Radhamadhab Sahu
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             Authentic, publicly verified feedback from Google Maps patient reviews, photographed directly in Dr. Radhamadhab Sahu’s consultation chamber in Bhubaneswar following successful treatments.

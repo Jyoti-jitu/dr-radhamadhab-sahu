@@ -25,7 +25,7 @@ export default function ClinicBrochureCareGuide() {
                   <span>Official Practice Brochure &bull; Ghatikia, Bhubaneswar</span>
                 </div>
                 <h2 className="text-xl sm:text-3xl md:text-5xl font-black tracking-tight text-white uppercase leading-tight">
-                  E.N.T. &amp; Cancer <span className="text-teal-300">Super-Speciality Clinic</span>
+                  Hospital &amp; Clinic <span className="text-teal-300">Consultation Locations</span>
                 </h2>
                 <div className="inline-block px-3 py-1 rounded-lg bg-teal-900/60 border border-teal-500/40 text-[11px] sm:text-sm font-bold text-teal-200 uppercase tracking-widest">
                   Skull Base Surgery Head &amp; Neck Cancer Center

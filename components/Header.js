@@ -55,6 +55,7 @@ export default function Header() {
         { name: "Head & Neck Surgery", href: "/specialities/head-and-neck-surgery" },
         { name: "Voice & Laryngeal Disorders", href: "/specialities/voice-and-laryngeal-disorders" },
         { name: "Sleep & Snoring Disorders", href: "/specialities/sleep-related-ent-disorders" },
+        { name: "Vertigo & Balance Disorders", href: "/specialities/vertigo-and-balance-disorders" },
       ],
     },
     { name: "Awards", href: "/awards" },
