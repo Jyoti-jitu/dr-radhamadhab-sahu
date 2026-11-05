@@ -75,6 +75,48 @@ export default function ContactPage() {
           {/* Dual Locations & Details with Realistic Map Thumbnails */}
           <ContactDetails />
 
+          {/* Local Clinical Neighborhood Directory & Geographic Clarity */}
+          <div className="medical-card p-6 sm:p-8 bg-white border border-slate-200 rounded-2xl sm:rounded-3xl space-y-4">
+            <div className="space-y-1.5">
+              <span className="text-[11px] sm:text-xs font-bold text-[#14746F] uppercase tracking-wider">
+                Geographic Accessibility &amp; Practice Overview
+              </span>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#0B2545]">
+                Consulting Locations for Bhubaneswar &amp; Odisha Patients
+              </h2>
+            </div>
+            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              Dr. Radhamadhab Sahu serves patients seeking advanced otolaryngology, endoscopic sinus care (FESS), scarless thyroidectomy (TOETVA), otology, and minimally invasive skull base surgery across the capital region. For patients traveling from nearby residential and commercial hubs&mdash;including <strong>Kalinga Nagar, Ghatikia, Khandagiri, Nayapalli, Jayadev Vihar, Chandrasekharpur, and Patia</strong>&mdash;both clinical locations are strategically situated on the primary K-8 corridor of Ghatikia Main Road, avoiding central urban congestion.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                <h3 className="text-xs sm:text-sm font-bold text-[#0B2545] flex items-center gap-1.5">
+                  <Building2 className="w-4 h-4 text-[#14746F]" />
+                  <span>SUM Ultimate Medicare (Quaternary Inpatient &amp; Day OPD)</span>
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Best suited for complex skull base admissions, surgical procedures under general anesthesia, cochlear implantations, pediatric airway foreign body emergencies, and comprehensive multi-specialty evaluations.
+                </p>
+                <div className="text-[11px] font-semibold text-[#0B2545]">
+                  OPD Schedule: Mon &ndash; Sat: 9:30 AM &ndash; 5:30 PM
+                </div>
+              </div>
+
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                <h3 className="text-xs sm:text-sm font-bold text-[#0B2545] flex items-center gap-1.5">
+                  <Stethoscope className="w-4 h-4 text-[#14746F]" />
+                  <span>Dr. Radhamadhab ENT &amp; Cancer Clinic (Private Outpatient)</span>
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Dedicated morning and evening private consultation chamber for in-depth clinical reviews, rigid diagnostic nasal endoscopy, video stroboscopy voice evaluations, and scheduled surgical follow-ups.
+                </p>
+                <div className="text-[11px] font-semibold text-[#0B2545]">
+                  Clinic Schedule: Mon &ndash; Sat: 8:00&ndash;11:00 AM &amp; 6:00&ndash;9:00 PM | Sun: 8:00 AM&ndash;12:30 PM
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Clinic Interior & Consultation Environment Showcase */}
           <div className="space-y-6 pt-4 border-t border-slate-200">
             <div className="space-y-2">

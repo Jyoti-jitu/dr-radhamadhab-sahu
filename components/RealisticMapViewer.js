@@ -215,35 +215,76 @@ export default function RealisticMapViewer() {
           </div>
         </div>
 
-        {/* Travel Times & Commute Guide */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs">
-          <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-3">
-            <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
-              10m
+        {/* Travel Times & Bhubaneswar Neighborhood Commute Guide */}
+        <div className="pt-3 border-t border-slate-100 space-y-3">
+          <div className="flex items-center justify-between">
+            <span className="text-[11px] sm:text-xs font-bold text-[#0B2545] uppercase tracking-wider">
+              Bhubaneswar Neighborhood Access &amp; Commute Times
             </span>
-            <div>
-              <strong className="text-[#0B2545] block font-semibold">From Khandagiri Square</strong>
-              <span className="text-slate-500 text-[11px]">Via Khandagiri – Chandaka Road</span>
-            </div>
+            <span className="text-[11px] text-slate-500 hidden sm:inline">
+              Convenient Kalinga Nagar / Ghatikia Road Access
+            </span>
           </div>
 
-          <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-3">
-            <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
-              20m
-            </span>
-            <div>
-              <strong className="text-[#0B2545] block font-semibold">From Biju Patnaik Airport (BBI)</strong>
-              <span className="text-slate-500 text-[11px]">Via Siripur &amp; Kalinga Nagar</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
+                02m
+              </span>
+              <div>
+                <strong className="text-[#0B2545] block font-semibold">Ghatikia &amp; Kalinga Nagar</strong>
+                <span className="text-slate-500 text-[11px]">Immediate local access on Ghatikia Main Road (K-8)</span>
+              </div>
             </div>
-          </div>
 
-          <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 flex items-center gap-3">
-            <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
-              25m
-            </span>
-            <div>
-              <strong className="text-[#0B2545] block font-semibold">From BBSR Railway Station</strong>
-              <span className="text-slate-500 text-[11px]">Via NH-16 / Fire Station Square</span>
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
+                08m
+              </span>
+              <div>
+                <strong className="text-[#0B2545] block font-semibold">Khandagiri &amp; Baramunda</strong>
+                <span className="text-slate-500 text-[11px]">Direct via Khandagiri–Chandaka Road (3.5 km)</span>
+              </div>
+            </div>
+
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
+                15m
+              </span>
+              <div>
+                <strong className="text-[#0B2545] block font-semibold">Jayadev Vihar &amp; Nayapalli</strong>
+                <span className="text-slate-500 text-[11px]">Via NH-16, Fire Station Square &amp; ITER Road (7.8 km)</span>
+              </div>
+            </div>
+
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
+                22m
+              </span>
+              <div>
+                <strong className="text-[#0B2545] block font-semibold">Patia &amp; Chandrasekharpur</strong>
+                <span className="text-slate-500 text-[11px]">Via Infocity–Khandagiri Bypass or Nandan Kanan Road</span>
+              </div>
+            </div>
+
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
+                18m
+              </span>
+              <div>
+                <strong className="text-[#0B2545] block font-semibold">Biju Patnaik Airport (BBI)</strong>
+                <span className="text-slate-500 text-[11px]">Via Siripur Square &amp; Jagamara–Ghatikia Corridor (9.2 km)</span>
+              </div>
+            </div>
+
+            <div className="p-3 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center gap-3">
+              <span className="w-8 h-8 rounded-lg bg-teal-50 text-[#14746F] flex items-center justify-center font-bold text-xs shrink-0">
+                24m
+              </span>
+              <div>
+                <strong className="text-[#0B2545] block font-semibold">BBSR Master Canteen Station</strong>
+                <span className="text-slate-500 text-[11px]">Via Rajmahal, AG Square &amp; Fire Station Road (11.5 km)</span>
+              </div>
             </div>
           </div>
         </div>
