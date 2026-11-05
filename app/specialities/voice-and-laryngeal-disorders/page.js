@@ -5,16 +5,17 @@ import { buildPageMetadata } from "@/lib/seo";
 const specialty = SPECIALTIES.find((s) => s.slug === "voice-and-laryngeal-disorders");
 
 export const metadata = buildPageMetadata({
-  title: "Voice Disorders & Phonomicrosurgery in Bhubaneswar | Dr. Radhamadhab Sahu",
+  title: "Voice Specialist in Bhubaneswar & Phonosurgery | Dr. Radhamadhab Sahu",
   description:
-    "Expert care for hoarseness, vocal cord polyps, vocal nodules, and laryngeal disorders in Bhubaneswar: Phonomicrosurgery, laser laryngeal surgery, and injection laryngoplasty.",
+    "Consult foremost Voice Specialist in Bhubaneswar & Laryngologist in Odisha Dr. Radhamadhab Sahu. Advanced phonomicrosurgery, vocal cord polyp excision, hoarseness treatment, and laser larynx surgery.",
   pathname: "/specialities/voice-and-laryngeal-disorders",
   keywords: [
-    "voice specialist Bhubaneswar",
-    "hoarseness treatment Odisha",
+    "Voice Specialist in Bhubaneswar",
+    "Phonomicrosurgery in Odisha",
+    "Laryngologist Odisha",
     "vocal cord surgery Bhubaneswar",
-    "phonomicrosurgery",
-    "laryngologist Odisha",
+    "Doctor for persistent hoarseness Bhubaneswar",
+    "laser laryngeal surgery Odisha",
   ],
 });
 

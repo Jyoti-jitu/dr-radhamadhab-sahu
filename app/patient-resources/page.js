@@ -19,14 +19,14 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   title: "Patient Resources & ENT Educational Guides | Dr. Radhamadhab Sahu",
   description:
-    "Evidence-based educational guides on chronic sinusitis, deviated nasal septum, hearing loss, voice hoarseness, sleep apnea, and endoscopic skull base surgery.",
+    "Evidence-based clinical guides by Dr. Radhamadhab Sahu on chronic sinusitis, deviated nasal septum, hearing loss, voice hoarseness, sleep apnea, and endoscopic skull base surgery in Bhubaneswar.",
   pathname: "/patient-resources",
   keywords: [
+    "Doctor for chronic sinusitis in Bhubaneswar",
+    "ENT doctor for hearing loss in Bhubaneswar",
     "sinusitis patient guide",
     "deviated septum symptoms",
-    "when to see an ENT doctor",
-    "hearing loss guide Bhubaneswar",
-    "skull base surgery explanation",
+    "when to see an ENT doctor in Bhubaneswar",
   ],
 });
 

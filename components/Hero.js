@@ -2,10 +2,13 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section>
+    <section className="relative">
+      <h1 className="sr-only">
+        Dr. Radhamadhab Sahu | Senior Consultant &amp; Head of Department – ENT and Skull Base Surgery | Bhubaneswar, Odisha
+      </h1>
       <Image
         src="/images/hero-image.png"
-        alt="Dr. Radhamadhab Sahu – Senior ENT and Skull Base Surgeon, Bhubaneswar. Pioneering endoscopic skull base surgery in Eastern India with over 800 complex surgeries performed."
+        alt="Dr. Radhamadhab Sahu – Senior Consultant & Head of Department – ENT and Skull Base Surgery, Bhubaneswar, Odisha"
         width={1774}
         height={887}
         priority

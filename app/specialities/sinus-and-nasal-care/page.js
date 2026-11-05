@@ -5,16 +5,17 @@ import { buildPageMetadata } from "@/lib/seo";
 const specialty = SPECIALTIES.find((s) => s.slug === "sinus-and-nasal-care");
 
 export const metadata = buildPageMetadata({
-  title: "Endoscopic Sinus Surgery (FESS) & Septoplasty | Dr. Radhamadhab Sahu",
+  title: "Sinus Specialist in Bhubaneswar & Rhinology Care | Dr. Radhamadhab Sahu",
   description:
-    "Expert sinus and nasal care in Bhubaneswar: Functional Endoscopic Sinus Surgery (FESS), septoplasty for deviated septum, turbinate coblation, and nasal polyposis treatment.",
+    "Consult leading Sinus Specialist in Bhubaneswar & Rhinology Specialist in Odisha Dr. Radhamadhab Sahu. Advanced FESS for chronic sinusitis, septoplasty, balloon sinuplasty, and nasal polyps.",
   pathname: "/specialities/sinus-and-nasal-care",
   keywords: [
-    "sinus surgery Bhubaneswar",
+    "Sinus Specialist in Bhubaneswar",
+    "Rhinology Specialist in Odisha",
+    "Doctor for chronic sinusitis in Bhubaneswar",
     "FESS surgery Odisha",
     "deviated septum surgery Bhubaneswar",
-    "turbinate reduction",
-    "chronic sinusitis treatment",
+    "nasal polyps specialist Bhubaneswar",
   ],
 });
 

@@ -21,8 +21,15 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   title: "About Dr. Radhamadhab Sahu | Qualifications, Training & Biography",
   description:
-    "Biography, medical qualifications, and specialized surgical training of Dr. Radhamadhab Sahu, Senior Consultant & HOD of ENT and Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar.",
+    "Qualifications, dual neurosurgical skull base training, and 17+ year surgical biography of Dr. Radhamadhab Sahu, Senior Consultant & HOD of ENT & Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar, Odisha.",
   pathname: "/about",
+  keywords: [
+    "Dr Radhamadhab Sahu",
+    "ENT Surgeon in Bhubaneswar",
+    "Experienced skull base surgeon in Odisha",
+    "Safdarjung Hospital ENT neurosurgery",
+    "Dr Radhamadhab Sahu qualification",
+  ],
 });
 
 export default function AboutPage() {

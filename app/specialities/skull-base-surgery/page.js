@@ -5,16 +5,17 @@ import { buildPageMetadata } from "@/lib/seo";
 const specialty = SPECIALTIES.find((s) => s.slug === "skull-base-surgery");
 
 export const metadata = buildPageMetadata({
-  title: "Endoscopic Skull Base Surgery in Bhubaneswar | Dr. Radhamadhab Sahu",
+  title: "Skull Base Surgeon in Odisha & Endoscopic Surgery | Dr. Radhamadhab Sahu",
   description:
-    "Minimally invasive endoscopic skull base surgery for pituitary adenomas, chordomas, CSF leaks, and cranial base tumors by 3-year neurosurgery trained surgeon Dr. Radhamadhab Sahu.",
+    "Consult leading Skull Base Surgeon in Odisha & Endoscopic Skull Base Surgery specialist Dr. Radhamadhab Sahu. Advanced pituitary tumor surgery, CSF leak repair, and clival chordoma care in Bhubaneswar.",
   pathname: "/specialities/skull-base-surgery",
   keywords: [
-    "skull base surgery Bhubaneswar",
-    "pituitary tumor surgery Odisha",
-    "endoscopic brain surgery",
+    "Skull Base Surgeon in Odisha",
+    "Endoscopic Skull Base Surgery India",
+    "Pituitary Tumor Surgery in Bhubaneswar",
+    "Experienced skull base surgeon in Odisha",
+    "Endoscopic pituitary surgery specialist in India",
     "CSF leak repair Bhubaneswar",
-    "chordoma surgeon Odisha",
   ],
 });
 

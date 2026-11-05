@@ -18,14 +18,14 @@ import { buildPageMetadata } from "@/lib/seo";
 export const metadata = buildPageMetadata({
   title: "Research, Publications & Media Coverage | Dr. Radhamadhab Sahu",
   description:
-    "Peer-reviewed medical publications, conference presentations at AOICON, and verified media coverage including The New Indian Express feature on international endoscopic surgery.",
+    "Peer-reviewed medical literature, national AOICON conference presentations, and accredited media coverage in The New Indian Express & Prameya News detailing landmark endoscopic ENT surgeries in Bhubaneswar.",
   pathname: "/research",
   keywords: [
     "Dr Radhamadhab Sahu publications",
-    "ENT research Bhubaneswar",
     "SUM Ultimate Medicare media coverage",
+    "sialoendoscopy salivary stones Odisha",
+    "skull base tumor surgery Bhubaneswar",
     "AOICON Dr Radhamadhab Sahu",
-    "endoscopic skull base literature",
   ],
 });
 

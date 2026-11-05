@@ -32,7 +32,16 @@ export const metadata = {
     absolute: "Dr. Radhamadhab Sahu | ENT & Skull Base Surgeon in Bhubaneswar",
   },
   description:
-    "Official website of Dr. Radhamadhab Sahu, Senior Consultant & HOD of ENT & Skull Base Surgery at SUM Ultimate Medicare and E.N.T. & Cancer Super-Speciality Clinic, Bhubaneswar, Odisha.",
+    "Consult Dr. Radhamadhab Sahu, premier ENT Specialist & Skull Base Surgeon in Bhubaneswar, Odisha. Senior Consultant & HOD at SUM Ultimate Medicare and Dr. Radhamadhab ENT & Cancer Clinic. Specialising in endoscopic skull base surgery, FESS, otology, scarless thyroid (TOETVA), voice, and sleep apnea care.",
+  keywords: [
+    "ENT Specialist in Bhubaneswar",
+    "ENT Surgeon in Bhubaneswar",
+    "Dr Radhamadhab Sahu",
+    "Skull Base Surgeon in Odisha",
+    "Best ENT Doctor in Bhubaneswar",
+    "Head and Neck Surgeon in Bhubaneswar",
+    "Where to consult an ENT specialist in Bhubaneswar",
+  ],
   alternates: {
     canonical: "https://drradhamadhabsahu.com",
   },
@@ -108,16 +117,16 @@ export default function HomePage() {
       <Hero />
 
       {/* 2. Institutional Affiliation Bar */}
-      <section className="bg-white py-6 border-b border-slate-200">
+      <section className="bg-white py-5 sm:py-6 border-b border-slate-200">
         <div className="medical-container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-600">
             <div className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0" />
               <span>
-                <strong className="text-[#0B2545] font-semibold">Active Hospital Affiliation:</strong> Senior Consultant &amp; Head of Department at <strong>SUM Ultimate Medicare</strong> (Quaternary Care Multi-Super Specialty Hospital, Bhubaneswar).
+                <strong className="text-[#0B2545] font-semibold">Dr. Radhamadhab Sahu</strong> &ndash; Senior Consultant &amp; Head of Department &ndash; ENT and Skull Base Surgery, Bhubaneswar, Odisha at <strong>SUM Ultimate Medicare</strong> &amp; <strong>Dr. Radhamadhab ENT and Cancer Clinic</strong>.
               </span>
             </div>
-            <div className="flex items-center gap-4 text-xs">
+            <div className="flex items-center gap-4 text-xs shrink-0">
               <span className="text-slate-400 hidden lg:inline">|</span>
               <span className="font-semibold text-[#14746F]">NABH &amp; NABL Accredited Quaternary Care</span>
             </div>

@@ -20,16 +20,16 @@ import { DOCTOR } from "@/lib/doctor";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
-  title: "Contact & Appointments | Dr. Radhamadhab Sahu (Bhubaneswar)",
+  title: "Where to Consult & Book Appointments | Dr. Radhamadhab Sahu (Bhubaneswar)",
   description:
-    "Consultation schedules, addresses, and telephone appointment details for Dr. Radhamadhab Sahu at SUM Ultimate Medicare and Dr. Radhamadhab ENT & Cancer Clinic, Bhubaneswar.",
+    "Where to consult Dr. Radhamadhab Sahu in Bhubaneswar: Consultation schedules, OPD timings, direct phone numbers, and addresses for SUM Ultimate Medicare and Dr. Radhamadhab ENT & Cancer Clinic, Ghatikia.",
   pathname: "/contact",
   keywords: [
+    "Where to consult an ENT specialist in Bhubaneswar",
     "Dr Radhamadhab Sahu contact",
     "SUM Ultimate Medicare ENT appointment",
     "Dr Radhamadhab ENT and Cancer Clinic phone",
     "ENT clinic Ghatikia Bhubaneswar",
-    "ENT doctor phone number Bhubaneswar",
   ],
 });
 

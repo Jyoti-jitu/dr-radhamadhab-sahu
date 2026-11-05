@@ -5,16 +5,17 @@ import { buildPageMetadata } from "@/lib/seo";
 const specialty = SPECIALTIES.find((s) => s.slug === "ear-and-hearing");
 
 export const metadata = buildPageMetadata({
-  title: "Ear Surgery, Tympanoplasty & Cochlear Implants | Dr. Radhamadhab Sahu",
+  title: "Ear Surgery Specialist in Odisha & Cochlear Implants | Dr. Radhamadhab Sahu",
   description:
-    "Comprehensive otology and neurotology in Bhubaneswar: Endoscopic tympanoplasty for eardrum perforation, cholesteatoma surgery, mastoidectomy, and cochlear/BAHA implants.",
+    "Leading Ear Surgery Specialist in Odisha & Cochlear Implant Surgeon in Bhubaneswar Dr. Radhamadhab Sahu. Endoscopic tympanoplasty, cholesteatoma mastoidectomy, vertigo, and hearing loss solutions.",
   pathname: "/specialities/ear-and-hearing",
   keywords: [
-    "ear doctor Bhubaneswar",
+    "Ear Surgery Specialist in Odisha",
+    "Cochlear Implant Surgeon in Bhubaneswar",
+    "Vertigo Specialist in Bhubaneswar",
+    "ENT doctor for hearing loss in Bhubaneswar",
     "tympanoplasty surgery Odisha",
-    "cochlear implant Bhubaneswar",
-    "cholesteatoma surgery",
-    "hearing loss specialist Bhubaneswar",
+    "cholesteatoma surgery Bhubaneswar",
   ],
 });
 

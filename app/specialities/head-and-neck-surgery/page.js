@@ -5,16 +5,17 @@ import { buildPageMetadata } from "@/lib/seo";
 const specialty = SPECIALTIES.find((s) => s.slug === "head-and-neck-surgery");
 
 export const metadata = buildPageMetadata({
-  title: "Head & Neck Surgery & Scarless Thyroid (TOETVA) | Dr. Radhamadhab Sahu",
+  title: "Head and Neck Surgeon in Bhubaneswar & Thyroid Care | Dr. Radhamadhab Sahu",
   description:
-    "Advanced head and neck surgical oncology in Bhubaneswar: Transoral Endoscopic Thyroidectomy Vestibular Approach (TOETVA), sialoendoscopy, parotidectomy, and neck mass evaluations.",
+    "Consult leading Head and Neck Surgeon in Bhubaneswar & Head and Neck Cancer Surgeon in Odisha Dr. Radhamadhab Sahu. Pioneer of scarless thyroid surgery (TOETVA), parotidectomy, and sialoendoscopy.",
   pathname: "/specialities/head-and-neck-surgery",
   keywords: [
-    "head and neck surgeon Odisha",
-    "scarless thyroid surgery Bhubaneswar",
-    "TOETVA Odisha",
+    "Head and Neck Surgeon in Bhubaneswar",
+    "Head and Neck Cancer Surgeon in Odisha",
+    "Thyroid Surgery Specialist in Bhubaneswar",
+    "TOETVA scarless thyroid surgery",
     "salivary gland surgeon Bhubaneswar",
-    "parotidectomy specialist",
+    "parotidectomy specialist Odisha",
   ],
 });
 

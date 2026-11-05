@@ -18,10 +18,17 @@ import { SPECIALTIES } from "@/lib/specialties";
 import { buildPageMetadata } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
-  title: "Clinical Specialities & Surgical Procedures | Dr. Radhamadhab Sahu",
+  title: "ENT Surgeon & Skull Base Specialities in Bhubaneswar | Dr. Radhamadhab Sahu",
   description:
-    "Comprehensive ENT & Skull Base specialities: Endoscopic Skull Base Surgery, Sinus Care & FESS, Ear & Hearing (Otology), Scarless Thyroidectomy (TOETVA), Voice Surgery, and Sleep Apnea Care in Bhubaneswar.",
+    "Explore 6 super-speciality surgical domains by leading ENT Surgeon in Bhubaneswar Dr. Radhamadhab Sahu: Endoscopic Skull Base Surgery, Sinus FESS, Otology & Cochlear Implants, Scarless Thyroidectomy (TOETVA), Voice Surgery, and Sleep Apnea.",
   pathname: "/specialities",
+  keywords: [
+    "ENT Surgeon in Bhubaneswar",
+    "ENT Specialist in Bhubaneswar",
+    "Best ENT Doctor in Bhubaneswar",
+    "Skull base surgery Odisha",
+    "ENT hospital Bhubaneswar",
+  ],
 });
 
 export default function SpecialitiesPage() {

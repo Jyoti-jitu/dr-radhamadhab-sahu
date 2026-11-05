@@ -115,6 +115,63 @@ export default function SpecialtyDetailView({ specialty }) {
                 </p>
               </div>
 
+              {/* Conditions & Disorders Treated */}
+              {specialty.conditionsTreated && specialty.conditionsTreated.length > 0 && (
+                <div className="space-y-4 sm:space-y-6">
+                  <div className="space-y-1.5">
+                    <span className="text-[11px] sm:text-xs font-bold text-[#14746F] uppercase tracking-wider">
+                      Clinical Scope
+                    </span>
+                    <h2 className="text-lg sm:text-2xl font-bold text-[#0B2545]">
+                      Conditions &amp; Disorders Treated
+                    </h2>
+                    <p className="text-xs sm:text-sm text-slate-600">
+                      Comprehensive diagnostic workup and evidence-based therapeutic pathways for complex disorders.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                    {specialty.conditionsTreated.map((cond, idx) => (
+                      <div
+                        key={idx}
+                        className="p-4 rounded-xl bg-white border border-slate-200 hover:border-[#14746F]/40 transition-colors shadow-xs space-y-1.5"
+                      >
+                        <div className="flex items-start gap-2">
+                          <CheckCircle2 className="w-4 h-4 text-[#14746F] shrink-0 mt-0.5" />
+                          <h3 className="text-xs sm:text-sm font-bold text-[#0B2545]">
+                            {cond.name}
+                          </h3>
+                        </div>
+                        <p className="text-xs text-slate-600 leading-relaxed pl-6">
+                          {cond.description}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Doctor's Relevant Surgical Expertise */}
+              {specialty.doctorExpertise && (
+                <div className="p-4 sm:p-6 lg:p-7 rounded-2xl bg-[#0B2545] text-white space-y-3 shadow-md">
+                  <div className="flex items-center gap-2 text-teal-300 text-xs font-bold uppercase tracking-wider">
+                    <ShieldCheck className="w-4 h-4 text-teal-400 shrink-0" />
+                    <span>Specialist Surgical Leadership</span>
+                  </div>
+                  <h3 className="text-base sm:text-xl font-extrabold text-white tracking-tight">
+                    {specialty.doctorExpertise.headline}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-200 leading-relaxed font-normal">
+                    {specialty.doctorExpertise.summary}
+                  </p>
+                  <div className="pt-2 flex flex-wrap items-center gap-4 text-[11px] text-teal-200 border-t border-white/10">
+                    <span>Senior Consultant &amp; HOD · SUM Ultimate Medicare</span>
+                    <span>·</span>
+                    <span>Dr. Radhamadhab ENT &amp; Cancer Clinic</span>
+                  </div>
+                </div>
+              )}
+
               {/* Verified Surgical Photographic Spotlight */}
               {specialty.featuredMedia && (
                 <div className="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-md">
@@ -239,6 +296,40 @@ export default function SpecialtyDetailView({ specialty }) {
                         {diag.detail}
                       </p>
                     </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Related Clinical Specialities & Interdisciplinary Care */}
+              <div className="space-y-4 pt-4 border-t border-slate-200">
+                <div className="space-y-1">
+                  <span className="text-[11px] sm:text-xs font-bold text-[#14746F] uppercase tracking-wider">
+                    Interdisciplinary Care
+                  </span>
+                  <h2 className="text-lg sm:text-xl font-bold text-[#0B2545]">
+                    Related ENT &amp; Surgical Specialities
+                  </h2>
+                  <p className="text-xs text-slate-600">
+                    Comprehensive cross-disciplinary consultations for co-occurring head, neck, airway, and skull base conditions.
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {otherSpecialties.slice(0, 4).map((rel) => (
+                    <Link
+                      key={rel.slug}
+                      href={`/specialities/${rel.slug}`}
+                      className="p-3.5 rounded-xl bg-white border border-slate-200 hover:border-[#14746F] hover:shadow-xs transition-all flex items-center justify-between group shadow-2xs"
+                    >
+                      <div className="pr-2">
+                        <p className="text-xs font-bold text-[#0B2545] group-hover:text-[#14746F] transition-colors">
+                          {rel.title}
+                        </p>
+                        <p className="text-[11px] text-slate-500 line-clamp-1">
+                          {rel.eyebrow}
+                        </p>
+                      </div>
+                      <ChevronRight className="w-4 h-4 text-slate-400 group-hover:text-[#14746F] group-hover:translate-x-0.5 transition-transform shrink-0" />
+                    </Link>
                   ))}
                 </div>
               </div>
