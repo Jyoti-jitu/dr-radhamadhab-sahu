@@ -11,7 +11,8 @@ All duplicate, uncompressed copies and unused files have been pruned and dedupli
 ### 1. Clinician Identity, Branding & Institutional Affiliation
 - **`dr-radhamadhab-sahu.jpg`** – Verified professional clinician portrait of Dr. Radhamadhab Sahu from SUM Ultimate Medicare registry.
 - **`hero-image.png`** – Homepage hero banner portrait of Dr. Sahu.
-- **`logo.jpg`** – Official practice logo used in navbar header.
+- **`logo.jpg`** – Official practice logo (ENT head and airway silhouette emblem).
+- **`logo.png`** – High-resolution transparent circular master logo used in navbar header and favicons.
 - **`sum-ultimate-medicare.jpg`** – High-resolution photograph of the SUM Ultimate Medicare hospital campus.
 - **`map-sum-ultimate-medicare.jpg`** – Satellite GPS navigation map to SUM Ultimate Medicare.
 - **`map-clinic-kalinga-nagar.jpg`** – Road map navigation view to K8/118 Ghatikia Main Road clinic.

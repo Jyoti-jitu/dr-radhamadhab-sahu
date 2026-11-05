@@ -50,14 +50,14 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "32x32" },
-      { url: "/images/logo.jpg", sizes: "1024x1024" },
+      { url: "/favicon.ico?v=2", sizes: "any" },
+      { url: "/icon.png?v=2", type: "image/png", sizes: "32x32" },
+      { url: "/images/logo.png?v=2", type: "image/png", sizes: "1024x1024" },
     ],
     apple: [
-      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-icon.png?v=2", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/favicon.ico?v=2",
   },
   alternates: {
     canonical: "https://drradhamadhabsahu.com",

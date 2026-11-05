@@ -105,13 +105,13 @@ export default function Header() {
       <div className="w-full max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-2.5 sm:py-3.5 flex items-center justify-between gap-4">
         {/* Brand / Doctor Identity */}
         <Link href="/" className="group flex items-center gap-2.5 sm:gap-3 shrink-0">
-          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg overflow-hidden shadow-xs shrink-0">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg overflow-hidden shrink-0">
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Dr. Radhamadhab Sahu ENT Clinic Logo"
               width={40}
               height={40}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
           <div className="flex flex-col min-w-0">
