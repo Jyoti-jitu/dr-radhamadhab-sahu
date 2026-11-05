@@ -22,7 +22,7 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL("https://drradhamadhabsahu.com"),
   title: {
-    default: "Dr. Radhamadhab Sahu | Senior ENT & Skull Base Surgeon Bhubaneswar",
+    default: "Dr. Radhamadhab Sahu | ENT & Skull Base Surgeon in Bhubaneswar",
     template: "%s | Dr. Radhamadhab Sahu",
   },
   description:

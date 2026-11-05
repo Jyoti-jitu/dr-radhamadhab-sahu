@@ -28,9 +28,49 @@ import { DOCTOR } from "@/lib/doctor";
 import { SPECIALTIES } from "@/lib/specialties";
 
 export const metadata = {
-  title: "Dr. Radhamadhab Sahu | Senior ENT & Skull Base Surgeon, Bhubaneswar",
+  title: {
+    absolute: "Dr. Radhamadhab Sahu | ENT & Skull Base Surgeon in Bhubaneswar",
+  },
   description:
     "Official website of Dr. Radhamadhab Sahu, Senior Consultant & HOD of ENT & Skull Base Surgery at SUM Ultimate Medicare and E.N.T. & Cancer Super-Speciality Clinic, Bhubaneswar, Odisha.",
+  alternates: {
+    canonical: "https://drradhamadhabsahu.com",
+  },
+  openGraph: {
+    title: "Dr. Radhamadhab Sahu | ENT & Skull Base Surgeon in Bhubaneswar",
+    description:
+      "Official website of Dr. Radhamadhab Sahu — Senior Consultant & HOD, ENT & Skull Base Surgery, SUM Ultimate Medicare. Specialising in endoscopic skull base surgery, FESS, otology, TOETVA, voice surgery, and sleep apnea care.",
+    url: "https://drradhamadhabsahu.com",
+    siteName: "Dr. Radhamadhab Sahu Medical Practice",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://drradhamadhabsahu.com/images/dr-radhamadhab-sahu.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Dr. Radhamadhab Sahu - Senior ENT and Skull Base Surgeon, Bhubaneswar",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr. Radhamadhab Sahu | ENT & Skull Base Surgeon in Bhubaneswar",
+    description:
+      "Senior Consultant & HOD, ENT & Skull Base Surgery at SUM Ultimate Medicare, Bhubaneswar. Endoscopic skull base surgery, FESS, otology, TOETVA, and more.",
+    images: ["https://drradhamadhabsahu.com/images/dr-radhamadhab-sahu.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const homeFaqs = [

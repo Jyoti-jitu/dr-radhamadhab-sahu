@@ -15,6 +15,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import AppointmentCTA from "@/components/AppointmentCTA";
 import FAQ from "@/components/FAQ";
 import { SPECIALTIES } from "@/lib/specialties";
+import { SITE_URL } from "@/lib/seo";
 
 export default function SpecialtyDetailView({ specialty }) {
   const breadcrumbItems = [
@@ -22,11 +23,39 @@ export default function SpecialtyDetailView({ specialty }) {
     { name: specialty.title, url: `/specialities/${specialty.slug}` },
   ];
 
+  const medicalWebPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: specialty.title,
+    headline: `${specialty.title} - ${specialty.eyebrow}`,
+    description: specialty.shortDescription,
+    url: `${SITE_URL}/specialities/${specialty.slug}`,
+    about: {
+      "@type": "MedicalSpecialty",
+      name: specialty.title,
+      description: specialty.fullDescription,
+    },
+    author: {
+      "@type": "Physician",
+      name: "Dr. Radhamadhab Sahu",
+      url: `${SITE_URL}/about`,
+    },
+    publisher: {
+      "@type": "MedicalClinic",
+      name: "Dr. Radhamadhab ENT and Cancer Clinic",
+      url: SITE_URL,
+    },
+  };
+
   // Other specialities for internal navigation
   const otherSpecialties = SPECIALTIES.filter((s) => s.slug !== specialty.slug);
 
   return (
     <div className="bg-[#FDFBF7]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalWebPageSchema) }}
+      />
       {/* Top Breadcrumb & Header Banner with Authentic Clinical Visual */}
       <section className="bg-white border-b border-slate-200 py-4 sm:py-8 lg:py-10">
         <div className="medical-container">

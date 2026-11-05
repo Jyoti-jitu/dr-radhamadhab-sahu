@@ -19,7 +19,9 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { DOCTOR } from "@/lib/doctor";
 
 export const metadata = {
-  title: "Official Practice Brochure • Ghatikia, Bhubaneswar | Dr. Radhamadhab Sahu",
+  title: {
+    absolute: "Official Practice Brochure • Ghatikia, Bhubaneswar | Dr. Radhamadhab Sahu",
+  },
   description:
     "Official clinical practice brochure of Dr. Radhamadhab Sahu at K8/118 Ghatikia Main Road, Kalinga Nagar, Bhubaneswar. Detailing 17 symptoms, 22 super-speciality procedures, consultation schedule, and clinic directions.",
   alternates: {
@@ -30,14 +32,35 @@ export const metadata = {
     description:
       "Official practice brochure of Dr. Radhamadhab Sahu detailing 17 symptoms, 22 super-speciality procedures, and consultation timings in Ghatikia, Bhubaneswar.",
     url: "https://drradhamadhabsahu.com/brochure",
+    siteName: "Dr. Radhamadhab Sahu Medical Practice",
+    locale: "en_IN",
+    type: "website",
     images: [
       {
-        url: "/images/clinic-official-brochure.jpg",
+        url: "https://drradhamadhabsahu.com/images/clinic-official-brochure.jpg",
         width: 1088,
         height: 1445,
         alt: "Official Clinical Practice Brochure - Dr. Radhamadhab Sahu",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Official Practice Brochure • E.N.T. & Cancer Super-Speciality Clinic",
+    description:
+      "Official practice brochure of Dr. Radhamadhab Sahu, Ghatikia, Bhubaneswar — 22 super-speciality procedures & consultation timings.",
+    images: ["https://drradhamadhabsahu.com/images/clinic-official-brochure.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

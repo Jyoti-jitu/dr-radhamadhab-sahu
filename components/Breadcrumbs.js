@@ -1,11 +1,19 @@
 import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
+import { generateBreadcrumbSchema } from "@/lib/seo";
 
 export default function Breadcrumbs({ items = [] }) {
   if (!items || items.length === 0) return null;
 
+  const breadcrumbSchema = generateBreadcrumbSchema(items);
+
   return (
-    <nav aria-label="Breadcrumb" className="py-3 text-xs sm:text-sm text-slate-500">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <nav aria-label="Breadcrumb" className="py-3 text-xs sm:text-sm text-slate-500">
       <ol className="flex items-center flex-wrap gap-1.5 sm:gap-2">
         <li className="inline-flex items-center">
           <Link
@@ -38,5 +46,6 @@ export default function Breadcrumbs({ items = [] }) {
         })}
       </ol>
     </nav>
+    </>
   );
 }

@@ -2,23 +2,28 @@ import { SITE_URL } from "@/lib/seo";
 import { SPECIALTIES } from "@/lib/specialties";
 
 export default function sitemap() {
-  const buildDate = "2026-10-23T00:00:00.000Z";
-  const routes = [
-    "",
-    "/about",
-    "/specialities",
-    "/awards",
-    "/research",
-    "/patient-resources",
-    "/brochure",
-    "/contact",
-    "/privacy-policy",
-    "/disclaimer",
-  ].map((route) => ({
+  const buildDate = "2026-11-05T00:00:00.000Z";
+
+  // Priority map: home 1.0, clinical/high-value 0.9, support pages 0.7
+  const routeConfig = [
+    { route: "",                  priority: 1.0, changeFrequency: "weekly" },
+    { route: "/about",            priority: 0.9, changeFrequency: "monthly" },
+    { route: "/specialities",     priority: 0.9, changeFrequency: "monthly" },
+    { route: "/awards",           priority: 0.9, changeFrequency: "monthly" },
+    { route: "/research",         priority: 0.8, changeFrequency: "monthly" },
+    { route: "/patient-resources",priority: 0.8, changeFrequency: "monthly" },
+    { route: "/contact",          priority: 0.8, changeFrequency: "monthly" },
+    { route: "/brochure",         priority: 0.7, changeFrequency: "monthly" },
+    { route: "/privacy-policy",   priority: 0.4, changeFrequency: "yearly" },
+    { route: "/disclaimer",       priority: 0.4, changeFrequency: "yearly" },
+    // /rewards is a 301 redirect to /awards — excluded from sitemap
+  ];
+
+  const staticRoutes = routeConfig.map(({ route, priority, changeFrequency }) => ({
     url: `${SITE_URL}${route}`,
     lastModified: buildDate,
-    changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1.0 : route.startsWith("/specialities") ? 0.9 : 0.8,
+    changeFrequency,
+    priority,
   }));
 
   const specialtyRoutes = SPECIALTIES.map((spec) => ({
@@ -28,5 +33,5 @@ export default function sitemap() {
     priority: 0.9,
   }));
 
-  return [...routes, ...specialtyRoutes];
+  return [...staticRoutes, ...specialtyRoutes];
 }
