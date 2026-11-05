@@ -50,14 +50,14 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=2", sizes: "any" },
-      { url: "/icon.png?v=2", type: "image/png", sizes: "32x32" },
-      { url: "/images/logo.png?v=2", type: "image/png", sizes: "1024x1024" },
+      { url: "/icon.png?v=4", type: "image/png", sizes: "32x32" },
+      { url: "/icon-192.png?v=4", type: "image/png", sizes: "192x192" },
+      { url: "/images/logo.png?v=4", type: "image/png", sizes: "1024x1024" },
     ],
     apple: [
-      { url: "/apple-icon.png?v=2", sizes: "180x180", type: "image/png" },
+      { url: "/apple-icon.png?v=4", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/favicon.ico?v=2",
+    shortcut: "/favicon.ico?v=4",
   },
   alternates: {
     canonical: "https://drradhamadhabsahu.com",
@@ -96,6 +96,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${plusJakarta.variable} font-sans`}>
       <head>
+        {/* Favicons & App Icons */}
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon.png?v=4" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png?v=4" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png?v=4" />
+        <link rel="shortcut icon" href="/favicon.ico?v=4" />
+
         {/* Physician JSON-LD */}
         <script
           type="application/ld+json"
