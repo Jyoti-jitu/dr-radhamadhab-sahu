@@ -11,6 +11,7 @@ import {
   HeartHandshake,
   ShieldCheck,
   ArrowRight,
+  ExternalLink,
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AppointmentCTA from "@/components/AppointmentCTA";
@@ -99,16 +100,34 @@ export default function AboutPage() {
                 <div className="space-y-2.5 sm:space-y-3">
                   <div>
                     <span className="text-slate-500 block">Primary Hospital:</span>
-                    <strong className="text-slate-800 font-semibold">
+                    <strong className="text-slate-800 font-semibold block">
                       SUM Ultimate Medicare, Bhubaneswar
                     </strong>
+                    <a
+                      href={DOCTOR.hospital.officialBookingUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#14746F] hover:underline mt-0.5"
+                    >
+                      <span>Official Hospital Profile</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
                   </div>
 
                   <div>
                     <span className="text-slate-500 block">Private Practice:</span>
-                    <strong className="text-slate-800 font-semibold">
+                    <strong className="text-slate-800 font-semibold block">
                       Dr. Radhamadhab ENT and Cancer Clinic, Ghatikia
                     </strong>
+                    <a
+                      href={DOCTOR.clinic.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#14746F] hover:underline mt-0.5"
+                    >
+                      <span>Google Maps Verified Location</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
                   </div>
 
                   <div>

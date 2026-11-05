@@ -13,7 +13,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import AppointmentCTA from "@/components/AppointmentCTA";
 import { PublicationCard, MediaCard, ConferenceCard } from "@/components/ResearchCard";
 import { DOCTOR } from "@/lib/doctor";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   title: "Research, Publications & Media Coverage | Dr. Radhamadhab Sahu",
@@ -32,8 +32,47 @@ export const metadata = buildPageMetadata({
 export default function ResearchPage() {
   const breadcrumbItems = [{ name: "Research & Media", url: "/research" }];
 
+  const researchSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: "Research, Publications & Media Coverage",
+    description:
+      "Peer-reviewed medical literature, national AOICON conference presentations, and accredited media coverage detailing landmark endoscopic ENT surgeries by Dr. Radhamadhab Sahu.",
+    url: `${SITE_URL}/research`,
+    author: {
+      "@id": `${SITE_URL}/#physician`,
+    },
+    publisher: {
+      "@id": `${SITE_URL}/#clinic`,
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: DOCTOR.publications.map((pub, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        item: {
+          "@type": "ScholarlyArticle",
+          headline: pub.title,
+          author: {
+            "@id": `${SITE_URL}/#physician`,
+          },
+          datePublished: pub.year,
+          publication: {
+            "@type": "Periodical",
+            name: pub.journal,
+          },
+          description: pub.description,
+        },
+      })),
+    },
+  };
+
   return (
     <div className="bg-[#FDFBF7]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(researchSchema) }}
+      />
       {/* Top Header */}
       <section className="bg-white border-b border-slate-200 py-4 sm:py-8">
         <div className="medical-container">

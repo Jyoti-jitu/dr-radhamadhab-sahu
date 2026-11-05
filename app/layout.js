@@ -2,7 +2,11 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { generatePhysicianSchema, generateClinicSchema } from "@/lib/seo";
+import {
+  generatePhysicianSchema,
+  generateClinicSchema,
+  generateWebSiteSchema,
+} from "@/lib/seo";
 import { Phone, Calendar } from "lucide-react";
 import { DOCTOR } from "@/lib/doctor";
 import HonorPopup from "@/components/HonorPopup";
@@ -76,6 +80,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const physicianSchema = generatePhysicianSchema();
   const clinicSchema = generateClinicSchema();
+  const webSiteSchema = generateWebSiteSchema();
 
   return (
     <html lang="en" className={`${plusJakarta.variable} font-sans`}>
@@ -89,6 +94,11 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicSchema) }}
+        />
+        {/* WebSite JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
         />
       </head>
       <body className="min-h-screen flex flex-col bg-[#FDFBF7] text-slate-800 antialiased selection:bg-[#E6F4F3] selection:text-[#0B2545]">

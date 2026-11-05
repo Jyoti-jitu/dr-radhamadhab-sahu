@@ -11,10 +11,13 @@ import {
   Info,
   ShieldCheck,
   Stethoscope,
+  ExternalLink,
+  UserCheck,
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AppointmentCTA from "@/components/AppointmentCTA";
-import { buildPageMetadata } from "@/lib/seo";
+import { DOCTOR } from "@/lib/doctor";
+import { buildPageMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   title: "Patient Resources & ENT Educational Guides | Dr. Radhamadhab Sahu",
@@ -36,6 +39,11 @@ const articles = [
     title: "Understanding Chronic Sinusitis: Causes, Symptoms & Modern Care",
     category: "Rhinology & Sinus Health",
     readTime: "5 min read",
+    datePublished: "2024-03-15",
+    dateModified: "2026-10-23",
+    author: DOCTOR.name,
+    authorBioUrl: "/about",
+    medicalReviewer: `${DOCTOR.name}, ${DOCTOR.qualifications}`,
     image: "/images/dr-sahu-fess-sinus-cme-award.jpg",
     imageAspect: "aspect-[3/4] sm:aspect-[4/5]",
     imagePosition: "object-top",
@@ -53,12 +61,22 @@ const articles = [
       "Routine over-the-counter decongestant nasal drops (e.g. xylometazoline) should NEVER be used for more than 5 consecutive days to prevent rhinitis medicamentosa (rebound congestion).",
       "Modern FESS utilizes dissolvable bio-absorbable spacers, avoiding painful traditional packing removal.",
     ],
+    references: [
+      "Rosenfeld RM, Piccirillo JF, Chandrasekhar SS, et al. Clinical practice guideline (update): adult sinusitis. Otolaryngol Head Neck Surg. 2015;152(2 Suppl):S1-S39.",
+      "Fokkens WJ, Lund VJ, Hopkins C, et al. European Position Paper on Rhinosinusitis and Nasal Polyps 2020 (EPOS 2020). Rhinology. 2020;58(Suppl S29):1-464.",
+      "Orlandi RR, Kingdom TT, Smith TL, et al. International consensus statement on allergy and rhinology: rhinosinusitis 2021. Int Forum Allergy Rhinol. 2021;11(3):213-739.",
+    ],
   },
   {
     id: "deviated-septum",
     title: "Deviated Nasal Septum (DNS) & Chronic Nasal Obstruction",
     category: "Nasal Airway",
     readTime: "4 min read",
+    datePublished: "2024-03-15",
+    dateModified: "2026-10-23",
+    author: DOCTOR.name,
+    authorBioUrl: "/about",
+    medicalReviewer: `${DOCTOR.name}, ${DOCTOR.qualifications}`,
     image: "/images/dr-sahu-national-conference-lectern.jpg",
     imageCaption: "Dr. Radhamadhab Sahu delivering an invited lecture on endoscopic septoplasty and airway reconstruction corridors.",
     imageBadge: "Airway Surgery Faculty",
@@ -73,12 +91,21 @@ const articles = [
       "Septoplasty is an internal functional procedure; it does not change the external shape of your nose unless combined with rhinoplasty.",
       "Most patients resume light desk work within 3 to 5 days following endoscopic septoplasty.",
     ],
+    references: [
+      "Illum P. Septoplasty and compensatory inferior turbinate hypertrophy: long-term results after surgical treatment. Rhinology. 1997;35(2):89-92.",
+      "American Academy of Otolaryngology–Head and Neck Surgery. Clinical Consensus Statement: Septoplasty with or without Inferior Turbinate Reduction. 2015.",
+    ],
   },
   {
     id: "when-to-consult",
     title: "When Should You Consult an ENT Specialist? 7 Red Flag Symptoms",
     category: "Clinical Guidance",
     readTime: "4 min read",
+    datePublished: "2024-03-15",
+    dateModified: "2026-10-23",
+    author: DOCTOR.name,
+    authorBioUrl: "/about",
+    medicalReviewer: `${DOCTOR.name}, ${DOCTOR.qualifications}`,
     image: "/images/clinic-head-silhouette-awards-wall.jpg",
     imageCaption: "Distinctive head-silhouette awards wall and surgical honours inside Dr. Radhamadhab Sahu's clinic in Bhubaneswar.",
     imageBadge: "Consultation Chamber",
@@ -97,12 +124,22 @@ const articles = [
     keyTakeaways: [
       "Early consultation prevents chronic complications and allows less invasive endoscopic interventions.",
     ],
+    references: [
+      "Stachler RJ, Francis DO, Schwartz SR, et al. Clinical Practice Guideline: Hoarseness (Dysphonia) (Update). Otolaryngol Head Neck Surg. 2018;158(1_suppl):S1-S42.",
+      "Chandrasekhar SS, Tsai Do BS, Schwartz SR, et al. Clinical Practice Guideline: Sudden Hearing Loss (Update). Otolaryngol Head Neck Surg. 2019;161(1_suppl):S1-S45.",
+      "Ziu E, et al. Adult Skull Base Cerebrospinal Fluid Leaks. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2023.",
+    ],
   },
   {
     id: "hearing-difficulties",
     title: "Understanding Ear Symptoms: Perforations, Cholesteatoma & Implants",
     category: "Otology & Hearing",
     readTime: "6 min read",
+    datePublished: "2024-03-15",
+    dateModified: "2026-10-23",
+    author: DOCTOR.name,
+    authorBioUrl: "/about",
+    medicalReviewer: `${DOCTOR.name}, ${DOCTOR.qualifications}`,
     image: "/images/dr-sahu-patient-abhishek-rao.jpg",
     imageCaption: "Long-term hearing restoration: Patient Abhishek Rao with Dr. Sahu at 2-year post-mastoidectomy follow-up.",
     imageBadge: "Verified Clinical Follow-Up",
@@ -118,12 +155,21 @@ const articles = [
       "Never let water enter an ear with a known eardrum perforation; use cotton soaked in petroleum jelly during showers.",
       "Simultaneous same-day bilateral tympanoplasty can repair both ears in a single sitting under expert hands.",
     ],
+    references: [
+      "Nieman CL, Oh ES, Lin FR. Evaluation and Management of Conductive Hearing Loss in Adults. JAMA. 2021;326(10):966-967.",
+      "American Academy of Otolaryngology–Head and Neck Surgery. Clinical Practice Guideline: Tympanostomy Tubes in Children (Update). 2022.",
+    ],
   },
   {
     id: "skull-base-guide",
     title: "What is Endoscopic Skull Base Surgery? A Patient's Primer",
     category: "Skull Base Surgery",
     readTime: "6 min read",
+    datePublished: "2024-03-15",
+    dateModified: "2026-10-23",
+    author: DOCTOR.name,
+    authorBioUrl: "/about",
+    medicalReviewer: `${DOCTOR.name}, ${DOCTOR.qualifications}`,
     image: "/images/dr-sahu-eboss-skullbase-faculty.jpg",
     imageAspect: "aspect-[3/4] sm:aspect-[4/5]",
     imagePosition: "object-top",
@@ -140,14 +186,58 @@ const articles = [
       "Endoscopic endonasal approaches leave zero external facial incisions.",
       "Post-operative care emphasizes strict avoidance of nose-blowing or heavy lifting to allow the skull base flap to heal securely.",
     ],
+    references: [
+      "Hadad G, Bassagasteguy L, Carrau RL, et al. A novel reconstructive technique after endoscopic expanded endonasal approaches: vascular pedicle nasoseptal flap. Laryngoscope. 2006;116(10):1882-1886.",
+      "Snyderman CH, Pant H, Carrau RL, Prevedello D, Gardner P, Kassam AB. What are the limits of endoscopic endonasal skull base surgery? Tech Vasc Interv Radiol. 2006;9(4):152-160.",
+    ],
   },
 ];
 
 export default function PatientResourcesPage() {
   const breadcrumbItems = [{ name: "Patient Resources", url: "/patient-resources" }];
 
+  const patientResourcesSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: "Patient Resources & ENT Educational Guides",
+    description:
+      "Evidence-based clinical guides on chronic sinusitis, deviated nasal septum, hearing loss, voice hoarseness, sleep apnea, and endoscopic skull base surgery.",
+    url: `${SITE_URL}/patient-resources`,
+    author: {
+      "@id": `${SITE_URL}/#physician`,
+    },
+    publisher: {
+      "@id": `${SITE_URL}/#clinic`,
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: articles.map((art, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        item: {
+          "@type": "Article",
+          headline: art.title,
+          description: art.summary,
+          datePublished: art.datePublished,
+          dateModified: art.dateModified,
+          author: {
+            "@id": `${SITE_URL}/#physician`,
+          },
+          publisher: {
+            "@id": `${SITE_URL}/#clinic`,
+          },
+          citation: art.references,
+        },
+      })),
+    },
+  };
+
   return (
     <div className="bg-[#FDFBF7]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(patientResourcesSchema) }}
+      />
       {/* Top Header */}
       <section className="bg-white border-b border-slate-200 py-4 sm:py-8">
         <div className="medical-container">
@@ -232,6 +322,31 @@ export default function PatientResourcesPage() {
                   </span>
                 </div>
 
+                {/* Author & Verification Byline */}
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-slate-600 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                  <div className="flex items-center gap-1.5 font-medium">
+                    <UserCheck className="w-3.5 h-3.5 text-[#14746F]" />
+                    <span>Author:</span>
+                    <Link
+                      href={art.authorBioUrl}
+                      className="font-bold text-[#0B2545] hover:text-[#14746F] hover:underline"
+                    >
+                      {art.author}
+                    </Link>
+                  </div>
+                  <span className="text-slate-300 hidden sm:inline">&bull;</span>
+                  <div className="flex items-center gap-1 text-slate-500 text-[11px]">
+                    <ShieldCheck className="w-3.5 h-3.5 text-teal-600" />
+                    <span>
+                      Reviewed by: <strong>{art.medicalReviewer}</strong>
+                    </span>
+                  </div>
+                  <span className="text-slate-300 hidden sm:inline">&bull;</span>
+                  <div className="text-[11px] text-slate-500">
+                    Updated: {art.dateModified}
+                  </div>
+                </div>
+
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
                   {/* Left Column: Narrative & Content */}
                   <div className="lg:col-span-7 space-y-3 sm:space-y-4">
@@ -264,6 +379,29 @@ export default function PatientResourcesPage() {
                           </li>
                         ))}
                       </ul>
+                    </div>
+
+                    {/* Peer-Reviewed Scientific References */}
+                    {art.references && art.references.length > 0 && (
+                      <div className="p-3.5 sm:p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5 text-[11px]">
+                        <p className="font-bold uppercase tracking-wider text-slate-700 flex items-center gap-1.5">
+                          <BookOpen className="w-3.5 h-3.5 text-[#14746F]" />
+                          <span>Scientific References &amp; Clinical Guidelines</span>
+                        </p>
+                        <ol className="list-decimal pl-4 space-y-1 text-slate-600 leading-relaxed">
+                          {art.references.map((ref, rIdx) => (
+                            <li key={rIdx}>{ref}</li>
+                          ))}
+                        </ol>
+                      </div>
+                    )}
+
+                    {/* Medical Educational Advisory Disclaimer */}
+                    <div className="p-3 rounded-xl bg-amber-50/60 border border-amber-200 text-[11px] text-amber-900/90 leading-relaxed flex items-start gap-2">
+                      <AlertCircle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
+                      <span>
+                        <strong>Clinical Advisory:</strong> This resource is authored by Dr. Radhamadhab Sahu for patient health literacy and evidence-based education. It does not replace individualized clinical consultation, fiberoptic endoscopy, or radiologic assessment.
+                      </span>
                     </div>
                   </div>
 

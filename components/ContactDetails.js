@@ -120,6 +120,16 @@ export default function ContactDetails() {
             </a>
 
             <a
+              href={DOCTOR.hospital.officialBookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 py-3 px-4 rounded-xl bg-teal-50 border border-teal-200 text-[#14746F] text-xs sm:text-sm font-semibold hover:bg-teal-100 transition-colors text-center"
+            >
+              <ExternalLink className="w-4 h-4 shrink-0" />
+              <span>Official Hospital Profile</span>
+            </a>
+
+            <a
               href={DOCTOR.hospital.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"

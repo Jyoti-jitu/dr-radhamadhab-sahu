@@ -14,7 +14,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import AppointmentCTA from "@/components/AppointmentCTA";
 import AwardsGallery from "@/components/AwardsGallery";
 import { AWARDS_GALLERY } from "@/lib/awards";
-import { buildPageMetadata } from "@/lib/seo";
+import { buildPageMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata = buildPageMetadata({
   title: "Awards, Honors & Surgical Felicitations | Dr. Radhamadhab Sahu",
@@ -34,8 +34,27 @@ export const metadata = buildPageMetadata({
 export default function AwardsPage() {
   const breadcrumbItems = [{ name: "Awards & Honors", url: "/awards" }];
 
+  const awardsSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: "Awards, Honors & Surgical Felicitations",
+    description:
+      "Complete gallery of 58+ verified national honors, state surgical awards, and conference felicitations conferred upon Dr. Radhamadhab Sahu.",
+    url: `${SITE_URL}/awards`,
+    author: {
+      "@id": `${SITE_URL}/#physician`,
+    },
+    publisher: {
+      "@id": `${SITE_URL}/#clinic`,
+    },
+  };
+
   return (
     <div className="bg-[#FDFBF7]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(awardsSchema) }}
+      />
       {/* Header & Breadcrumb Section */}
       <section className="bg-white border-b border-slate-200 py-6 sm:py-10">
         <div className="medical-container space-y-4">
