@@ -9,6 +9,7 @@ import {
   Navigation,
   FileCheck,
   ShieldAlert,
+  MessageSquare,
 } from "lucide-react";
 import { DOCTOR } from "@/lib/doctor";
 
@@ -247,6 +248,16 @@ export default function ContactDetails() {
             >
               <Phone className="w-4 h-4 shrink-0" />
               <span>Call Clinic to Book</span>
+            </a>
+
+            <a
+              href="https://wa.me/919716772703?text=Hello%20Dr.%20Radhamadhab%20Sahu%20Practice,%20I%20would%20like%20to%20inquire%20about%20a%20consultation%20appointment."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 py-3 px-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-semibold hover:bg-emerald-100 transition-colors text-center"
+            >
+              <MessageSquare className="w-4 h-4 text-emerald-600 shrink-0" />
+              <span>WhatsApp Inquiry</span>
             </a>
 
             <a

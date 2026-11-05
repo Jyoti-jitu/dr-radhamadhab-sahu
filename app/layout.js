@@ -7,7 +7,7 @@ import {
   generateClinicSchema,
   generateWebSiteSchema,
 } from "@/lib/seo";
-import { Phone, Calendar } from "lucide-react";
+import { Phone, Calendar, MessageSquare } from "lucide-react";
 import { DOCTOR } from "@/lib/doctor";
 import HonorPopup from "@/components/HonorPopup";
 
@@ -113,6 +113,15 @@ export default function RootLayout({ children }) {
 
         {/* Discreet Mobile Floating Appointment Action */}
         <div className="fixed bottom-4 right-4 z-40 sm:hidden flex items-center gap-2">
+          <a
+            href="https://wa.me/919716772703?text=Hello%20Dr.%20Radhamadhab%20Sahu%20Clinic,%20I%20would%20like%20to%20inquire%20about%20a%20consultation."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3.5 rounded-full bg-emerald-600 text-white shadow-lg active:scale-95 transition-transform flex items-center justify-center"
+            aria-label="WhatsApp clinic directly"
+          >
+            <MessageSquare className="w-5 h-5" />
+          </a>
           <a
             href={DOCTOR.clinic.telLink}
             className="p-3.5 rounded-full bg-[#14746F] text-white shadow-lg active:scale-95 transition-transform flex items-center justify-center"

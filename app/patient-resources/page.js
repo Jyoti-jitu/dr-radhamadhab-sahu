@@ -191,6 +191,68 @@ const articles = [
       "Snyderman CH, Pant H, Carrau RL, Prevedello D, Gardner P, Kassam AB. What are the limits of endoscopic endonasal skull base surgery? Tech Vasc Interv Radiol. 2006;9(4):152-160.",
     ],
   },
+  {
+    id: "head-neck-thyroid",
+    title: "Thyroid Nodules, Salivary Gland Stones & Scarless Surgery",
+    category: "Head & Neck Surgery",
+    readTime: "6 min read",
+    datePublished: "2024-04-10",
+    dateModified: "2026-10-23",
+    author: DOCTOR.name,
+    authorBioUrl: "/about",
+    medicalReviewer: `${DOCTOR.name}, ${DOCTOR.qualifications}`,
+    image: "/images/dr-sahu-patient-deepak-barik.jpg",
+    imageCaption: "Dr. Radhamadhab Sahu with post-operative patient Deepak Kumar Barik and family following successful head & neck lesion excision.",
+    imageBadge: "Head & Neck Outcomes",
+    summary:
+      "When thyroid swellings require ultrasound FNAC, how Transoral Endoscopic Thyroidectomy (TOETVA) removes nodules without neck scars, and micro-sialoendoscopy for salivary stones.",
+    content: [
+      "Thyroid nodules are common, but every solitary or dominant swelling requires systematic evaluation with high-resolution neck ultrasound and Fine Needle Aspiration Cytology (FNAC) to distinguish benign colloids from malignant papillary carcinomas.",
+      "For eligible patients with benign or indeterminate thyroid nodules, Transoral Endoscopic Thyroidectomy Vestibular Approach (TOETVA) offers a pioneering surgical alternative. Operating through three small puncture incisions hidden on the inner side of the lower lip, the thyroid is excised completely without leaving any visible surgical cut on the front of the neck.",
+      "Similarly, obstructive mealtime swelling under the jaw or in the cheek is often caused by salivary stones (sialolithiasis). With diagnostic and interventional sialoendoscopy, miniature endoscopes measure just 1.3 mm, allowing surgeons to locate and extract stones while preserving natural salivary flow.",
+    ],
+    keyTakeaways: [
+      "Over 90% of thyroid nodules are benign, but ultrasound FNAC is mandatory to establish cytological safety.",
+      "TOETVA leaves zero neck scars, making it an excellent option for cosmetically conscious patients with nodules under 4–5 cm.",
+      "Sialoendoscopy saves the salivary gland from traditional surgical excision in the majority of stone cases.",
+    ],
+    references: [
+      "Haugen BR, Alexander EK, Bible KC, et al. 2015 American Thyroid Association Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer. Thyroid. 2016;26(1):1-133.",
+      "Anuwong A, Ketwong K, Yongchaiyud P, et al. Transoral Endoscopic Thyroidectomy Vestibular Approach (TOETVA): From First-in-Human to International Adoption. World J Surg. 2018;42(2):464-475.",
+      "Marchal F, Dulguerov P. Sialendoscopy: new engine in salivary duct surgery. Arch Otolaryngol Head Neck Surg. 2003;129(8):830-834.",
+    ],
+  },
+  {
+    id: "voice-and-sleep",
+    title: "Understanding Hoarseness, Vocal Cord Polyps & Obstructive Sleep Apnea",
+    category: "Voice & Sleep Health",
+    readTime: "5 min read",
+    datePublished: "2024-04-20",
+    dateModified: "2026-10-23",
+    author: DOCTOR.name,
+    authorBioUrl: "/about",
+    medicalReviewer: `${DOCTOR.name}, ${DOCTOR.qualifications}`,
+    image: "/images/dr-sahu-phonocon-2025-award.jpg",
+    imageCaption: "Dr. Radhamadhab Sahu receiving national honors at PHONOCON 2025 for voice and phonosurgical contributions.",
+    imageBadge: "Phonosurgery Faculty",
+    summary:
+      "When voice changes warrant video laryngostroboscopy, how phonomicrosurgery preserves vocal fold layers, and how sleep apnea is treated when CPAP fails.",
+    content: [
+      "Voice hoarseness persisting for more than three weeks is never normal. While acute laryngitis resolves with vocal rest and hydration, persistent breathiness, pitch breaks, or strain may signify benign vocal cord nodules, polyps, or early laryngeal dysplasia requiring high-definition stroboscopy.",
+      "Phonomicrosurgery uses cold microscopic micro-instruments to excise benign vocal fold lesions while strictly preserving the delicate gelatinous lamina propria, restoring natural mucosal wave oscillations and vocal endurance.",
+      "In sleep medicine, loud habitual snoring paired with witnessed gasping or unrefreshing sleep indicates Obstructive Sleep Apnea (OSA). When patients cannot tolerate CPAP masks, Drug-Induced Sleep Endoscopy (DISE) accurately maps the site of airway collapse, guiding targeted low-temperature coblation pharyngoplasty or multi-level surgical airway widening.",
+    ],
+    keyTakeaways: [
+      "Hoarseness lasting longer than 3 weeks is a red flag requiring fiberoptic laryngeal examination.",
+      "Vocal surgery requires 48 to 72 hours of total voice rest followed by guided speech therapy for optimal vocal recovery.",
+      "Sleep apnea stresses cardiac and vascular health; surgical airway widening offers lasting relief for CPAP-intolerant patients.",
+    ],
+    references: [
+      "Stachler RJ, Francis DO, Schwartz SR, et al. Clinical Practice Guideline: Hoarseness (Dysphonia) (Update). Otolaryngol Head Neck Surg. 2018;158(1_suppl):S1-S42.",
+      "De Vito A, Carrasco Llatas M, Vanni A, et al. European position paper on drug-induced sleep endoscopy: 2017 update. Clin Otolaryngol. 2018;43(6):1541-1552.",
+      "Kapur VK, Auckley DH, Chowdhuri S, et al. Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea. J Clin Sleep Med. 2017;13(3):479-504.",
+    ],
+  },
 ];
 
 export default function PatientResourcesPage() {
@@ -264,11 +326,11 @@ export default function PatientResourcesPage() {
               Quick Topic Directory (Select to Jump)
             </span>
             <span className="text-xs text-[#14746F] font-semibold hidden sm:inline">
-              5 Comprehensive Clinical Primers
+              7 Evidence-Based Clinical Primers Across 5 Pillars
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-2.5 sm:gap-4">
             {articles.map((art) => (
               <a
                 key={art.id}
